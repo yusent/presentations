@@ -1,31 +1,15 @@
 <style>
-section[id="14"],
-section[id="15"],
-section[id="16"],
-section[id="17"],
-section[id="18"],
-section[id="19"],
-section[id="20"],
-section[id="21"],
-section[id="22"],
-section[id="23"],
-section[id="24"],
-section[id="25"],
-section[id="26"],
-section[id="27"],
-section[id="28"],
-section[id="29"],
-section[id="30"],
-section[id="31"],
-section[id="32"],
-section[id="33"],
-section[id="34"],
-section[id="35"],
-section[id="36"],
-section[id="37"],
-section[id="38"]
-{
+section {
   justify-content: flex-start;
+}
+
+section[id="1"], section[id="2"] {
+  justify-content: center;
+}
+
+img {
+  object-fit: contain;
+  vertical-align: middle;
 }
 </style>
 
@@ -43,55 +27,61 @@ computaciones, el cual se basa en abstracción con funciones.
 Fue inventado en 1930 por el matemático Alonzo Church como parte de su
 investigación sobre la fundación de las matemáticas.
 
----
-
-# Sintaxis de Cálculo-λ
-
-expression
-&nbsp;
-&nbsp;
-&nbsp;
+<center>
+  <img src="calculo-lambda/images/church_alonzo.jpg" />
+</center>
 
 ---
 
 # Sintaxis de Cálculo-λ
 
-expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
-&nbsp;
-&nbsp;
-&nbsp;
+<span style="font-size:3rem">
+  expression
+</span>
 
 ---
 
 # Sintaxis de Cálculo-λ
 
-expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp;&nbsp;&nbsp; <b style="color:red">aplicación</b>
-&nbsp;
-&nbsp;
+<span style="font-size:3rem">
+  expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
+</span>
 
 ---
 
 # Sintaxis de Cálculo-λ
 
-expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp;&nbsp;&nbsp; <b style="color:red">aplicación</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> <b>λ</b> variable . expression &nbsp;&nbsp;&nbsp; <b style="color:red">abstracción</b>
-&nbsp;
+<span style="font-size:3rem">
+  expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp; <b style="color:red">aplicación</b>
+</span>
 
 ---
 
 # Sintaxis de Cálculo-λ
 
-expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp;&nbsp;&nbsp; <b style="color:red">aplicación</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> <b>λ</b> variable . expression &nbsp;&nbsp;&nbsp; <b style="color:red">abstracción</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> ( expression ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">agrupamiento</b>
+<span style="font-size:3rem">
+  expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp; <b style="color:red">aplicación</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> <b>λ</b> variable . expression &nbsp; <b style="color:red">abstracción</b>
+</span>
+
+---
+
+# Sintaxis de Cálculo-λ
+
+<span style="font-size:3rem">
+  expression <span style="color:red">::=</span> variable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">identificador</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> expression expression &nbsp; <b style="color:red">aplicación</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> <b>λ</b> variable . expression &nbsp; <b style="color:red">abstracción</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red">|</span> ( expression ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:red">grupo</b>
+</span>
 
 ---
 
 # Identidad
 
+<span style="font-size:3rem">
 I := λx.x
 
 I a = **?**
@@ -101,62 +91,71 @@ I 42 = **?**
 I "hola mundo" = **?**
 
 I I = **?**
+</span>
 
 ---
 
 # Identidad
 
+<span style="font-size:3rem">
 I := λx.x
 
-I a = **a**
+I a = <b style="color:red">a</b>
 
 I 42 = **?**
 
 I "hola mundo" = **?**
 
 I I = **?**
+</span>
 
 ---
 
 # Identidad
 
+<span style="font-size:3rem">
 I := λx.x
 
-I a = **a**
+I a = <b style="color:red">a</b>
 
-I 42 = **42**
+I 42 = <b style="color:red">42</b>
 
 I "hola mundo" = **?**
 
 I I = **?**
+</span>
 
 ---
 
 # Identidad
 
+<span style="font-size:3rem">
 I := λx.x
 
-I a = **a**
+I a = <b style="color:red">a</b>
 
-I 42 = **42**
+I 42 = <b style="color:red">42</b>
 
-I "hola mundo" = **"hola mundo"**
+I "hola mundo" = <b style="color:red">"hola mundo"</b>
 
 I I = **?**
+</span>
 
 ---
 
 # Identidad
 
+<span style="font-size:3rem">
 I := λx.x
 
-I a = **a**
+I a = <b style="color:red">a</b>
 
-I 42 = **42**
+I 42 = <b style="color:red">42</b>
 
-I "hola mundo" = **"hola mundo"**
+I "hola mundo" = <b style="color:red">"hola mundo"</b>
 
-I I = **I**
+I I = <b style="color:red">I</b>
+</span>
 
 ---
 
@@ -449,7 +448,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -457,7 +456,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -470,7 +469,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -483,7 +482,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -501,7 +500,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -519,7 +518,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -537,7 +536,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -555,7 +554,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -573,7 +572,7 @@ fn(a) -> fn(b) -> x end end
 
 ---
 
-# Combinador mockingbird
+# Combinador Zenzontle (Mockingbird)
 
 <span style="font-size: 4rem">
   M := λf.f f
@@ -588,3 +587,333 @@ fn(a) -> fn(b) -> x end end
 <span style="font-size: 4rem">
   M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = M M = ... 😢
 </span>
+
+---
+
+# Combinador Zenzontle (Mockingbird)
+
+<span style="font-size: 4rem">
+  M := λf.f f
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  M I = <span style="color:red">I</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  M M = <span style="color:red">Ω</span>
+</span>
+
+---
+
+# Combinador Zenzontle (Mockingbird)
+
+<span style="font-size: 4rem">
+  ω := λf.f f
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  ω I = <span style="color:red">I</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  ω ω = <span style="color:red">Ω</span>
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K 42 "hola"  = ?
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K 42 "hola"  = <span style="color:red">42</span>
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K 42 "hola"  = <span style="color:red">42</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K I 12  = <span style="color:red">I</span>
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K 42 "hola"  = <span style="color:red">42</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K I 12  = <span style="color:red">I</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K I x y  = ?
+</span>
+
+---
+
+# Combinador Cernícalo (Kestrel)
+
+<span style="font-size: 4rem">
+  K := λa.λb.a
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K 42 "hola"  = <span style="color:red">42</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K I 12  = <span style="color:red">I</span>
+</span>
+
+<br>
+<span style="font-size: 4rem">
+  K I x y  = <span style="color:red">y</span>
+</span>
+
+---
+
+# Combinador Milano Real (Kite)
+
+<span style="font-size: 4rem">
+  KI := λa.λb.b
+</span>
+
+---
+
+# Combinador Milano Real (Kite)
+
+<span style="font-size: 4rem">
+  KI := λa.λb.b
+</span>
+
+<span style="font-size: 4rem">
+  KI := K I
+</span>
+
+---
+
+# ¿Por qué nombres de pájaros?
+
+<div style="display:flex;justify-content:space-around">
+  <img src="calculo-lambda/images/to-mock-a-mockingbird.jpg" height="400" width="auto" />
+  <img src="calculo-lambda/images/smullyan.jpg" height="300" width="auto" />
+</div>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a
+</span>
+
+<span style="font-size: 3rem">
+  λa.b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b)
+</span>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b)
+</span>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b)
+</span>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b)
+</span>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b)
+</span>
+
+---
+
+# Combinadores
+
+Son funciones sin variables libres
+
+<span style="font-size: 3rem">
+  λa.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.a <span style="color:red">es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.a b <span style="color:red">no es un combinador</span>
+</span>
+
+<span style="font-size: 3rem">
+  λa.λb.λc (λd.b) <span style="color:red">es un combinador</span>
+</span>
+
+---
+
+# Combinadores en Elixir
+
+| Símbolo | Pájaro | Cálculo-λ | Elixir |
+| --- | --- | --- | --- |
+| I | Idiot (Galah) | λa.a | `Function.identity` |
+| M | Mockingbird (Zenzontle) | λf.f f | `fn(f) -> f.(f) end` |
+| K | Kestrel (Cernícalo) | λa.λb.a | `fn(a) -> fn(b) -> a end end` |
+| KI | Kite (Milano Real) | λa.λb.b | `fn(a) -> fn(b) -> b end end` |
