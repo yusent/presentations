@@ -915,5 +915,5 @@ Son funciones sin variables libres
 | --- | --- | --- | --- |
 | I | Idiot (Galah) | λa.a | `Function.identity` |
 | M | Mockingbird (Zenzontle) | λf.f f | `fn(f) -> f.(f) end` |
-| K | Kestrel (Cernícalo) | λa.λb.a | `fn(a) -> fn(b) -> a end end` |
-| KI | Kite (Milano Real) | λa.λb.b | `fn(a) -> fn(b) -> b end end` |
+| K | Kestrel (Cernícalo) | λa.λb.a | `fn(a) -> fn(_) -> a end end` |
+| KI | Kite (Milano Real) | λa.λb.b | `fn(_) -> fn(b) -> b end end` |
