@@ -15,7 +15,7 @@ img {
 
 # Cálculo Lambda
 
-[https://github.com/yusent/presentations/blob/master/calculo-lambda.html](https://github.com/yusent/presentations/blob/master/calculo-lambda.html)
+[https://yusent.github.io/calculo-lambda.html](https://yusent.github.io/calculo-lambda.html)
 
 ---
 
