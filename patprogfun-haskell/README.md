@@ -40,3 +40,18 @@ img {
 | Strategy Pattern | Seguro ya entendieron la idea |
 | Decorator Pattern | No esperen nada distinto |
 | Visitor Pattern | Funciones |
+
+---
+
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones, Tipos y Composición
+- Funciones como entidades de primera clase
+  - Funciones como interfaces
+  - Aplicación parcial
+  - Encadenamiento
+- Mónadas
+  - Manejo de errores y Operaciones Asíncronas
+- Monoides
+  - Agregación de datos
