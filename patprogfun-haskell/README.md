@@ -21,6 +21,14 @@ img {
   object-fit: contain;
   vertical-align: middle;
 }
+
+.note {
+  color: #f00;
+  font-weight: bold;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
 </style>
 
 # Patrones de Programación Funcional en Haskell
@@ -55,3 +63,7 @@ img {
   - Manejo de errores y Operaciones Asíncronas
 - Monoides
   - Agregación de datos
+
+<div class="note">
+  Vista general (sin entrar a detalle)
+</div>
