@@ -22,6 +22,10 @@ img {
   vertical-align: middle;
 }
 
+.red {
+  color: #f00;
+}
+
 .note {
   color: #f00;
   font-weight: bold;
@@ -67,3 +71,50 @@ img {
 <div class="note">
   Vista general (sin entrar a detalle)
 </div>
+
+---
+
+# Principios básicos de FP
+
+**Las funciones son entidades de primera clase**
+
+---
+
+# Principios básicos de FP
+
+<b>
+  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+</b>
+
+---
+
+# Principios básicos de FP
+
+<b>
+  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+</b>
+
+- Se pueden almacenar en variables
+
+---
+
+# Principios básicos de FP
+
+<b>
+  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+</b>
+
+- Se pueden almacenar en variables
+- Se pueden pasar como argumento a una función
+
+---
+
+# Principios básicos de FP
+
+<b>
+  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+</b>
+
+- Se pueden almacenar en variables
+- Se pueden pasar como argumento a una función
+- Se pueden regresar como resultado de una función
