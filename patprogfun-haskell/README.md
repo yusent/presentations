@@ -294,3 +294,68 @@ img {
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a una función
 - Se pueden regresar como resultado de una función
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+Usando notación lambda (función anónima):
+```haskell
+add = \a b -> a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+Usando notación lambda (función anónima):
+```haskell
+add = \a b -> a + b
+```
+
+Para aplicar una función separamos con espacio:
+```haskell
+add 10 2 -- Regresa 12
+```
