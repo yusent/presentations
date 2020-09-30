@@ -43,6 +43,132 @@ img {
 
 | Patrón orientado a objetos | Patrón funcional |
 | --- | --- |
+| Single Responsability Principle | |
+| Open/Closed Principle | |
+| Liskov Substitution Principle | |
+| Interface Segregation Principle | |
+| Dependency Inversion Principle | |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | |
+| Liskov Substitution Principle | |
+| Interface Segregation Principle | |
+| Dependency Inversion Principle | |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | |
+| Interface Segregation Principle | |
+| Dependency Inversion Principle | |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | |
+| Dependency Inversion Principle | |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | Funciones |
+| Dependency Inversion Principle | |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | Funciones |
+| Dependency Inversion Principle | Funciones de nuevo |
+| Factory Pattern | |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | Funciones |
+| Dependency Inversion Principle | Funciones de nuevo |
+| Factory Pattern | Funciones |
+| Strategy Pattern | |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | Funciones |
+| Dependency Inversion Principle | Funciones de nuevo |
+| Factory Pattern | Funciones |
+| Strategy Pattern | Seguro ya entendieron la idea |
+| Decorator Pattern | |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
+| Single Responsability Principle | Funciones |
+| Open/Closed Principle | Funciones |
+| Liskov Substitution Principle | También funciones |
+| Interface Segregation Principle | Funciones |
+| Dependency Inversion Principle | Funciones de nuevo |
+| Factory Pattern | Funciones |
+| Strategy Pattern | Seguro ya entendieron la idea |
+| Decorator Pattern | No esperen nada distinto |
+| Visitor Pattern | |
+
+---
+
+| Patrón orientado a objetos | Patrón funcional |
+| --- | --- |
 | Single Responsability Principle | Funciones |
 | Open/Closed Principle | Funciones |
 | Liskov Substitution Principle | También funciones |
@@ -52,6 +178,52 @@ img {
 | Strategy Pattern | Seguro ya entendieron la idea |
 | Decorator Pattern | No esperen nada distinto |
 | Visitor Pattern | Funciones |
+
+---
+
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones, Tipos y Composición
+
+---
+
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones, Tipos y Composición
+- Funciones como entidades de primera clase
+  - Funciones como interfaces
+  - Aplicación parcial
+  - Encadenamiento
+
+---
+
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones, Tipos y Composición
+- Funciones como entidades de primera clase
+  - Funciones como interfaces
+  - Aplicación parcial
+  - Encadenamiento
+- Mónadas
+  - Manejo de errores y Operaciones Asíncronas
+
+---
+
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones, Tipos y Composición
+- Funciones como entidades de primera clase
+  - Funciones como interfaces
+  - Aplicación parcial
+  - Encadenamiento
+- Mónadas
+  - Manejo de errores y Operaciones Asíncronas
+- Monoides
+  - Agregación de datos
 
 ---
 
