@@ -26,6 +26,10 @@ img {
   color: #f00;
 }
 
+.transparent {
+  opacity: 0;
+}
+
 .note {
   color: #f00;
   font-weight: bold;
@@ -49,7 +53,7 @@ img {
 | Interface Segregation Principle | |
 | Dependency Inversion Principle | |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -63,7 +67,7 @@ img {
 | Interface Segregation Principle | |
 | Dependency Inversion Principle | |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -77,7 +81,7 @@ img {
 | Interface Segregation Principle | |
 | Dependency Inversion Principle | |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -91,7 +95,7 @@ img {
 | Interface Segregation Principle | |
 | Dependency Inversion Principle | |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -105,7 +109,7 @@ img {
 | Interface Segregation Principle | Funciones |
 | Dependency Inversion Principle | |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -119,7 +123,7 @@ img {
 | Interface Segregation Principle | Funciones |
 | Dependency Inversion Principle | Funciones de nuevo |
 | Factory Pattern | |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
@@ -133,7 +137,7 @@ img {
 | Interface Segregation Principle | Funciones |
 | Dependency Inversion Principle | Funciones de nuevo |
 | Factory Pattern | Funciones |
-| Strategy Pattern | |
+| Strategy Pattern | <span class="transparent">Seguro ya entendieron la idea</span> |
 | Decorator Pattern | |
 | Visitor Pattern | |
 
