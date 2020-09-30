@@ -7,6 +7,10 @@ section[id="1"], section[id="2"] {
   justify-content: center;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 table {
   display: table;
 }
@@ -250,50 +254,71 @@ img {
 
 ---
 
-# Principios básicos de FP
-
-**Las funciones son entidades de primera clase**
+## Las funciones son entidades de primera clase
 
 ---
 
-# Principios básicos de FP
-
-<b>
-  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-</b>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 ---
 
-# Principios básicos de FP
-
-<b>
-  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-</b>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
 
 ---
 
-# Principios básicos de FP
-
-<b>
-  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-</b>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a una función
 
 ---
 
-# Principios básicos de FP
-
-<b>
-  Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-</b>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a una función
 - Se pueden regresar como resultado de una función
+
+---
+
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+
+- Se pueden almacenar en variables
+- Se pueden pasar como argumento a una función
+- Se pueden regresar como resultado de una función
+- Son independientes (No necesitan estar atadas a una clase u objeto)
+
+---
+
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+
+- Se pueden almacenar en variables
+- Se pueden pasar como argumento a una función
+- Se pueden regresar como resultado de una función
+- Son independientes (No necesitan estar atadas a una clase u objeto)
+
+<center>
+  <img src="patprogfun-haskell/images/function.png" style="height: 400px" />
+</center>
+
+---
+
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+
+- Se pueden almacenar en variables
+- Se pueden pasar como argumento a una función
+- Se pueden regresar como resultado de una función
+- Son independientes (No necesitan estar atadas a una clase u objeto)
+
+<center>
+  <img src="patprogfun-haskell/images/function.png" style="height: 400px" />
+</center>
+
+<div class="note">
+  Esfera -> Cubo
+</div>
 
 ---
 
@@ -358,4 +383,48 @@ add = \a b -> a + b
 Para aplicar una función separamos con espacio:
 ```haskell
 add 10 2 -- Regresa 12
+```
+
+---
+
+# Composición de funciones
+
+<center>
+  <img src="patprogfun-haskell/images/composed-functions.png" style="height: 500px" />
+</center>
+
+---
+
+# Composición de funciones
+
+<center>
+  <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+</center>
+
+---
+
+# Composición de funciones
+
+<center>
+  <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+</center>
+
+<div class="note" style="bottom: 200px">
+  Esfera -> Icosidodecaedro
+</div>
+
+---
+
+# Composición de funciones en Haskell
+
+Utilizamos el punto para componer funciones:
+```haskell
+half x = x / 2
+
+square x = x * x
+
+halfSquare x = half (square x)
+
+-- halfSquare puede ser definida como:
+halfSquare = half . square
 ```
