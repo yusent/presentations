@@ -34,6 +34,10 @@ img {
   opacity: 0;
 }
 
+.muted {
+  color: #0005;
+}
+
 .note {
   color: #f00;
   font-weight: bold;
@@ -300,7 +304,11 @@ img {
 - Son independientes (No necesitan estar atadas a una clase u objeto)
 
 <center>
-  <img src="patprogfun-haskell/images/function.png" style="height: 400px" />
+  <img src="patprogfun-haskell/images/function.png" style="height: 350px" />
+</center>
+
+<center style="margin-top: -30px">
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
 
 ---
@@ -313,7 +321,11 @@ img {
 - Son independientes (No necesitan estar atadas a una clase u objeto)
 
 <center>
-  <img src="patprogfun-haskell/images/function.png" style="height: 400px" />
+  <img src="patprogfun-haskell/images/function.png" style="height: 350px" />
+</center>
+
+<center style="margin-top: -30px">
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
 
 <div class="note">
@@ -391,6 +403,8 @@ add 10 2 -- Regresa 12
 
 <center>
   <img src="patprogfun-haskell/images/composed-functions.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
 
 ---
@@ -399,6 +413,8 @@ add 10 2 -- Regresa 12
 
 <center>
   <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
 
 ---
@@ -407,6 +423,8 @@ add 10 2 -- Regresa 12
 
 <center>
   <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
 
 <div class="note" style="bottom: 200px">
