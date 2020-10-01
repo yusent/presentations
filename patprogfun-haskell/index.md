@@ -3,6 +3,13 @@ section {
   justify-content: flex-start;
 }
 
+.title-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section[id="1"] {
   justify-content: center;
 }
@@ -371,121 +378,6 @@ img {
 
 ---
 
-## Definición de funciones
-
-```haskell
-add a b = a + b
-```
-
----
-
-## Definición de funciones
-
-```haskell
-add a b = a + b
-```
-
-Opcionalmente podemos especificar una firma:
-```haskell
-add :: Int -> Int -> Int
-add a b = a + b
-```
-
----
-
-## Definición de funciones
-
-```haskell
-add a b = a + b
-```
-
-Opcionalmente podemos especificar una firma:
-```haskell
-add :: Int -> Int -> Int
-add a b = a + b
-```
-
-Usando notación lambda (función anónima):
-```haskell
-add = \a b -> a + b
-```
-
----
-
-## Definición de funciones
-
-```haskell
-add a b = a + b
-```
-
-Opcionalmente podemos especificar una firma:
-```haskell
-add :: Int -> Int -> Int
-add a b = a + b
-```
-
-Usando notación lambda (función anónima):
-```haskell
-add = \a b -> a + b
-```
-
-Para aplicar una función separamos con espacio:
-```haskell
-add 10 2 -- Regresa 12
-```
-
----
-
-# Composición de funciones
-
-<center>
-  <img src="images/composed-functions.png" style="height: 500px" />
-  <br>
-  <small class="muted">Imagen tomada de https://mathinsight.org</small>
-</center>
-
----
-
-# Composición de funciones
-
-<center>
-  <img src="images/composed-functions-result.png" style="height: 500px" />
-  <br>
-  <small class="muted">Imagen tomada de https://mathinsight.org</small>
-</center>
-
----
-
-# Composición de funciones
-
-<center>
-  <img src="images/composed-functions-result.png" style="height: 500px" />
-  <br>
-  <small class="muted">Imagen tomada de https://mathinsight.org</small>
-</center>
-
-<div class="note" style="bottom: 200px">
-  Esfera -> Icosidodecaedro
-</div>
-
----
-
-# Composición de funciones
-
-Utilizamos el punto para componer funciones:
-```haskell
-half x = x / 2
-
-square x = x * x
-
-halfSquare x = half (square x)
-
--- halfSquare puede ser definida como:
-halfSquare = half . square
-```
-
----
-
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
@@ -600,6 +492,105 @@ halfSquare = half . square
 
 ---
 
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+Usando notación lambda (función anónima):
+```haskell
+add = \a b -> a + b
+```
+
+---
+
+## Definición de funciones
+
+```haskell
+add a b = a + b
+```
+
+Opcionalmente podemos especificar una firma:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+Usando notación lambda (función anónima):
+```haskell
+add = \a b -> a + b
+```
+
+Para aplicar una función separamos con espacio:
+```haskell
+add 10 2 -- Regresa 12
+```
+
+---
+
+<div class="title-section">
+  <h1>Composición de funciones</h1>
+</div>
+
+---
+
+<center>
+  <img src="images/composed-functions.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
+</center>
+
+---
+
+<center>
+  <img src="images/composed-functions-result.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
+</center>
+
+---
+
+<center>
+  <img src="images/composed-functions-result.png" style="height: 500px" />
+  <br>
+  <small class="muted">Imagen tomada de https://mathinsight.org</small>
+</center>
+
+<div class="note" style="bottom: 300px">
+  Esfera -> Icosidodecaedro
+</div>
+
+---
+
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
@@ -650,30 +641,6 @@ halfSquare = half . square
   <div class="block">Función 2</div>
   <span class="arrow">&rarr;</span>
   <div class="block">Función 3</div>
-  <span class="arrow">&rarr;</span>
-  <span class="blue">y</span>
-</div>
-
----
-
-<div class="chain">
-  <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
-  <div class="block">Función 1</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block">Función 2</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block">Función 3</div>
-  <span class="arrow">&rarr;</span>
-  <span class="blue">y</span>
-</div>
-
-<p class="arrow">&darr;</p>
-
-<div class="chain">
-  <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
-  <div class="block service-block">Servicio</div>
   <span class="arrow">&rarr;</span>
   <span class="blue">y</span>
 </div>
@@ -854,6 +821,21 @@ halfSquare = half . square
 
 ---
 
+## Utilizamos el punto para componer funciones:
+
+```haskell
+half x = x / 2
+
+square x = x * x
+
+halfSquare x = half (square x)
+
+-- halfSquare puede ser definida como:
+halfSquare = half . square
+```
+
+---
+
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
@@ -1015,25 +997,29 @@ halfSquare = half . square
 ---
 
 <div class="chain">
-  <span class="blue">HTTP Request</span>
+  <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">Autenticación</div>
+  <div class="block use-case-block">Caso de uso 1</div>
   <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">...</div>
+  <div class="block use-case-block">Caso de uso 2</div>
   <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">Formato</div>
+  <div class="block use-case-block">Caso de uso 3</div>
   <span class="arrow">&rarr;</span>
-  <span class="blue">HTTP Response</span>
+  <span class="blue">y</span>
 </div>
 
 <p class="arrow">&darr;</p>
 
 <div class="chain">
-  <span class="blue">HTTP Request</span>
+  <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
-  <div class="block application-block">Aplicación WEB</div>
+  <div class="block application-block"><span>Aplicación</span></div>
   <span class="arrow">&rarr;</span>
-  <span class="blue">HTTP Response</span>
+  <span class="blue">y</span>
+</div>
+
+<div class="note">
+  <u><i>¡La composición es fractal!</i></u>
 </div>
 
 ---
@@ -1060,8 +1046,10 @@ halfSquare = half . square
   <span class="blue">HTTP Response</span>
 </div>
 
-<div class="note">
-  <u><i>¡La composición es fractal!</i></u>
+---
+
+<div class="title-section">
+  <h1>Tipos de datos</h1>
 </div>
 
 ---
@@ -1276,7 +1264,7 @@ shouldIDrink Water -- Yes
 ```haskell
 type CheckNumber = Int
 type CardNumber = String
-type PaymentAmount = Decimal
+type MoneyAmount = Decimal
 ```
 
 ---
@@ -1286,7 +1274,7 @@ type PaymentAmount = Decimal
 ```haskell
 type CheckNumber = Int
 type CardNumber = String
-type PaymentAmount = Decimal
+type MoneyAmount = Decimal
 
 data CardType = Visa | Mastercard
 data Currency = MXN | USD | EUR
@@ -1299,24 +1287,7 @@ data Currency = MXN | USD | EUR
 ```haskell
 type CheckNumber = Int
 type CardNumber = String
-type PaymentAmount = Decimal
-
-data CardType = Visa | Mastercard
-data Currency = MXN | USD | EUR
-
-data PaymentMethod = Cash
-                   | Check CheckNumber
-                   | CreditCard CardType CardNumber
-```
-
----
-
-## ¿Cómo representaríamos los tipos para un sistema de pagos?
-
-```haskell
-type CheckNumber = Int
-type CardNumber = String
-type PaymentAmount = Decimal
+type MoneyAmount = Decimal
 
 data CardType = Visa | Mastercard
 data Currency = MXN | USD | EUR
@@ -1324,9 +1295,28 @@ data Currency = MXN | USD | EUR
 data PaymentMethod = Cash
                    | Check CheckNumber
                    | CreditCard CardType CardNumber
+                   | DebitCard CardType CardNumber
+```
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+```haskell
+type CheckNumber = Int
+type CardNumber = String
+type MoneyAmount = Decimal
+
+data CardType = Visa | Mastercard
+data Currency = MXN | USD | EUR
+
+data PaymentMethod = Cash
+                   | Check CheckNumber
+                   | CreditCard CardType CardNumber
+                   | DebitCard CardType CardNumber
 
 data Payment = Payment
-             { amount   :: PaymentAmount
+             { amount   :: MoneyAmount
              , currency :: Currency
              , method   :: PaymentMethod
              }
