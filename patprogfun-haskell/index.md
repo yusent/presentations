@@ -433,7 +433,7 @@ add 10 2 -- Regresa 12
 
 ---
 
-# Composición de funciones en Haskell
+# Composición de funciones
 
 Utilizamos el punto para componer funciones:
 ```haskell
