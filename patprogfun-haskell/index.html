@@ -1371,6 +1371,96 @@
 <span class="hljs-title">pointY</span> (<span class="hljs-type">Point</span> <span class="hljs-number">12</span> <span class="hljs-number">144</span>) <span class="hljs-comment">-- 144</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75">
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+<p>Podemos declarar que el tipo de dato <code>Answer</code> puede ser <code>Yes</code> <b class="blue">&quot;Ó&quot;</b> <code>No</code> <b class="blue">&quot;Ó&quot;</b> <code>Maybe</code>:</p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Answer</span> = <span class="hljs-type">Yes</span></span>
+            | <span class="hljs-type">No</span>
+            | <span class="hljs-type">Maybe</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76">
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+<p>Podemos declarar que el tipo de dato <code>Answer</code> puede ser <code>Yes</code> <b class="blue">&quot;Ó&quot;</b> <code>No</code> <b class="blue">&quot;Ó&quot;</b> <code>Maybe</code>:</p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Answer</span> = <span class="hljs-type">Yes</span></span>
+            | <span class="hljs-type">No</span>
+            | <span class="hljs-type">Maybe</span>
+            | <span class="hljs-type">Other</span> { customText :: <span class="hljs-type">String</span> }
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77">
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+<p><b>e.g.</b></p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Drink</span> = <span class="hljs-type">Water</span> | <span class="hljs-type">Beer</span> | <span class="hljs-type">Wine</span> | <span class="hljs-type">Soda</span> | <span class="hljs-type">Milk</span></span>
+
+<span class="hljs-title">shouldIDrink</span> :: <span class="hljs-type">Drink</span> -&gt; <span class="hljs-type">Answer</span>
+<span class="hljs-title">shouldIDrink</span> drink = <span class="hljs-keyword">case</span> drink <span class="hljs-keyword">of</span>
+                       <span class="hljs-type">Water</span> -&gt; <span class="hljs-type">Yes</span>
+                       <span class="hljs-type">Milk</span>  -&gt; <span class="hljs-type">Maybe</span>
+                       <span class="hljs-type">Soda</span>  -&gt; <span class="hljs-type">No</span>
+                       <span class="hljs-type">Beer</span>  -&gt; <span class="hljs-type">Other</span> <span class="hljs-string">&quot;¡Eso no se cuestiona!&quot;</span>
+                       <span class="hljs-type">Wine</span>  -&gt; <span class="hljs-type">Yes</span>
+
+<span class="hljs-title">shouldIDrink</span> <span class="hljs-type">Milk</span>  <span class="hljs-comment">-- Maybe</span>
+<span class="hljs-title">shouldIDrink</span> <span class="hljs-type">Water</span> <span class="hljs-comment">-- Yes</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78">
+<h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79">
+<h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PaymentAmount</span> = <span class="hljs-type">Decimal</span></span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80">
+<h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PaymentAmount</span> = <span class="hljs-type">Decimal</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CardType</span> = <span class="hljs-type">Visa</span> | <span class="hljs-type">Mastercard</span></span>
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Currency</span> = <span class="hljs-type">MXN</span> | <span class="hljs-type">USD</span> | <span class="hljs-type">EUR</span></span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81">
+<h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PaymentAmount</span> = <span class="hljs-type">Decimal</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CardType</span> = <span class="hljs-type">Visa</span> | <span class="hljs-type">Mastercard</span></span>
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Currency</span> = <span class="hljs-type">MXN</span> | <span class="hljs-type">USD</span> | <span class="hljs-type">EUR</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">PaymentMethod</span> = <span class="hljs-type">Cash</span></span>
+                   | <span class="hljs-type">Check</span> <span class="hljs-type">CheckNumber</span>
+                   | <span class="hljs-type">CreditCard</span> <span class="hljs-type">CardType</span> <span class="hljs-type">CardNumber</span>
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82">
+<h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PaymentAmount</span> = <span class="hljs-type">Decimal</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CardType</span> = <span class="hljs-type">Visa</span> | <span class="hljs-type">Mastercard</span></span>
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Currency</span> = <span class="hljs-type">MXN</span> | <span class="hljs-type">USD</span> | <span class="hljs-type">EUR</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">PaymentMethod</span> = <span class="hljs-type">Cash</span></span>
+                   | <span class="hljs-type">Check</span> <span class="hljs-type">CheckNumber</span>
+                   | <span class="hljs-type">CreditCard</span> <span class="hljs-type">CardType</span> <span class="hljs-type">CardNumber</span>
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Payment</span> = <span class="hljs-type">Payment</span></span>
+             { amount   :: <span class="hljs-type">PaymentAmount</span>
+             , currency :: <span class="hljs-type">Currency</span>
+             , method   :: <span class="hljs-type">PaymentMethod</span>
+             }
+</span></span></foreignObject></svg></code></pre>
+</section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let o,r;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",({data:e,origin:o})=>{if(o===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),o=Number.parseFloat(t);Number.isNaN(o)||(r=o)}}catch(t){console.error(t)}}));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||r||t.currentScale||1;o!==c&&(o=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let o=0;o<u;o+=1){const r=t.children[o],a=r.getScreenCTM();if(a){const t=null!==(n=null===(e=r.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,o=null!==(s=null===(i=r.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=r.firstChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-o}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}}),!1!==l&&Array.from(i.querySelectorAll("iframe"),({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)})}o=1,r=void 0;const i=(t,e,o)=>{if(t.getAttribute(e)!==o)return t.setAttribute(e,o),!0};function a(t={}){const e="boolean"==typeof t?(t=>{const e=!t;return console.warn(`[DEPRECATION WARNING] Usage of observer() with boolean option has been deprecated. Please replace with the usage of option object: observer({ once: ${e?"true":"false"} }).`),{once:e}})(t):t,{once:o=!1,target:r=document}=e,a="Apple Computer, Inc."===navigator.vendor?[n]:[];let l=!o;const s=()=>{for(const t of a)t({target:r});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const o=t.firstChild,r=o.firstChild,{scrollWidth:n,scrollHeight:a}=r;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(o,"width",""+c),i(o,"height",""+d),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")})}(r),l&&window.requestAnimationFrame(s)};return s(),()=>{l=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),o=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:o})})(s?s.getRootNode():document)}();
 </script></foreignObject></svg></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r,a,s=(function(e){
 /*!

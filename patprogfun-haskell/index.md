@@ -1215,3 +1215,119 @@ data Person = Person { personAge :: Int, personName :: String }
 
 pointY (Point 12 144) -- 144
 ```
+
+---
+
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+
+Podemos declarar que el tipo de dato `Answer` puede ser `Yes` <b class="blue">"Ó"</b> `No` <b class="blue">"Ó"</b> `Maybe`:
+
+```haskell
+data Answer = Yes
+            | No
+            | Maybe
+```
+
+---
+
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+
+Podemos declarar que el tipo de dato `Answer` puede ser `Yes` <b class="blue">"Ó"</b> `No` <b class="blue">"Ó"</b> `Maybe`:
+
+```haskell
+data Answer = Yes
+            | No
+            | Maybe
+            | Other { customText :: String }
+```
+
+---
+
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+
+<b>e.g.</b>
+```haskell
+data Drink = Water | Beer | Wine | Soda | Milk
+
+shouldIDrink :: Drink -> Answer
+shouldIDrink drink = case drink of
+                       Water -> Yes
+                       Milk  -> Maybe
+                       Soda  -> No
+                       Beer  -> Other "¡Eso no se cuestiona!"
+                       Wine  -> Yes
+
+shouldIDrink Milk  -- Maybe
+shouldIDrink Water -- Yes
+```
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+```haskell
+type CheckNumber = Int
+type CardNumber = String
+type PaymentAmount = Decimal
+```
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+```haskell
+type CheckNumber = Int
+type CardNumber = String
+type PaymentAmount = Decimal
+
+data CardType = Visa | Mastercard
+data Currency = MXN | USD | EUR
+```
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+```haskell
+type CheckNumber = Int
+type CardNumber = String
+type PaymentAmount = Decimal
+
+data CardType = Visa | Mastercard
+data Currency = MXN | USD | EUR
+
+data PaymentMethod = Cash
+                   | Check CheckNumber
+                   | CreditCard CardType CardNumber
+```
+
+---
+
+## ¿Cómo representaríamos los tipos para un sistema de pagos?
+
+```haskell
+type CheckNumber = Int
+type CardNumber = String
+type PaymentAmount = Decimal
+
+data CardType = Visa | Mastercard
+data Currency = MXN | USD | EUR
+
+data PaymentMethod = Cash
+                   | Check CheckNumber
+                   | CreditCard CardType CardNumber
+
+data Payment = Payment
+             { amount   :: PaymentAmount
+             , currency :: Currency
+             , method   :: PaymentMethod
+             }
+```
