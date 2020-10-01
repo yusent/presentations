@@ -1104,3 +1104,114 @@ halfSquare = half . square
 
 `([a] -> a)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `head`, `last`, `\x -> x !! 1`, ... <span class="blue"><b>}</b></span>
 `([a] -> [a])` <span class="red"><=</span> <span class="blue"><b>{</b></span> `tail`, `init`, ... <span class="blue"><b>}</b></span>
+
+---
+
+# Los tipos también se pueden componer...
+
+## Podemos entonces crear nuevos tipos a partir de los tipos existentes.
+
+---
+
+# Los tipos también se pueden componer...
+
+## Podemos entonces crear nuevos tipos a partir de los tipos existentes.
+
+### Existen 2 maneras:
+
+- <span class="blue"><b>Conjunción</b></span>
+- <span class="blue"><b>Disyunción</b></span>
+
+---
+
+<h1 style="margin-bottom: 0">Conjunción</h1>
+
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"AND"</span></h3>
+
+Podemos declarar que el tipo de dato `Person` se compone de los tipos `Int` (edad) <b class="blue">"Y"</b> `String` (nombre) así:
+
+```haskell
+data Person = Person Int String
+```
+
+---
+
+<h1 style="margin-bottom: 0">Conjunción</h1>
+
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"AND"</span></h3>
+
+Podemos declarar que el tipo de dato `Person` se compone de los tipos `Int` (edad) <b class="blue">"Y"</b> `String` (nombre) así:
+```haskell
+data Person = Person Int String
+```
+
+El constructor del tipo puede tener nombre distinto:
+```haskell
+data CartesianPoint = Point Float Float
+```
+
+Podemos construir valores de estos tipos utilizando la función constructora:
+```haskell
+let myPoint = Point 3.1 12.14
+let me = Person 34 "Yusent"
+```
+
+---
+
+# Conjunción
+
+Podemos especificar nombres de atributos:
+```haskell
+data CartesianPoint = Point { x :: Float, y :: Float }
+data Person = Person { age :: Int, name :: String }
+```
+
+---
+
+# Conjunción
+
+Podemos especificar nombres de atributos:
+```haskell
+data CartesianPoint = Point { x :: Float, y :: Float }
+data Person = Person { age :: Int, name :: String }
+```
+
+Podemos entonces construir de dos maneras:
+```haskell
+let point0 = Point 3.1 12.14
+let point1 = Point { x = 3.1, y = 12.14 }
+```
+
+---
+
+# Conjunción
+
+Podemos especificar nombres de atributos:
+```haskell
+data CartesianPoint = Point { x :: Float, y :: Float }
+data Person = Person { age :: Int, name :: String }
+```
+
+Podemos entonces construir de dos maneras:
+```haskell
+let point0 = Point 3.1 12.14
+let point1 = Point { x = 3.1, y = 12.14 }
+```
+
+Los nombres de atributos funcionan como funciones auxiliares:
+```haskell
+let andy = Person 66 "Andrés"
+age andy -- 66
+```
+
+---
+
+# Conjunción
+
+Es convención usar nombres explícitos para evitar colisiones:
+```haskell
+data CartesianPoint = Point { pointX :: Float, pointY :: Float }
+data Person = Person { personAge :: Int, personName :: String }
+
+pointY (Point 12 144) -- 144
+```
