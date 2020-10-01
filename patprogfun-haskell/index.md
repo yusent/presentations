@@ -261,6 +261,13 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
   - Funciones
   - Composición
   - Tipos de datos
+  - Contemplar todos los casos
+
+---
+
+<div class="title-section">
+  <h1>Funciones</h1>
+</div>
 
 ---
 
@@ -302,15 +309,8 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-
-- Se pueden almacenar en variables
-- Se pueden pasar como argumento a otra función
-- Se pueden regresar como resultado de otra función
-- Son independientes (No necesitan estar atadas a una clase u objeto)
-
 <center>
-  <img src="images/function.png" style="height: 350px" />
+  <img src="images/function.png" />
 </center>
 
 <center style="margin-top: -30px">
@@ -319,15 +319,8 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
-
-- Se pueden almacenar en variables
-- Se pueden pasar como argumento a otra función
-- Se pueden regresar como resultado de otra función
-- Son independientes (No necesitan estar atadas a una clase u objeto)
-
 <center>
-  <img src="images/function.png" style="height: 350px" />
+  <img src="images/function.png" />
 </center>
 
 <center style="margin-top: -30px">
