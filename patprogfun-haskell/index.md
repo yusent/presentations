@@ -30,12 +30,44 @@ img {
   color: #f00;
 }
 
+.blue {
+  color: #44f;
+}
+
 .transparent {
   opacity: 0;
 }
 
 .muted {
   color: #0005;
+}
+
+.chain {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  background-color: #ccc;
+  font-weight: bold;
+  height: 50px;
+  padding: 5px 10px;
+}
+
+.service-block {
+  background-color: #aaf;
+}
+
+.use-case-block {
+  background-color: #afa;
+}
+
+.arrow {
+  align-self: center;
+  font-size: 100px;
+  margin-top: 16px;
 }
 
 .note {
