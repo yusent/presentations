@@ -233,14 +233,14 @@ img {
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Tipos y Composición
+  - Funciones, Composición y Tipos
 
 ---
 
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Tipos y Composición
+  - Funciones, Composición y Tipos
 - Funciones como entidades de primera clase
   - Funciones como interfaces
   - Aplicación parcial
@@ -251,7 +251,7 @@ img {
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Tipos y Composición
+  - Funciones, Composición y Tipos
 - Funciones como entidades de primera clase
   - Funciones como interfaces
   - Aplicación parcial
@@ -264,7 +264,7 @@ img {
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Tipos y Composición
+  - Funciones, Composición y Tipos
 - Funciones como entidades de primera clase
   - Funciones como interfaces
   - Aplicación parcial
@@ -279,7 +279,7 @@ img {
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Tipos y Composición
+  - Funciones, Composición y Tipos
 - Funciones como entidades de primera clase
   - Funciones como interfaces
   - Aplicación parcial
@@ -1035,3 +1035,72 @@ halfSquare = half . square
   <span class="arrow">&rarr;</span>
   <span class="blue">HTTP Response</span>
 </div>
+
+---
+
+<div class="chain">
+  <span class="blue">HTTP Request</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Autenticación</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">...</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Formato</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">HTTP Response</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">HTTP Request</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block application-block">Aplicación WEB</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">HTTP Response</span>
+</div>
+
+<div class="note">
+  <u><i>¡La composición es fractal!</i></u>
+</div>
+
+---
+
+## Un tipo de dato es sólo un nombre para un conjunto de cosas
+
+`Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
+`Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
+`String` <span class="red"><=</span> <span class="blue"><b>{</b></span> `"hola"`, `"mundo"`, `"parangaricutirimicuaro"`, `"LOL"`, ... <span class="blue"><b>}</b></span>
+
+---
+
+## Un tipo de dato es sólo un nombre para un conjunto de cosas
+
+`Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
+`Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
+`String` <span class="red"><=</span> <span class="blue"><b>{</b></span> `"hola"`, `"mundo"`, `"parangaricutirimicuaro"`, `"LOL"`, ... <span class="blue"><b>}</b></span>
+
+### Las funciones también tienen tipo:
+
+`(Int -> Int)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `\x -> x * 2`, `\x -> x ^ 3`, `\x -> x - 4`, ... <span class="blue"><b>}</b></span>
+`(Int -> Bool)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `\x -> x > 12`, `\x -> mod x 3 == 0`, ... <span class="blue"><b>}</b></span>
+`(Float -> Int)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `ceiling`, `floor`, ... <span class="blue"><b>}</b></span>
+
+---
+
+## Un tipo de dato es sólo un nombre para un conjunto de cosas
+
+`Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
+`Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
+`String` <span class="red"><=</span> <span class="blue"><b>{</b></span> `"hola"`, `"mundo"`, `"parangaricutirimicuaro"`, `"LOL"`, ... <span class="blue"><b>}</b></span>
+
+### Las funciones también tienen tipo:
+
+`(Int -> Int)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `\x -> x * 2`, `\x -> x ^ 3`, `\x -> x - 4`, ... <span class="blue"><b>}</b></span>
+`(Int -> Bool)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `\x -> x > 12`, `\x -> mod x 3 == 0`, ... <span class="blue"><b>}</b></span>
+`(Float -> Int)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `ceiling`, `floor`, ... <span class="blue"><b>}</b></span>
+
+### ... y pueden contener tipos variables
+
+`([a] -> a)` <span class="red"><=</span> <span class="blue"><b>{</b></span> `head`, `last`, `\x -> x !! 1`, ... <span class="blue"><b>}</b></span>
+`([a] -> [a])` <span class="red"><=</span> <span class="blue"><b>{</b></span> `tail`, `init`, ... <span class="blue"><b>}</b></span>
