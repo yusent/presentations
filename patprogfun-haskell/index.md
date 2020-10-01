@@ -33,6 +33,14 @@ img {
   vertical-align: middle;
 }
 
+.hljs-keyword {
+  color: #6f42c1 !important;
+}
+
+.hljs-type {
+  color: #660
+}
+
 .red {
   color: #f00;
 }
