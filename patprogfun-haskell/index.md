@@ -81,7 +81,7 @@ img {
 
 # Patrones de Programación Funcional en Haskell
 
-[https://yusent.github.io/patprogfun-haskell.html](https://yusent.github.io/patprogfun-haskell.html)
+[https://yusent.github.io/slides/patprogfun-haskell](https://yusent.github.io/slides/patprogfun-haskell)
 
 ---
 
