@@ -52,8 +52,7 @@ img {
 .block {
   background-color: #ccc;
   font-weight: bold;
-  height: 50px;
-  padding: 5px 10px;
+  padding: 2px 10px;
 }
 
 .service-block {
@@ -62,6 +61,12 @@ img {
 
 .use-case-block {
   background-color: #afa;
+}
+
+.application-block {
+  color: #fff;
+  background-color: #9e111b;
+  padding: 10px 20px;
 }
 
 .arrow {
@@ -925,4 +930,108 @@ halfSquare = half . square
   <div class="block use-case-block">Caso de uso</div>
   <span class="arrow">&rarr;</span>
   <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block use-case-block transparent">Caso de uso 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block use-case-block transparent">Caso de uso 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block use-case-block transparent">Caso de uso 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block application-block"><span>Aplicación</span></div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">HTTP Request</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Autenticación</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">...</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Formato</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">HTTP Response</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">HTTP Response</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block application-block">Aplicación WEB</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">HTTP Response</span>
 </div>
