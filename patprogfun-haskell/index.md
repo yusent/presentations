@@ -478,3 +478,451 @@ halfSquare x = half (square x)
 -- halfSquare puede ser definida como:
 halfSquare = half . square
 ```
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<center>
+  <b class="blue">Operación de bajo nivel</b>
+</center>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<center>
+  <b class="blue">Operación de bajo nivel</b>
+</center>
+
+<div class="chain" style="margin-right: 18px">
+  <span class="blue">10</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">half</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">5</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<center>
+  <b class="blue">Operación de bajo nivel</b>
+</center>
+
+<div class="chain" style="margin-right: 18px">
+  <span class="blue">10</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">half</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">5</span>
+</div>
+
+<div class="chain" style="margin: -90px 0 0 18px">
+  <span class="blue">12</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">square</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">144</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<center>
+  <b class="blue">Operación de bajo nivel</b>
+</center>
+
+<div class="chain" style="margin-right: 18px">
+  <span class="blue">10</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">half</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">5</span>
+</div>
+
+<div class="chain" style="margin: -90px 0 0 18px">
+  <span class="blue">12</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">square</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">144</span>
+</div>
+
+<div class="chain" style="margin: -90px 0 0 48px">
+  <span class="blue">"hola mundo"</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">toUpper</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">"HOLA MUNDO"</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">Función 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">Función 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">Función 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="blue transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">Función 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<div class="note">
+  Como <i>"microservicio"</i> pero sin el <i>"micro"</i>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">getEmployer</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">getPayDay</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">isToday</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">Boolean</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">getPayDay</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">isToday</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">Boolean</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block transparent">isToday</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">Boolean</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">isToday</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">Boolean</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">isToday</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">Boolean</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">isToday</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">Boolean</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue transparent">Yus</span>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block">shouldTransferMoney</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">False</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">isToday</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">Boolean</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">Yus</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">shouldTransferMoney</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">False</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">Person</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getEmployer</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">getPayDay</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block">isToday</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">Boolean</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">Yus</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">shouldTransferMoney</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">False</span>
+</div>
+
+<div class="note" style="font-size: 50px">
+  &#9785;
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block transparent">Servicio 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block transparent">Servicio 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block transparent">Servicio 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+---
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+
+<p class="arrow">&darr;</p>
+
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
