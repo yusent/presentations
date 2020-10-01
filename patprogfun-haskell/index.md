@@ -3,7 +3,7 @@ section {
   justify-content: flex-start;
 }
 
-section[id="1"], section[id="2"] {
+section[id="1"] {
   justify-content: center;
 }
 
@@ -275,23 +275,23 @@ img {
 ## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
-- Se pueden pasar como argumento a una función
+- Se pueden pasar como argumento a otra función
 
 ---
 
 ## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
-- Se pueden pasar como argumento a una función
-- Se pueden regresar como resultado de una función
+- Se pueden pasar como argumento a otra función
+- Se pueden regresar como resultado de otra función
 
 ---
 
 ## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
-- Se pueden pasar como argumento a una función
-- Se pueden regresar como resultado de una función
+- Se pueden pasar como argumento a otra función
+- Se pueden regresar como resultado de otra función
 - Son independientes (No necesitan estar atadas a una clase u objeto)
 
 ---
@@ -299,12 +299,12 @@ img {
 ## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
-- Se pueden pasar como argumento a una función
-- Se pueden regresar como resultado de una función
+- Se pueden pasar como argumento a otra función
+- Se pueden regresar como resultado de otra función
 - Son independientes (No necesitan estar atadas a una clase u objeto)
 
 <center>
-  <img src="patprogfun-haskell/images/function.png" style="height: 350px" />
+  <img src="images/function.png" style="height: 350px" />
 </center>
 
 <center style="margin-top: -30px">
@@ -316,12 +316,12 @@ img {
 ## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
 
 - Se pueden almacenar en variables
-- Se pueden pasar como argumento a una función
-- Se pueden regresar como resultado de una función
+- Se pueden pasar como argumento a otra función
+- Se pueden regresar como resultado de otra función
 - Son independientes (No necesitan estar atadas a una clase u objeto)
 
 <center>
-  <img src="patprogfun-haskell/images/function.png" style="height: 350px" />
+  <img src="images/function.png" style="height: 350px" />
 </center>
 
 <center style="margin-top: -30px">
@@ -402,7 +402,7 @@ add 10 2 -- Regresa 12
 # Composición de funciones
 
 <center>
-  <img src="patprogfun-haskell/images/composed-functions.png" style="height: 500px" />
+  <img src="images/composed-functions.png" style="height: 500px" />
   <br>
   <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
@@ -412,7 +412,7 @@ add 10 2 -- Regresa 12
 # Composición de funciones
 
 <center>
-  <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+  <img src="images/composed-functions-result.png" style="height: 500px" />
   <br>
   <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
@@ -422,7 +422,7 @@ add 10 2 -- Regresa 12
 # Composición de funciones
 
 <center>
-  <img src="patprogfun-haskell/images/composed-functions-result.png" style="height: 500px" />
+  <img src="images/composed-functions-result.png" style="height: 500px" />
   <br>
   <small class="muted">Imagen tomada de https://mathinsight.org</small>
 </center>
