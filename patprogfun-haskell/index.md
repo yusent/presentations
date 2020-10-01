@@ -97,6 +97,16 @@ img {
 
 ---
 
+# ¿A qué nos referimos con patrones de programación?
+
+Estrategias para resolver problemas comunes de software, las cuales deben ser:
+
+- Generales
+- Repetibles
+- Transformables directamente en código
+
+---
+
 | Patrón orientado a objetos | Patrón funcional |
 | --- | --- |
 | Single Responsability Principle | |
@@ -218,7 +228,7 @@ img {
 | Dependency Inversion Principle | Funciones de nuevo |
 | Factory Pattern | Funciones |
 | Strategy Pattern | Seguro ya entendieron la idea |
-| Decorator Pattern | No esperen nada distinto |
+| Decorator Pattern | Funciones |
 | Visitor Pattern | |
 
 ---
@@ -232,7 +242,7 @@ img {
 | Dependency Inversion Principle | Funciones de nuevo |
 | Factory Pattern | Funciones |
 | Strategy Pattern | Seguro ya entendieron la idea |
-| Decorator Pattern | No esperen nada distinto |
+| Decorator Pattern | Funciones |
 | Visitor Pattern | Funciones |
 
 ---
@@ -240,65 +250,9 @@ img {
 # Lo que hoy les vengo manejando
 
 - Principios Básicos de Programación Funcional
-  - Funciones, Composición y Tipos
-
----
-
-# Lo que hoy les vengo manejando
-
-- Principios Básicos de Programación Funcional
-  - Funciones, Composición y Tipos
-- Funciones como entidades de primera clase
-  - Funciones como interfaces
-  - Aplicación parcial
-  - Encadenamiento
-
----
-
-# Lo que hoy les vengo manejando
-
-- Principios Básicos de Programación Funcional
-  - Funciones, Composición y Tipos
-- Funciones como entidades de primera clase
-  - Funciones como interfaces
-  - Aplicación parcial
-  - Encadenamiento
-- Mónadas
-  - Manejo de errores y Operaciones Asíncronas
-
----
-
-# Lo que hoy les vengo manejando
-
-- Principios Básicos de Programación Funcional
-  - Funciones, Composición y Tipos
-- Funciones como entidades de primera clase
-  - Funciones como interfaces
-  - Aplicación parcial
-  - Encadenamiento
-- Mónadas
-  - Manejo de errores y Operaciones Asíncronas
-- Monoides
-  - Agregación de datos
-
----
-
-# Lo que hoy les vengo manejando
-
-- Principios Básicos de Programación Funcional
-  - Funciones, Composición y Tipos
-- Funciones como entidades de primera clase
-  - Funciones como interfaces
-  - Aplicación parcial
-  - Encadenamiento
-- Mónadas
-  - Manejo de errores y Operaciones Asíncronas
-- Monoides
-  - Agregación de datos
-
-<div class="note">
-  Vista general (sin entrar a detalle)
-</div>
+  - Funciones
+  - Composición
+  - Tipos de datos
 
 ---
 
