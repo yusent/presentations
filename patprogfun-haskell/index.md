@@ -415,6 +415,7 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 - Patrones Básicos de Programación Funcional
   - Funciones
+  - Currificación
   - Composición
   - Tipos de datos como conjuntos
   - Principio de "Contemplar todos los casos para no tener que usar excepciones" (100% real no fake)
@@ -425,6 +426,7 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 - Patrones Básicos de Programación Funcional
   - Funciones
+  - Currificación
   - Composición
   - Tipos de datos como conjuntos
   - Principio de "Contemplar todos los casos para no tener que usar excepciones" (100% real no fake)
@@ -433,7 +435,6 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 - Funciones puras / impuras
 - Pattern matching
-- Currificación
 - Mónadas / Monoides
 
 ---
@@ -681,6 +682,171 @@ add = \a b -> a + b
 Para aplicar una función separamos con espacio:
 ```haskell
 add 10 2 -- Regresa 12
+```
+
+---
+
+<div class="title-section">
+  <h1>Currificación</h1>
+</div>
+
+---
+
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+
+---
+
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+
+```javascript
+const add = (a, b) => a + b;
+```
+
+---
+
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+
+```javascript
+const add = (a, b) => a + b;
+
+const curryfiedAdd = a => b => a + b;
+```
+
+---
+
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+
+```javascript
+const add = (a, b) => a + b;
+
+const curryfiedAdd = a => b => a + b;
+
+add(1, 2) // 3
+curryfiedAdd(1)(2) // 3
+```
+
+---
+
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+
+```javascript
+const add = (a, b) => a + b;
+
+const curryfiedAdd = a => b => a + b;
+
+add(1, 2) // 3
+curryfiedAdd(1)(2) // 3
+```
+
+Podemos crear funciones utilizando aplicaciones parciales:
+
+```javascript
+const add12 = curryfiedAdd(12);
+
+add12(3) // 15
+```
+
+---
+
+### Podemos crear una función para currificar funciones de 2 argumentos así:
+
+```javascript
+const curry2args = func => (x) => (y) => func(x, y);
+const curryfiedAdd = curry2args(add);
+
+curryfiedAdd(1)(2) // 3
+```
+
+---
+
+### Podemos crear una función para currificar funciones de 2 argumentos así:
+
+```javascript
+const curry2args = func => (x) => (y) => func(x, y);
+const curryfiedAdd = curry2args(add);
+
+curryfiedAdd(1)(2) // 3
+```
+
+### O una que currifique funciones de 3 argumentos:
+
+```javascript
+const curry3args = func => (x) => (y) => (z) => func(x, y, z);
+const mult3 = (a, b, c) => a * b * c;
+
+const curryfiedMult = curry3args(mult3);
+const multBy24 = curryfiedMult(2)(12);
+
+multBy24(6) // 144
+```
+
+---
+
+# En Haskell !todas las funciones están currificadas!
+
+<center>
+  <iframe src="https://giphy.com/embed/3o72F8t9TDi2xVnxOE" width="720" height="490" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</center>
+
+---
+
+Hay paréntesis escondidos en la firma de la función:
+```haskell
+add :: Int -> Int -> Int
+add a b = a + b
+```
+
+---
+
+Hay paréntesis escondidos en la firma de la función:
+```haskell
+add :: Int -> (Int -> Int)
+add a b = a + b
+```
+
+---
+
+Hay paréntesis escondidos en la firma de la función:
+```haskell
+add :: Int -> (Int -> Int)
+add a b = a + b
+```
+
+También hay paréntesis escondidos en la evaluación:
+```haskell
+add 12 3
+```
+
+---
+
+Hay paréntesis escondidos en la firma de la función:
+```haskell
+add :: Int -> (Int -> Int)
+add a b = a + b
+```
+
+También hay paréntesis escondidos en la evaluación:
+```haskell
+add 12 3 = (add 12) 3
+```
+
+---
+
+Hay paréntesis escondidos en la firma de la función:
+```haskell
+add :: Int -> (Int -> Int)
+add a b = a + b
+```
+
+También hay paréntesis escondidos en la evaluación:
+```haskell
+add 12 3 = (add 12) 3
+```
+
+Para currificar basta entonces con dar menos argumentos:
+```haskell
+add12 = add 12
+add12 12 -- 24
 ```
 
 ---
@@ -954,12 +1120,12 @@ add 10 2 -- Regresa 12
 ```haskell
 half x = x / 2
 
-square x = x * x
+mult a b = a * b
 
-halfSquare x = half (square x)
+byThreeOverTwo x = half (mult 3 x)
 
--- halfSquare puede ser definida como:
-halfSquare = half . square
+-- byThreeOverTwo puede ser definida como:
+byThreeOverTwo = half . mult 3
 ```
 
 ---
@@ -969,17 +1135,17 @@ halfSquare = half . square
 ```haskell
 half x = x / 2
 
-square x = x * x
+mult a b = a * b
 
-halfSquare x = half (square x)
+byThreeOverTwo x = half (mult 3 x)
 
--- halfSquare puede ser definida como:
-halfSquare = half . square
+-- byThreeOverTwo puede ser definida como:
+byThreeOverTwo = half . mult 3
 ```
 
 Podemos componer en orden natural utilizando el operador `>>>` del módulo `Control.Arrow`:
 ```haskell
-halfSquare = square >>> half
+byThreeOverTwo = mult 3 >>> half
 ```
 
 ---
@@ -1737,8 +1903,12 @@ fromMaybe 42 Nothing  -- 42
 
 ---
 
+<img height="340" src="images/thats-all-folks.jpg" />
+
+<h1 style="text-align: center">¡Eso es todo amigos!</h1>
+
 <div class="title-section">
-  <h1>Presentación disponible en:</h1>
+  <h3>Presentación disponible en:</h3>
   <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>
 </div>
 
