@@ -1,107 +1,184 @@
 <style>
-section {
-  justify-content: flex-start;
-}
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
 
-.title-section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  #cover div {
+    flex: 1;
+  }
 
-section[id="1"] {
-  justify-content: center;
-}
+  #cover div:last-child {
+    border-left: 1px solid #ccc;
+  }
 
-ul {
-  margin-bottom: 0;
-}
+  #cover ul {
+    list-style-type: none;
+  }
 
-table {
-  display: table;
-}
+  #cover ul li img {
+    margin-right: 0.5rem;
+  }
 
-th {
-  background-color: #333;
-  color: #fff;
-  text-align: left;
-}
+  section {
+    justify-content: flex-start;
+  }
 
-img {
-  object-fit: contain;
-  vertical-align: middle;
-}
+  .title-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.hljs-keyword {
-  color: #6f42c1 !important;
-}
+  section[id="1"], section[id="2"], section[id="3"] {
+    justify-content: center;
+  }
 
-.hljs-type {
-  color: #660
-}
+  ul {
+    margin-bottom: 0;
+  }
 
-.red {
-  color: #f00;
-}
+  table {
+    display: table;
+  }
 
-.blue {
-  color: #44f;
-}
+  th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+  }
 
-.transparent {
-  opacity: 0;
-}
+  img {
+    object-fit: contain;
+    vertical-align: middle;
+  }
 
-.muted {
-  color: #0005;
-}
+  .hljs-keyword {
+    color: #6f42c1 !important;
+  }
 
-.chain {
-  align-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .hljs-type {
+    color: #660
+  }
 
-.block {
-  background-color: #ccc;
-  font-weight: bold;
-  padding: 2px 10px;
-}
+  .red {
+    color: #f00;
+  }
 
-.service-block {
-  background-color: #aaf;
-}
+  .blue {
+    color: #44f;
+  }
 
-.use-case-block {
-  background-color: #afa;
-}
+  .transparent {
+    opacity: 0;
+  }
 
-.application-block {
-  color: #fff;
-  background-color: #9e111b;
-  padding: 10px 20px;
-}
+  .muted {
+    color: #0005;
+  }
 
-.arrow {
-  align-self: center;
-  font-size: 100px;
-  margin-top: 16px;
-}
+  .chain {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.note {
-  color: #f00;
-  font-weight: bold;
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-}
+  .block {
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 2px 10px;
+  }
+
+  .service-block {
+    background-color: #aaf;
+  }
+
+  .use-case-block {
+    background-color: #afa;
+  }
+
+  .application-block {
+    color: #fff;
+    background-color: #9e111b;
+    padding: 10px 20px;
+  }
+
+  .arrow {
+    align-self: center;
+    font-size: 100px;
+    margin-top: 16px;
+  }
+
+  .note {
+    color: #f00;
+    font-weight: bold;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+  }
 </style>
 
 # Patrones de Programación Funcional en Haskell
 
 [https://yusent.github.io/slides/patprogfun-haskell](https://yusent.github.io/slides/patprogfun-haskell)
+
+---
+
+<div id="cover" class="d-flex">
+  <div>
+    <h2>¡Hola! Yo soy Yusent</h2>
+  </div>
+  <div>
+    <ul>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
+        yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
+        yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
+        yus3nt
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
+        yus3nt
+      </li>
+    </ul>
+  </div>
+</div>
+
+---
+
+<div id="cover" class="d-flex">
+  <div>
+    <h2>¡Hola! Yo soy <span class="red">Yus</span><s>ent</s></h2>
+  </div>
+  <div>
+    <ul>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
+        @yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
+        @yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
+        @yus3nt
+      </li>
+      <li class="d-flex">
+        <img height="32" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
+        @yus3nt
+      </li>
+    </ul>
+  </div>
+</div>
 
 ---
 
@@ -276,9 +353,9 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 ### Posibles temas para secuela:
 
 - Funcionas puras / impuras
+- Pattern matching
 - Currificación
-- Mónadas
-- Monoides
+- Mónadas / Monoides
 
 ---
 
