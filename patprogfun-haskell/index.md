@@ -216,61 +216,6 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-# ¿Por qué usar Haskell?
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
-- Sus sistema de tipos es fuerte
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
-- Sus sistema de tipos es fuerte
-- Cuenta con inferencia de tipos
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
-- Sus sistema de tipos es fuerte
-- Cuenta con inferencia de tipos
-- Es de alto nivel
-
----
-
-# ¿Por qué usar Haskell?
-
-- Es puro (no permite efectos secundarios)
-- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
-- Sus sistema de tipos es fuerte
-- Cuenta con inferencia de tipos
-- Es de alto nivel
-- Es elegante <span class="red">&hearts;</span>
-
----
-
 | Patrón orientado a objetos | Patrón funcional |
 | --- | --- |
 | Single Responsability Principle | |
@@ -411,6 +356,61 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
+# ¿Por qué usar Haskell?
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+- Es de alto nivel
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+- Es de alto nivel
+- Es elegante <span class="red">&hearts;</span>
+
+---
+
 ## Lo que hoy les vengo manejando
 
 - Patrones Básicos de Programación Funcional
@@ -449,24 +449,24 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas.</span>
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas.</span>
 
 - Se pueden almacenar en variables
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas.</span>
 
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a otra función
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas.</span>
 
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a otra función
@@ -474,7 +474,7 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas</span>
+## Las funciones son <s>entidades de primera clase</s> <span class="red">cosas.</span>
 
 - Se pueden almacenar en variables
 - Se pueden pasar como argumento a otra función
@@ -692,11 +692,11 @@ add 10 2 -- Regresa 12
 
 ---
 
-<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes.
 
 ---
 
-<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes.
 
 ```javascript
 const add = (a, b) => a + b;
@@ -704,7 +704,7 @@ const add = (a, b) => a + b;
 
 ---
 
-<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes.
 
 ```javascript
 const add = (a, b) => a + b;
@@ -714,7 +714,7 @@ const curryfiedAdd = a => b => a + b;
 
 ---
 
-<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes.
 
 ```javascript
 const add = (a, b) => a + b;
@@ -727,7 +727,7 @@ curryfiedAdd(1)(2) // 3
 
 ---
 
-<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes
+<b class="blue">Currificación</b> es el proceso mediante el cual transformamos una función que toma múltiples argumentos en una que toma un sólo argumento y regresa una función que toma los argumentos restantes.
 
 ```javascript
 const add = (a, b) => a + b;
@@ -1368,7 +1368,7 @@ byThreeOverTwo = mult 3 >>> half
 
 ---
 
-## Un tipo de dato es sólo un nombre para un conjunto de cosas
+## Un tipo de dato es sólo un nombre para un conjunto de cosas.
 
 `Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
 `Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
@@ -1376,7 +1376,7 @@ byThreeOverTwo = mult 3 >>> half
 
 ---
 
-## Un tipo de dato es sólo un nombre para un conjunto de cosas
+## Un tipo de dato es sólo un nombre para un conjunto de cosas.
 
 `Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
 `Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
@@ -1390,7 +1390,7 @@ byThreeOverTwo = mult 3 >>> half
 
 ---
 
-## Un tipo de dato es sólo un nombre para un conjunto de cosas
+## Un tipo de dato es sólo un nombre para un conjunto de cosas.
 
 `Int` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-2`, `-1`, `0`, `1`, `2`, `3`, `4`, ... <span class="blue"><b>}</b></span>
 `Float` <span class="red"><=</span> <span class="blue"><b>{</b></span> `-3.1415926`, `1.618033988`, `2.7182818284` ... <span class="blue"><b>}</b></span>
@@ -1522,7 +1522,7 @@ pointY (Point 12 144) -- 144
 
 <h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
 
-<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span>.</h3>
 
 Podemos declarar que el tipo de dato `Answer` puede ser `Yes` <b class="blue">"Ó"</b> `No` <b class="blue">"Ó"</b> `Maybe`:
 
@@ -1536,7 +1536,7 @@ data Answer = Yes
 
 <h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
 
-<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span>.</h3>
 
 Podemos declarar que el tipo de dato `Answer` puede ser `Yes` <b class="blue">"Ó"</b> `No` <b class="blue">"Ó"</b> `Maybe`:
 
@@ -1557,11 +1557,11 @@ data Drink = Water | Beer | Wine | Soda | Milk
 
 shouldIDrink :: Drink -> Answer
 shouldIDrink drink = case drink of
-                       Water -> Yes
-                       Milk  -> Maybe
-                       Soda  -> No
-                       Beer  -> Other "¡Eso no se cuestiona!"
-                       Wine  -> Yes
+                          Water -> Yes
+                          Milk  -> Maybe
+                          Soda  -> No
+                          Beer  -> Other "¡Eso no se cuestiona!"
+                          Wine  -> Yes
 
 shouldIDrink Milk  -- Maybe
 shouldIDrink Water -- Yes
@@ -1780,7 +1780,7 @@ myDiv a b = if b != 0
 
 ---
 
-## Las excepciones son consideradas un anti-patrón en FP
+## Las excepciones son consideradas un anti-patrón en FP.
 
 - Son en esencia enunciados `GOTO` sofisticados
 - Hacen el código difícil de leer y entender
