@@ -20,19 +20,19 @@
     <ul>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
-        yusent
+        @yusent
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
-        yusent
+        @yusent
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
-        yus3nt
+        @yus3nt
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
-        yus3nt
+        @yus3nt
       </li>
     </ul>
   </div>
@@ -1036,25 +1036,27 @@
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53">
-<div class="chain">
-  <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
-  <div class="block service-block">Servicio 1</div>
-  <span class="arrow transparent">&rarr;</span>
-  <div class="block service-block transparent">Servicio 2</div>
-  <span class="arrow transparent">&rarr;</span>
-  <div class="block service-block transparent">Servicio 3</div>
-  <span class="arrow transparent">&rarr;</span>
-  <span class="transparent">y</span>
-</div>
+<h2>Utilizamos el punto para componer funciones:</h2>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">half</span> x = x / <span class="hljs-number">2</span>
+
+<span class="hljs-title">square</span> x = x * x
+
+<span class="hljs-title">halfSquare</span> x = half (square x)
+
+<span class="hljs-comment">-- halfSquare puede ser definida como:</span>
+<span class="hljs-title">halfSquare</span> = half . square
+</span></span></foreignObject></svg></code></pre>
+<p>Podemos componer en orden natural utilizando el operador <code>&gt;&gt;&gt;</code> del módulo <code>Control.Arrow</code>:</p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">halfSquare</span> = square &gt;&gt;&gt; half
+</span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54">
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block service-block">Servicio 2</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block transparent">Servicio 2</div>
   <span class="arrow transparent">&rarr;</span>
   <div class="block service-block transparent">Servicio 3</div>
   <span class="arrow transparent">&rarr;</span>
@@ -1068,8 +1070,8 @@
   <div class="block service-block">Servicio 1</div>
   <span class="arrow">&rarr;</span>
   <div class="block service-block">Servicio 2</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block service-block">Servicio 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block service-block transparent">Servicio 3</div>
   <span class="arrow transparent">&rarr;</span>
   <span class="transparent">y</span>
 </div>
@@ -1083,11 +1085,24 @@
   <div class="block service-block">Servicio 2</div>
   <span class="arrow">&rarr;</span>
   <div class="block service-block">Servicio 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
+</div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57">
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block service-block">Servicio 3</div>
   <span class="arrow">&rarr;</span>
   <span class="blue">y</span>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58">
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
@@ -1108,26 +1123,13 @@
   <span class="blue">y</span>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59">
 <div class="chain">
   <span class="blue">x</span>
   <span class="arrow">&rarr;</span>
   <div class="block use-case-block">Caso de uso 1</div>
   <span class="arrow transparent">&rarr;</span>
   <div class="block use-case-block transparent">Caso de uso 2</div>
-  <span class="arrow transparent">&rarr;</span>
-  <div class="block use-case-block transparent">Caso de uso 3</div>
-  <span class="arrow transparent">&rarr;</span>
-  <span class="transparent">y</span>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59">
-<div class="chain">
-  <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">Caso de uso 2</div>
   <span class="arrow transparent">&rarr;</span>
   <div class="block use-case-block transparent">Caso de uso 3</div>
   <span class="arrow transparent">&rarr;</span>
@@ -1141,8 +1143,8 @@
   <div class="block use-case-block">Caso de uso 1</div>
   <span class="arrow">&rarr;</span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow">&rarr;</span>
-  <div class="block use-case-block">Caso de uso 3</div>
+  <span class="arrow transparent">&rarr;</span>
+  <div class="block use-case-block transparent">Caso de uso 3</div>
   <span class="arrow transparent">&rarr;</span>
   <span class="transparent">y</span>
 </div>
@@ -1156,8 +1158,8 @@
   <div class="block use-case-block">Caso de uso 2</div>
   <span class="arrow">&rarr;</span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow">&rarr;</span>
-  <span class="blue">y</span>
+  <span class="arrow transparent">&rarr;</span>
+  <span class="transparent">y</span>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62">
@@ -1169,14 +1171,6 @@
   <div class="block use-case-block">Caso de uso 2</div>
   <span class="arrow">&rarr;</span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow">&rarr;</span>
-  <span class="blue">y</span>
-</div>
-<p class="arrow">&darr;</p>
-<div class="chain">
-  <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
-  <div class="block application-block"><span>Aplicación</span></div>
   <span class="arrow">&rarr;</span>
   <span class="blue">y</span>
 </div>
@@ -1201,11 +1195,32 @@
   <span class="arrow">&rarr;</span>
   <span class="blue">y</span>
 </div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64">
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 1</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 2</div>
+  <span class="arrow">&rarr;</span>
+  <div class="block use-case-block">Caso de uso 3</div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
+<p class="arrow">&darr;</p>
+<div class="chain">
+  <span class="blue">x</span>
+  <span class="arrow">&rarr;</span>
+  <div class="block application-block"><span>Aplicación</span></div>
+  <span class="arrow">&rarr;</span>
+  <span class="blue">y</span>
+</div>
 <div class="note">
   <u><i>¡La composición es fractal!</i></u>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65">
 <div class="chain">
   <span class="blue">HTTP Request</span>
   <span class="arrow">&rarr;</span>
@@ -1226,18 +1241,18 @@
   <span class="blue">HTTP Response</span>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66">
 <div class="title-section">
   <h1>Tipos de datos</h1>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67">
 <h2>Un tipo de dato es sólo un nombre para un conjunto de cosas</h2>
 <p><code>Int</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-2</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, ... <span class="blue"><b>}</b></span><br />
 <code>Float</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-3.1415926</code>, <code>1.618033988</code>, <code>2.7182818284</code> ... <span class="blue"><b>}</b></span><br />
 <code>String</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>&quot;hola&quot;</code>, <code>&quot;mundo&quot;</code>, <code>&quot;parangaricutirimicuaro&quot;</code>, <code>&quot;LOL&quot;</code>, ... <span class="blue"><b>}</b></span></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68">
 <h2>Un tipo de dato es sólo un nombre para un conjunto de cosas</h2>
 <p><code>Int</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-2</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, ... <span class="blue"><b>}</b></span><br />
 <code>Float</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-3.1415926</code>, <code>1.618033988</code>, <code>2.7182818284</code> ... <span class="blue"><b>}</b></span><br />
@@ -1247,7 +1262,7 @@
 <code>(Int -&gt; Bool)</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>\x -&gt; x &gt; 12</code>, <code>\x -&gt; mod x 3 == 0</code>, ... <span class="blue"><b>}</b></span><br />
 <code>(Float -&gt; Int)</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>ceiling</code>, <code>floor</code>, ... <span class="blue"><b>}</b></span></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69">
 <h2>Un tipo de dato es sólo un nombre para un conjunto de cosas</h2>
 <p><code>Int</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-2</code>, <code>-1</code>, <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, ... <span class="blue"><b>}</b></span><br />
 <code>Float</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>-3.1415926</code>, <code>1.618033988</code>, <code>2.7182818284</code> ... <span class="blue"><b>}</b></span><br />
@@ -1260,11 +1275,11 @@
 <p><code>([a] -&gt; a)</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>head</code>, <code>last</code>, <code>\x -&gt; x !! 1</code>, ... <span class="blue"><b>}</b></span><br />
 <code>([a] -&gt; [a])</code> <span class="red">&lt;=</span> <span class="blue"><b>{</b></span> <code>tail</code>, <code>init</code>, ... <span class="blue"><b>}</b></span></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70">
 <h1>Los tipos también se pueden componer...</h1>
 <h2>Podemos entonces crear nuevos tipos a partir de los tipos existentes.</h2>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71">
 <h1>Los tipos también se pueden componer...</h1>
 <h2>Podemos entonces crear nuevos tipos a partir de los tipos existentes.</h2>
 <h3>Existen 2 maneras:</h3>
@@ -1273,14 +1288,14 @@
 <li><span class="blue"><b>Disyunción</b></span></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72">
 <h1 style="margin-bottom: 0">Conjunción</h1>
 <h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"AND"</span></h3>
 <p>Podemos declarar que el tipo de dato <code>Person</code> se compone de los tipos <code>Int</code> (edad) <b class="blue">&quot;Y&quot;</b> <code>String</code> (nombre) así:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> <span class="hljs-type">Int</span> <span class="hljs-type">String</span></span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73">
 <h1 style="margin-bottom: 0">Conjunción</h1>
 <h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"AND"</span></h3>
 <p>Podemos declarar que el tipo de dato <code>Person</code> se compone de los tipos <code>Int</code> (edad) <b class="blue">&quot;Y&quot;</b> <code>String</code> (nombre) así:</p>
@@ -1294,14 +1309,14 @@
 <span class="hljs-title">let</span> me = <span class="hljs-type">Person</span> <span class="hljs-number">34</span> <span class="hljs-string">&quot;Yusent&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74">
 <h1>Conjunción</h1>
 <p>Podemos especificar nombres de atributos:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CartesianPoint</span> = <span class="hljs-type">Point</span> { <span class="hljs-title">x</span> :: <span class="hljs-type">Float</span>, <span class="hljs-title">y</span> :: <span class="hljs-type">Float</span> }</span>
 <span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">age</span> :: <span class="hljs-type">Int</span>, <span class="hljs-title">name</span> :: <span class="hljs-type">String</span> }</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75">
 <h1>Conjunción</h1>
 <p>Podemos especificar nombres de atributos:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CartesianPoint</span> = <span class="hljs-type">Point</span> { <span class="hljs-title">x</span> :: <span class="hljs-type">Float</span>, <span class="hljs-title">y</span> :: <span class="hljs-type">Float</span> }</span>
@@ -1312,7 +1327,7 @@
 <span class="hljs-title">let</span> point1 = <span class="hljs-type">Point</span> { x = <span class="hljs-number">3.1</span>, y = <span class="hljs-number">12.14</span> }
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76">
 <h1>Conjunción</h1>
 <p>Podemos especificar nombres de atributos:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CartesianPoint</span> = <span class="hljs-type">Point</span> { <span class="hljs-title">x</span> :: <span class="hljs-type">Float</span>, <span class="hljs-title">y</span> :: <span class="hljs-type">Float</span> }</span>
@@ -1327,22 +1342,13 @@
 <span class="hljs-title">age</span> andy <span class="hljs-comment">-- 66</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77">
 <h1>Conjunción</h1>
 <p>Es convención usar nombres explícitos para evitar colisiones:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">CartesianPoint</span> = <span class="hljs-type">Point</span> { <span class="hljs-title">pointX</span> :: <span class="hljs-type">Float</span>, <span class="hljs-title">pointY</span> :: <span class="hljs-type">Float</span> }</span>
 <span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">personAge</span> :: <span class="hljs-type">Int</span>, <span class="hljs-title">personName</span> :: <span class="hljs-type">String</span> }</span>
 
 <span class="hljs-title">pointY</span> (<span class="hljs-type">Point</span> <span class="hljs-number">12</span> <span class="hljs-number">144</span>) <span class="hljs-comment">-- 144</span>
-</span></span></foreignObject></svg></code></pre>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77">
-<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
-<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
-<p>Podemos declarar que el tipo de dato <code>Answer</code> puede ser <code>Yes</code> <b class="blue">&quot;Ó&quot;</b> <code>No</code> <b class="blue">&quot;Ó&quot;</b> <code>Maybe</code>:</p>
-<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Answer</span> = <span class="hljs-type">Yes</span></span>
-            | <span class="hljs-type">No</span>
-            | <span class="hljs-type">Maybe</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78">
@@ -1352,10 +1358,19 @@
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Answer</span> = <span class="hljs-type">Yes</span></span>
             | <span class="hljs-type">No</span>
             | <span class="hljs-type">Maybe</span>
-            | <span class="hljs-type">Other</span> { customText :: <span class="hljs-type">String</span> }
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79">
+<h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
+<h3 style="margin-top: 0">Es como usar el operador lógico <span class="blue">"XOR"</span></h3>
+<p>Podemos declarar que el tipo de dato <code>Answer</code> puede ser <code>Yes</code> <b class="blue">&quot;Ó&quot;</b> <code>No</code> <b class="blue">&quot;Ó&quot;</b> <code>Maybe</code>:</p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Answer</span> = <span class="hljs-type">Yes</span></span>
+            | <span class="hljs-type">No</span>
+            | <span class="hljs-type">Maybe</span>
+            | <span class="hljs-type">Other</span> { customText :: <span class="hljs-type">String</span> }
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80">
 <h1 style="margin-bottom: 0">Disyunción (exclusiva)</h1>
 <p><b>e.g.</b></p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Drink</span> = <span class="hljs-type">Water</span> | <span class="hljs-type">Beer</span> | <span class="hljs-type">Wine</span> | <span class="hljs-type">Soda</span> | <span class="hljs-type">Milk</span></span>
@@ -1372,17 +1387,17 @@
 <span class="hljs-title">shouldIDrink</span> <span class="hljs-type">Water</span> <span class="hljs-comment">-- Yes</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81">
 <h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82">
 <h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
 <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
 <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">MoneyAmount</span> = <span class="hljs-type">Decimal</span></span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83">
 <h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
 <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
@@ -1392,7 +1407,7 @@
 <span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Currency</span> = <span class="hljs-type">MXN</span> | <span class="hljs-type">USD</span> | <span class="hljs-type">EUR</span></span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84">
 <h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
 <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
@@ -1407,7 +1422,7 @@
                    | <span class="hljs-type">DebitCard</span> <span class="hljs-type">CardType</span> <span class="hljs-type">CardNumber</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85">
 <h2>¿Cómo representaríamos los tipos para un sistema de pagos?</h2>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CheckNumber</span> = <span class="hljs-type">Int</span></span>
 <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">CardNumber</span> = <span class="hljs-type">String</span></span>
@@ -1428,22 +1443,14 @@
              }
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86">
 <div class="title-section">
   <h1>Contemplar todos los casos</h1>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86">
-<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
-<span class="hljs-title">myDiv</span> a b = a / b
-</span></span></foreignObject></svg></code></pre>
-</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87">
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
 <span class="hljs-title">myDiv</span> a b = a / b
-
-<span class="hljs-title">myDiv</span> <span class="hljs-number">144</span> <span class="hljs-number">12</span> <span class="hljs-comment">-- 12.0</span>
-<span class="hljs-title">myDiv</span> <span class="hljs-number">4.8</span> <span class="hljs-number">2.4</span> <span class="hljs-comment">-- 2.0</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88">
@@ -1452,7 +1459,6 @@
 
 <span class="hljs-title">myDiv</span> <span class="hljs-number">144</span> <span class="hljs-number">12</span> <span class="hljs-comment">-- 12.0</span>
 <span class="hljs-title">myDiv</span> <span class="hljs-number">4.8</span> <span class="hljs-number">2.4</span> <span class="hljs-comment">-- 2.0</span>
-<span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- ???</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="89">
@@ -1461,7 +1467,7 @@
 
 <span class="hljs-title">myDiv</span> <span class="hljs-number">144</span> <span class="hljs-number">12</span> <span class="hljs-comment">-- 12.0</span>
 <span class="hljs-title">myDiv</span> <span class="hljs-number">4.8</span> <span class="hljs-number">2.4</span> <span class="hljs-comment">-- 2.0</span>
-<span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- Infinity</span>
+<span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- ???</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="90">
@@ -1472,7 +1478,6 @@
 <span class="hljs-title">myDiv</span> <span class="hljs-number">4.8</span> <span class="hljs-number">2.4</span> <span class="hljs-comment">-- 2.0</span>
 <span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- Infinity</span>
 </span></span></foreignObject></svg></code></pre>
-<p><span class="red">La firma de la función es una mentira <img class="emoji" draggable="false" alt="😢" src="https://twemoji.maxcdn.com/2/svg/1f622.svg" data-marp-twemoji=""/></span></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="91">
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
@@ -1483,7 +1488,6 @@
 <span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- Infinity</span>
 </span></span></foreignObject></svg></code></pre>
 <p><span class="red">La firma de la función es una mentira <img class="emoji" draggable="false" alt="😢" src="https://twemoji.maxcdn.com/2/svg/1f622.svg" data-marp-twemoji=""/></span></p>
-<p>¿Cómo arreglamos <code>myDiv</code>?</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="92">
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
@@ -1495,10 +1499,6 @@
 </span></span></foreignObject></svg></code></pre>
 <p><span class="red">La firma de la función es una mentira <img class="emoji" draggable="false" alt="😢" src="https://twemoji.maxcdn.com/2/svg/1f622.svg" data-marp-twemoji=""/></span></p>
 <p>¿Cómo arreglamos <code>myDiv</code>?</p>
-<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> a b = <span class="hljs-keyword">if</span> b != <span class="hljs-number">0</span>
-              <span class="hljs-keyword">then</span> a / b
-              <span class="hljs-keyword">else</span> error <span class="hljs-string">&quot;divisor must be a nonzero number&quot;</span>
-</span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="93">
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
@@ -1514,7 +1514,6 @@
               <span class="hljs-keyword">then</span> a / b
               <span class="hljs-keyword">else</span> error <span class="hljs-string">&quot;divisor must be a nonzero number&quot;</span>
 </span></span></foreignObject></svg></code></pre>
-<p><b class="blue">¡Problema resuelto!</b></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="94">
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
@@ -1531,9 +1530,25 @@
               <span class="hljs-keyword">else</span> error <span class="hljs-string">&quot;divisor must be a nonzero number&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 <p><b class="blue">¡Problema resuelto!</b></p>
-<p><span class="note">¿Cierto?...</span></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="95">
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
+<span class="hljs-title">myDiv</span> a b = a / b
+
+<span class="hljs-title">myDiv</span> <span class="hljs-number">144</span> <span class="hljs-number">12</span> <span class="hljs-comment">-- 12.0</span>
+<span class="hljs-title">myDiv</span> <span class="hljs-number">4.8</span> <span class="hljs-number">2.4</span> <span class="hljs-comment">-- 2.0</span>
+<span class="hljs-title">myDiv</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-comment">-- Infinity</span>
+</span></span></foreignObject></svg></code></pre>
+<p><span class="red">La firma de la función es una mentira <img class="emoji" draggable="false" alt="😢" src="https://twemoji.maxcdn.com/2/svg/1f622.svg" data-marp-twemoji=""/></span></p>
+<p>¿Cómo arreglamos <code>myDiv</code>?</p>
+<pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myDiv</span> a b = <span class="hljs-keyword">if</span> b != <span class="hljs-number">0</span>
+              <span class="hljs-keyword">then</span> a / b
+              <span class="hljs-keyword">else</span> error <span class="hljs-string">&quot;divisor must be a nonzero number&quot;</span>
+</span></span></foreignObject></svg></code></pre>
+<p><b class="blue">¡Problema resuelto!</b></p>
+<p><span class="note">¿Cierto?...</span></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="96">
 <h2>Las excepciones son consideradas un anti-patrón en FP</h2>
 <ul>
 <li>Son en esencia enunciados <code>GOTO</code> sofisticados</li>
@@ -1542,12 +1557,12 @@
 <li>Los lenguajes funcionales por lo general contienen estructuras de datos especiales para lidiar con problemas sin usar excepciones</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="96">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="97">
 <h1>Maybe al rescate</h1>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Maybe</span> a = <span class="hljs-type">Just</span> a | <span class="hljs-type">Nothing</span></span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="97">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="98">
 <h1>Maybe al rescate</h1>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Maybe</span> a = <span class="hljs-type">Just</span> a | <span class="hljs-type">Nothing</span></span>
 </span></span></foreignObject></svg></code></pre>
@@ -1558,7 +1573,7 @@
               <span class="hljs-keyword">else</span> <span class="hljs-type">Nothing</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="98">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="99">
 <h1>Maybe al rescate</h1>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Maybe</span> a = <span class="hljs-type">Just</span> a | <span class="hljs-type">Nothing</span></span>
 </span></span></foreignObject></svg></code></pre>
@@ -1574,7 +1589,7 @@
 <span class="hljs-title">a</span> == <span class="hljs-number">6</span> <span class="hljs-comment">-- No compila, no podemos comparar un Float con un Maybe Float</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="99">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="100">
 <h1>Maybe al rescate</h1>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Maybe</span> a = <span class="hljs-type">Just</span> a | <span class="hljs-type">Nothing</span></span>
 </span></span></foreignObject></svg></code></pre>
@@ -1592,7 +1607,7 @@
 <span class="hljs-title">b</span> == <span class="hljs-type">Just</span> <span class="hljs-number">1</span> <span class="hljs-comment">-- False</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="100">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="101">
 <p>Es común usar enunciados <code>case</code> para lidiar con los posibles valores de un tipo:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myIntPrint</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">IO</span> ()
 <span class="hljs-title">myIntPrint</span> mx = <span class="hljs-keyword">case</span> mx <span class="hljs-keyword">of</span>
@@ -1600,7 +1615,7 @@
                      <span class="hljs-type">Nothing</span> -&gt; print <span class="hljs-string">&quot;NaN&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="101">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="102">
 <p>Es común usar enunciados <code>case</code> para lidiar con los posibles valores de un tipo:</p>
 <pre><code class="language-haskell"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-title">myIntPrint</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">IO</span> ()
 <span class="hljs-title">myIntPrint</span> mx = <span class="hljs-keyword">case</span> mx <span class="hljs-keyword">of</span>
@@ -1619,13 +1634,13 @@
 <span class="hljs-comment">-- Entre otras</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="102">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="103">
 <div class="title-section">
   <h1>Presentación disponible en:</h1>
   <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="103">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="104">
 <div class="title-section">
   <h1>Presentación disponible en:</h1>
   <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>

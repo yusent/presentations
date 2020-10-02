@@ -133,19 +133,19 @@
     <ul>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
-        yusent
+        @yusent
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
-        yusent
+        @yusent
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
-        yus3nt
+        @yus3nt
       </li>
       <li class="d-flex">
         <img height="32" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
-        yus3nt
+        @yus3nt
       </li>
     </ul>
   </div>
@@ -880,6 +880,26 @@ halfSquare x = half (square x)
 
 -- halfSquare puede ser definida como:
 halfSquare = half . square
+```
+
+---
+
+## Utilizamos el punto para componer funciones:
+
+```haskell
+half x = x / 2
+
+square x = x * x
+
+halfSquare x = half (square x)
+
+-- halfSquare puede ser definida como:
+halfSquare = half . square
+```
+
+Podemos componer en orden natural utilizando el operador `>>>` del módulo `Control.Arrow`:
+```haskell
+halfSquare = square >>> half
 ```
 
 ---
