@@ -265,6 +265,23 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
+# Lo que hoy les vengo manejando
+
+- Principios Básicos de Programación Funcional
+  - Funciones
+  - Composición
+  - Tipos de datos
+  - Contemplar todos los casos
+
+### Posibles temas para secuela:
+
+- Funcionas puras / impuras
+- Currificación
+- Mónadas
+- Monoides
+
+---
+
 <div class="title-section">
   <h1>Funciones</h1>
 </div>
