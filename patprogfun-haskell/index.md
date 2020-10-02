@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   section[id="1"], section[id="2"], section[id="3"] {
@@ -121,8 +122,6 @@
 </style>
 
 # Patrones de Programación Funcional en Haskell
-
-[https://yusent.github.io/slides/patprogfun-haskell](https://yusent.github.io/slides/patprogfun-haskell)
 
 ---
 
@@ -1624,3 +1623,19 @@ fromMaybe 42 Nothing  -- 42
 
 -- Entre otras
 ```
+
+---
+
+<div class="title-section">
+  <h1>Presentación disponible en:</h1>
+  <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>
+</div>
+
+---
+
+<div class="title-section">
+  <h1>Presentación disponible en:</h1>
+  <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>
+</div>
+
+<div class="note">¿Preguntas?</div>
