@@ -331,25 +331,25 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
-# Lo que hoy les vengo manejando
+## Lo que hoy les vengo manejando
 
-- Principios Básicos de Programación Funcional
+- Patrones Básicos de Programación Funcional
   - Funciones
   - Composición
-  - Tipos de datos
-  - Contemplar todos los casos
+  - Tipos de datos como conjuntos
+  - Principio de "Contemplar todos los casos para no tener que usar excepciones" (100% real no fake)
 
 ---
 
-# Lo que hoy les vengo manejando
+## Lo que hoy les vengo manejando
 
-- Principios Básicos de Programación Funcional
+- Patrones Básicos de Programación Funcional
   - Funciones
   - Composición
-  - Tipos de datos
-  - Contemplar todos los casos
+  - Tipos de datos como conjuntos
+  - Principio de "Contemplar todos los casos para no tener que usar excepciones" (100% real no fake)
 
-### Posibles temas para secuela:
+#### Posibles temas para secuela:
 
 - Funciones puras / impuras
 - Pattern matching
@@ -1480,8 +1480,8 @@ myDiv 1 0 -- Infinity
 
 ```haskell
 myDiv a b = if b != 0
-              then a / b
-              else error "divisor must be a nonzero number"
+               then a / b
+               else error "divisor must be a nonzero number"
 ```
 
 ---
@@ -1501,8 +1501,8 @@ myDiv 1 0 -- Infinity
 
 ```haskell
 myDiv a b = if b != 0
-              then a / b
-              else error "divisor must be a nonzero number"
+               then a / b
+               else error "divisor must be a nonzero number"
 ```
 
 <b class="blue">¡Problema resuelto!</b>
@@ -1524,8 +1524,8 @@ myDiv 1 0 -- Infinity
 
 ```haskell
 myDiv a b = if b != 0
-              then a / b
-              else error "divisor must be a nonzero number"
+               then a / b
+               else error "divisor must be a nonzero number"
 ```
 
 <b class="blue">¡Problema resuelto!</b>
@@ -1561,8 +1561,8 @@ i.e.
 ```haskell
 myDiv :: Float -> Maybe Float
 myDiv a b = if b != 0
-              then Just (a / b)
-              else Nothing
+               then Just (a / b)
+               else Nothing
 ```
 
 ---
@@ -1577,8 +1577,8 @@ i.e.
 ```haskell
 myDiv :: Float -> Maybe Float
 myDiv a b = if b != 0
-              then Just (a / b)
-              else Nothing
+               then Just (a / b)
+               else Nothing
 
 let a = myDiv 12 2 -- Just 6
 let b = myDiv 12 0 -- Nothing
@@ -1598,8 +1598,8 @@ i.e.
 ```haskell
 myDiv :: Float -> Maybe Float
 myDiv a b = if b != 0
-              then Just (a / b)
-              else Nothing
+               then Just (a / b)
+               else Nothing
 
 let a = myDiv 12 2 -- Just 6
 let b = myDiv 12 0 -- Nothing
