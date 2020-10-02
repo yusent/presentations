@@ -1293,3 +1293,257 @@ data Payment = Payment
              , method   :: PaymentMethod
              }
 ```
+
+---
+
+<div class="title-section">
+  <h1>Contemplar todos los casos</h1>
+</div>
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+```
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+```
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- ???
+```
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+<span class="red">La firma de la función es una mentira &#128546;</span>
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+<span class="red">La firma de la función es una mentira &#128546;</span>
+
+¿Cómo arreglamos `myDiv`?
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+<span class="red">La firma de la función es una mentira &#128546;</span>
+
+¿Cómo arreglamos `myDiv`?
+
+```haskell
+myDiv a b = if b != 0
+              then a / b
+              else error "divisor must be a nonzero number"
+```
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+<span class="red">La firma de la función es una mentira &#128546;</span>
+
+¿Cómo arreglamos `myDiv`?
+
+```haskell
+myDiv a b = if b != 0
+              then a / b
+              else error "divisor must be a nonzero number"
+```
+
+<b class="blue">¡Problema resuelto!</b>
+
+---
+
+```haskell
+myDiv :: Float -> Float
+myDiv a b = a / b
+
+myDiv 144 12 -- 12.0
+myDiv 4.8 2.4 -- 2.0
+myDiv 1 0 -- Infinity
+```
+
+<span class="red">La firma de la función es una mentira &#128546;</span>
+
+¿Cómo arreglamos `myDiv`?
+
+```haskell
+myDiv a b = if b != 0
+              then a / b
+              else error "divisor must be a nonzero number"
+```
+
+<b class="blue">¡Problema resuelto!</b>
+
+<span class="note">¿Cierto?...</span>
+
+---
+
+## Las excepciones son consideradas un anti-patrón en FP
+
+- Son en esencia enunciados `GOTO` sofisticados
+- Hacen el código difícil de leer y entender
+- La mayoría de los lenguajes no te obligan a manejar las excepciones para compilar
+- Los lenguajes funcionales por lo general contienen estructuras de datos especiales para lidiar con problemas sin usar excepciones
+
+---
+
+# Maybe al rescate
+
+```haskell
+data Maybe a = Just a | Nothing
+```
+
+---
+
+# Maybe al rescate
+
+```haskell
+data Maybe a = Just a | Nothing
+```
+
+i.e.
+```haskell
+myDiv :: Float -> Maybe Float
+myDiv a b = if b != 0
+              then Just (a / b)
+              else Nothing
+```
+
+---
+
+# Maybe al rescate
+
+```haskell
+data Maybe a = Just a | Nothing
+```
+
+i.e.
+```haskell
+myDiv :: Float -> Maybe Float
+myDiv a b = if b != 0
+              then Just (a / b)
+              else Nothing
+
+let a = myDiv 12 2 -- Just 6
+let b = myDiv 12 0 -- Nothing
+
+a == 6 -- No compila, no podemos comparar un Float con un Maybe Float
+```
+
+---
+
+# Maybe al rescate
+
+```haskell
+data Maybe a = Just a | Nothing
+```
+
+i.e.
+```haskell
+myDiv :: Float -> Maybe Float
+myDiv a b = if b != 0
+              then Just (a / b)
+              else Nothing
+
+let a = myDiv 12 2 -- Just 6
+let b = myDiv 12 0 -- Nothing
+
+a == 6 -- No compila, no podemos comparar un Float con un Maybe Float
+a == Just 6 -- True
+b == Just 1 -- False
+```
+
+---
+
+Es común usar enunciados `case` para lidiar con los posibles valores de un tipo:
+
+```haskell
+myIntPrint :: Maybe Int -> IO ()
+myIntPrint mx = case mx of
+                     Just x  -> print x
+                     Nothing -> print "NaN"
+```
+
+---
+
+Es común usar enunciados `case` para lidiar con los posibles valores de un tipo:
+
+```haskell
+myIntPrint :: Maybe Int -> IO ()
+myIntPrint mx = case mx of
+                     Just x  -> print x
+                     Nothing -> print "NaN"
+```
+
+Haskell incluye el módulo `Data.Maybe` con funciones útiles para el tipo `Maybe`:
+```haskell
+import Data.Maybe
+
+isJust (Just 3)       -- True
+isJust Nothing        -- False
+isNothing Nothing     -- True
+fromMaybe 42 (Just 2) -- 2
+fromMaybe 42 Nothing  -- 42
+
+-- Entre otras
+```
