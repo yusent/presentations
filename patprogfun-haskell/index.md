@@ -1892,6 +1892,18 @@ fromMaybe 42 Nothing  -- 42
 
 ---
 
+# Conclusión
+
+### ¡Haskell rifa!
+
+---
+
+# Conclusión
+
+### <s>¡Haskell rifa!</s> Los patrones de programación son indispensables para crear soluciones de alto nivel que sean fáciles de razonar.
+
+---
+
 <img height="340" src="images/thats-all-folks.jpg" />
 
 <h1 style="text-align: center">¡Eso es todo amigos!</h1>
