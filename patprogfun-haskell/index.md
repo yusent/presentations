@@ -351,7 +351,7 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ### Posibles temas para secuela:
 
-- Funcionas puras / impuras
+- Funciones puras / impuras
 - Pattern matching
 - Currificación
 - Mónadas / Monoides
