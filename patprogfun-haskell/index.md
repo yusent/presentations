@@ -191,6 +191,86 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 ---
 
+<img height="420" src="images/patterns-big-deal.jpg" />
+
+---
+
+<img height="420" src="images/patterns-big-deal.jpg" />
+
+- Nos permiten re-usar la experiencia (son formas probadas de estructurar software)
+
+---
+
+<img height="420" src="images/patterns-big-deal.jpg" />
+
+- Nos permiten re-usar la experiencia (son formas probadas de estructurar software)
+- Se reconocen con facilidad (y nos revelan la intención)
+
+---
+
+<img height="420" src="images/patterns-big-deal.jpg" />
+
+- Nos permiten re-usar la experiencia (son formas probadas de estructurar software)
+- Se reconocen con facilidad (y nos revelan la intención)
+- Nos dan abstracción y encapsulación (esconden algunos detalles y nos ayudan a razonar en alto nivel)
+
+---
+
+# ¿Por qué usar Haskell?
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+- Es de alto nivel
+
+---
+
+# ¿Por qué usar Haskell?
+
+- Es puro (no permite efectos secundarios)
+- Es "popular" (ya sé, ya sé, déjenme explicarlo...)
+- Sus sistema de tipos es fuerte
+- Cuenta con inferencia de tipos
+- Es de alto nivel
+- Es elegante <span class="red">&hearts;</span>
+
+---
+
 | Patrón orientado a objetos | Patrón funcional |
 | --- | --- |
 | Single Responsability Principle | |
@@ -1614,10 +1694,10 @@ b == Just 1 -- False
 Es común usar enunciados `case` para lidiar con los posibles valores de un tipo:
 
 ```haskell
-myIntPrint :: Maybe Int -> IO ()
-myIntPrint mx = case mx of
-                     Just x  -> print x
-                     Nothing -> print "NaN"
+maybeIntPrint :: Maybe Int -> IO ()
+maybeIntPrint mx = case mx of
+                        Just x  -> print x
+                        Nothing -> print "NaN"
 ```
 
 ---
@@ -1625,10 +1705,10 @@ myIntPrint mx = case mx of
 Es común usar enunciados `case` para lidiar con los posibles valores de un tipo:
 
 ```haskell
-myIntPrint :: Maybe Int -> IO ()
-myIntPrint mx = case mx of
-                     Just x  -> print x
-                     Nothing -> print "NaN"
+maybeIntPrint :: Maybe Int -> IO ()
+maybeIntPrint mx = case mx of
+                        Just x  -> print x
+                        Nothing -> print "NaN"
 ```
 
 Haskell incluye el módulo `Data.Maybe` con funciones útiles para el tipo `Maybe`:
@@ -1646,8 +1726,12 @@ fromMaybe 42 Nothing  -- 42
 
 ---
 
+<img height="340" src="images/thats-all-folks.jpg" />
+
+<h1 style="text-align: center">¡Eso es todo amigos!</h1>
+
 <div class="title-section">
-  <h1>Presentación disponible en:</h1>
+  <h3>Presentación disponible en:</h3>
   <a href="https://yusent.github.io/slides/patprogfun-haskell">https://yusent.github.io/slides/patprogfun-haskell</a>
 </div>
 
