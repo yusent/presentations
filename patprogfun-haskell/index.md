@@ -84,6 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
   }
 
   .block {
@@ -107,9 +108,21 @@
   }
 
   .arrow {
-    align-self: center;
-    font-size: 100px;
-    margin-top: 16px;
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 9px;
+  }
+
+  .arrow.right {
+    margin: 0 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .arrow.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 
   .note {
@@ -509,9 +522,9 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -519,13 +532,13 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<center>
+<center style="margin-bottom: 80px">
   <b class="blue">Operación de bajo nivel</b>
 </center>
 
@@ -533,21 +546,21 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<center>
+<center style="margin-bottom: 80px">
   <b class="blue">Operación de bajo nivel</b>
 </center>
 
-<div class="chain" style="margin-right: 18px">
+<div class="chain">
   <span class="blue">10</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">half</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">5</span>
 </div>
 
@@ -555,29 +568,29 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<center>
+<center style="margin-bottom: 80px">
   <b class="blue">Operación de bajo nivel</b>
 </center>
 
-<div class="chain" style="margin-right: 18px">
+<div class="chain">
   <span class="blue">10</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">half</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">5</span>
 </div>
 
-<div class="chain" style="margin: -90px 0 0 18px">
+<div class="chain">
   <span class="blue">12</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">square</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">144</span>
 </div>
 
@@ -585,37 +598,37 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<center>
+<center style="margin-bottom: 80px">
   <b class="blue">Operación de bajo nivel</b>
 </center>
 
-<div class="chain" style="margin-right: 18px">
+<div class="chain">
   <span class="blue">10</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">half</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">5</span>
 </div>
 
-<div class="chain" style="margin: -90px 0 0 18px">
+<div class="chain">
   <span class="blue">12</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">square</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">144</span>
 </div>
 
-<div class="chain" style="margin: -90px 0 0 48px">
+<div class="chain">
   <span class="blue">"hola mundo"</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">toUpper</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">"HOLA MUNDO"</span>
 </div>
 
@@ -887,13 +900,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 1</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">Función 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">Función 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -901,13 +914,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">Función 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -915,13 +928,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="blue transparent">y</span>
 </div>
 
@@ -929,13 +942,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -943,23 +956,25 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">Función 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -971,13 +986,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">getEmployer</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">getPayDay</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">isToday</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">Boolean</span>
 </div>
 
@@ -985,13 +1000,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">getPayDay</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">isToday</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">Boolean</span>
 </div>
 
@@ -999,13 +1014,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block transparent">isToday</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">Boolean</span>
 </div>
 
@@ -1013,13 +1028,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">isToday</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">Boolean</span>
 </div>
 
@@ -1027,13 +1042,13 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">isToday</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">Boolean</span>
 </div>
 
@@ -1041,23 +1056,25 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">isToday</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">Boolean</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue transparent">Yus</span>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block service-block">shouldTransferMoney</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">False</span>
 </div>
 
@@ -1065,23 +1082,25 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">isToday</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">Boolean</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">Yus</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">shouldTransferMoney</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">False</span>
 </div>
 
@@ -1089,23 +1108,25 @@ add12 12 -- 24
 
 <div class="chain">
   <span class="blue">Person</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getEmployer</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">getPayDay</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block">isToday</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">Boolean</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">Yus</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">shouldTransferMoney</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">False</span>
 </div>
 
@@ -1152,13 +1173,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block service-block transparent">Servicio 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block service-block transparent">Servicio 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1166,13 +1187,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block service-block transparent">Servicio 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1180,13 +1201,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1194,13 +1215,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -1208,23 +1229,25 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block service-block">Servicio 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -1232,13 +1255,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block use-case-block transparent">Caso de uso 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block use-case-block transparent">Caso de uso 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1246,13 +1269,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <div class="block use-case-block transparent">Caso de uso 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1260,13 +1283,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow transparent">&rarr;</span>
+  <span class="arrow right transparent"></span>
   <span class="transparent">y</span>
 </div>
 
@@ -1274,13 +1297,13 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -1288,23 +1311,25 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block application-block"><span>Aplicación</span></div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -1312,23 +1337,25 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 1</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 2</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Caso de uso 3</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">x</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block application-block"><span>Aplicación</span></div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">y</span>
 </div>
 
@@ -1340,23 +1367,25 @@ byThreeOverTwo = mult 3 >>> half
 
 <div class="chain">
   <span class="blue">HTTP Request</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Autenticación</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">...</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block use-case-block">Formato</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">HTTP Response</span>
 </div>
 
-<p class="arrow">&darr;</p>
+<center style="margin-bottom: 80px">
+  <span class="arrow down"></span>
+</center>
 
 <div class="chain">
   <span class="blue">HTTP Request</span>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <div class="block application-block">Aplicación WEB</div>
-  <span class="arrow">&rarr;</span>
+  <span class="arrow right"></span>
   <span class="blue">HTTP Response</span>
 </div>
 
@@ -1782,7 +1811,6 @@ myDiv a b = if b != 0
 
 ## Las excepciones son consideradas un anti-patrón en FP.
 
-- Son en esencia enunciados `GOTO` sofisticados
 - Hacen el código difícil de leer y entender
 - La mayoría de los lenguajes no te obligan a manejar las excepciones para compilar
 - Los lenguajes funcionales por lo general contienen estructuras de datos especiales para lidiar con problemas sin usar excepciones
