@@ -799,7 +799,7 @@ multBy24(6) // 144
 # En Haskell !todas las funciones están currificadas!
 
 <center>
-  <iframe src="https://giphy.com/embed/3o72F8t9TDi2xVnxOE" width="720" height="490" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <img src="images/surprised-monkey.webp" height="450" />
 </center>
 
 ---
