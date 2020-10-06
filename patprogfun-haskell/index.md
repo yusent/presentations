@@ -841,7 +841,7 @@ add a b = a + b
 
 También hay paréntesis escondidos en la evaluación:
 ```haskell
-add 12 3 = (add 12) 3
+(add 12) 3
 ```
 
 ---
@@ -854,7 +854,7 @@ add a b = a + b
 
 También hay paréntesis escondidos en la evaluación:
 ```haskell
-add 12 3 = (add 12) 3
+(add 12) 3
 ```
 
 Para currificar basta entonces con dar menos argumentos:
