@@ -80,6 +80,7 @@
   }
 
   .chain {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     align-self: center;
     display: flex;
     align-items: center;
@@ -561,7 +562,7 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
   <span class="arrow right"></span>
   <div class="block">half</div>
   <span class="arrow right"></span>
-  <span class="blue">5</span>
+  <span class="blue">5&nbsp;</span>
 </div>
 
 ---
@@ -583,11 +584,11 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
   <span class="arrow right"></span>
   <div class="block">half</div>
   <span class="arrow right"></span>
-  <span class="blue">5</span>
+  <span class="blue">5&nbsp;</span>
 </div>
 
 <div class="chain">
-  <span class="blue">12</span>
+  <span class="blue">12&nbsp;</span>
   <span class="arrow right"></span>
   <div class="block">square</div>
   <span class="arrow right"></span>
@@ -613,11 +614,11 @@ Estrategias para resolver problemas comunes de software, las cuales deben ser:
   <span class="arrow right"></span>
   <div class="block">half</div>
   <span class="arrow right"></span>
-  <span class="blue">5</span>
+  <span class="blue">5&nbsp;</span>
 </div>
 
 <div class="chain">
-  <span class="blue">12</span>
+  <span class="blue">12&nbsp;</span>
   <span class="arrow right"></span>
   <div class="block">square</div>
   <span class="arrow right"></span>
@@ -1071,7 +1072,7 @@ add12 12 -- 24
 </center>
 
 <div class="chain">
-  <span class="blue transparent">Yus</span>
+  <span class="blue transparent">&nbsp;&nbsp;Yus</span>
   <span class="arrow right transparent"></span>
   <div class="block service-block">shouldTransferMoney</div>
   <span class="arrow right transparent"></span>
@@ -1097,7 +1098,7 @@ add12 12 -- 24
 </center>
 
 <div class="chain">
-  <span class="blue">Yus</span>
+  <span class="blue">&nbsp;&nbsp;Yus</span>
   <span class="arrow right"></span>
   <div class="block service-block">shouldTransferMoney</div>
   <span class="arrow right transparent"></span>
@@ -1123,7 +1124,7 @@ add12 12 -- 24
 </center>
 
 <div class="chain">
-  <span class="blue">Yus</span>
+  <span class="blue">&nbsp;&nbsp;Yus</span>
   <span class="arrow right"></span>
   <div class="block service-block">shouldTransferMoney</div>
   <span class="arrow right"></span>
@@ -1382,7 +1383,7 @@ byThreeOverTwo = mult 3 >>> half
 </center>
 
 <div class="chain">
-  <span class="blue">HTTP Request</span>
+  <span class="blue">&nbsp;HTTP Request</span>
   <span class="arrow right"></span>
   <div class="block application-block">Aplicación WEB</div>
   <span class="arrow right"></span>
