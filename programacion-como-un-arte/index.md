@@ -8,8 +8,12 @@
     flex-direction: column;
   }
 
-  .flex-full {
+  .flex-1 {
     flex: 1;
+  }
+
+  .justify-around {
+    justify-content: space-around;
   }
 
   #cover div {
@@ -87,6 +91,10 @@
     color: #0005;
   }
 
+  .bold {
+    font-weight: bold;
+  }
+
   .chain {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     align-self: center;
@@ -140,6 +148,16 @@
     position: absolute;
     bottom: 100px;
     right: 100px;
+  }
+
+  .life-cell {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+  }
+
+  .alive {
+    background-color: green;
   }
 </style>
 
@@ -217,10 +235,57 @@
 
 ---
 
-<div class="flex-full d-flex flex-column">
+<div class="title-section">
+  <h1>Conway's Game of Life</h1>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<div class="d-flex">
+  <div class="d-flex flex-column">
+    <img src="media/conway.jpg" />
+    <small class="bold">John Horton Conway (1937 – 2020)</small>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<div class="d-flex">
+  <div class="d-flex flex-column">
+    <img src="media/conway.jpg" />
+    <small class="bold">John Horton Conway (1937 – 2020)</small>
+  </div>
+
+  <div class="flex-1">
+    <ul>
+      <li>Creado en <b>1970</b></li>
+      <li><b>0 jugadores</b> (Su evolución está determinada por su estado inicial)</li>
+      <li>Consiste en una cuadrícula bidimensional de tamaño infinito cuyas celdas pueden estar en dos posibles estados:</li>
+    </ul>
+    <br>
+    <div class="d-flex justify-around">
+      <div class="d-flex flex-column">
+        <div class="life-cell alive"></div>
+        <small class="bold">Viva</small>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="life-cell"></div>
+        <small class="bold">Muerta</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="flex-1 d-flex flex-column">
   <h1>¿Qué es esto?</h1>
 
-  <div class="flex-full">
+  <div class="flex-1">
     <video onclick="this.paused ? this.play() : this.pause(); this.blur()">
       <source src="media/life-in-life.webm" type="video/webm">
     </video>
