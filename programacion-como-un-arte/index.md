@@ -150,14 +150,64 @@
     right: 100px;
   }
 
-  .life-cell {
-    background-color: black;
-    height: 30px;
-    width: 30px;
+  ol {
+    counter-reset: li;
+    list-style: none;
   }
 
-  .alive {
-    background-color: green;
+  ol li::before {
+    color: red;
+    content: counter(li) ".";
+    display: inline-block;
+    font-weight: bold;
+    margin-left: -1.3rem;
+    width: 1.3rem;
+  }
+
+  ol li {
+    counter-increment: li;
+  }
+
+  .life-grid {
+    background-color: black;
+    margin: 0 auto;
+    display: grid;
+    padding: 3px;
+    grid-gap: 3px;
+    grid-auto-flow: row;
+  }
+
+  .life-grid > div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alive, .dying, .surviving {
+    background-color: black !important;
+  }
+
+  .being-born::before {
+    content: "👶🏻";
+  }
+
+  .dying::before {
+    content: "☠️";
+  }
+
+  .surviving::before {
+    content: "🖖";
+  }
+
+  .one-by-one {
+    grid-template-columns: repeat(1, 70px);
+    grid-template-rows: repeat(1, 70px);
+  }
+
+  .five-by-five {
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 70px);
   }
 </style>
 
@@ -248,6 +298,63 @@
     <img src="media/conway.jpg" />
     <small class="bold">John Horton Conway (1937 – 2020)</small>
   </div>
+
+  <div class="flex-1">
+    <ul>
+      <li>Creado en <b>1970</b></li>
+      <li class="transparent"><b>0 jugadores</b> (Su evolución está determinada por su estado inicial)</li>
+      <li class="transparent">Consiste en una cuadrícula bidimensional de tamaño infinito cuyas celdas pueden estar en dos posibles estados:</li>
+    </ul>
+    <br>
+    <div class="d-flex justify-around transparent">
+      <div class="d-flex flex-column">
+        <div class="life-grid one-by-one">
+          <div></div>
+        </div>
+        <small class="bold">Viva</small>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="life-grid one-by-one">
+          <div></div>
+        </div>
+        <small class="bold">Muerta</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<div class="d-flex">
+  <div class="d-flex flex-column">
+    <img src="media/conway.jpg" />
+    <small class="bold">John Horton Conway (1937 – 2020)</small>
+  </div>
+
+  <div class="flex-1">
+    <ul>
+      <li>Creado en <b>1970</b></li>
+      <li><b>0 jugadores</b> (Su evolución está determinada por su estado inicial)</li>
+      <li class="transparent">Consiste en una cuadrícula bidimensional de tamaño infinito cuyas celdas pueden estar en dos posibles estados:</li>
+    </ul>
+    <br>
+    <div class="d-flex justify-around transparent">
+      <div class="d-flex flex-column">
+        <div class="life-grid one-by-one">
+          <div class="alive"></div>
+        </div>
+        <small class="bold">Viva</small>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="life-grid one-by-one">
+          <div></div>
+        </div>
+        <small class="bold">Muerta</small>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
@@ -269,15 +376,414 @@
     <br>
     <div class="d-flex justify-around">
       <div class="d-flex flex-column">
-        <div class="life-cell alive"></div>
+        <div class="life-grid one-by-one">
+          <div class="alive"></div>
+        </div>
         <small class="bold">Viva</small>
       </div>
       <div class="d-flex flex-column">
-        <div class="life-cell"></div>
+        <div class="life-grid one-by-one">
+          <div></div>
+        </div>
         <small class="bold">Muerta</small>
       </div>
     </div>
   </div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 1:</span>
+  Una celda viva con
+  <span class="red">menos de 2 celdas vivas alrededor</span>
+  muere por <i>soledad</i>.
+</h6>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 1:</span>
+  Una celda viva con
+  <span class="red">menos de 2 celdas vivas alrededor</span>
+  muere por <i>soledad</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 1:</span>
+  Una celda viva con
+  <span class="red">menos de 2 celdas vivas alrededor</span>
+  muere por <i>soledad</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="dying"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="dying"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 1:</span>
+  Una celda viva con
+  <span class="red">menos de 2 celdas vivas alrededor</span>
+  muere por <i>soledad</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 2:</span>
+  Una celda viva con
+  <span class="red">2 ó 3 celdas vivas alrededor</span>
+  sobrevive a la siguiente generación.
+</h6>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 2:</span>
+  Una celda viva con
+  <span class="red">2 ó 3 celdas vivas alrededor</span>
+  sobrevive a la siguiente generación.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 2:</span>
+  Una celda viva con
+  <span class="red">2 ó 3 celdas vivas alrededor</span>
+  sobrevive a la siguiente generación.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="surviving"></div>
+  <div class="surviving"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="surviving"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 3:</span>
+  Una celda viva con
+  <span class="red">más de 3 celdas vivas alrededor</span>
+  muere por <i>sobrepoblación</i>.
+</h6>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 3:</span>
+  Una celda viva con
+  <span class="red">más de 3 celdas vivas alrededor</span>
+  muere por <i>sobrepoblación</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 3:</span>
+  Una celda viva con
+  <span class="red">más de 3 celdas vivas alrededor</span>
+  muere por <i>sobrepoblación</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="dying"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 3:</span>
+  Una celda viva con
+  <span class="red">más de 3 celdas vivas alrededor</span>
+  muere por <i>sobrepoblación</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 4:</span>
+  Una celda muerta con
+  <span class="red">exactamente 3 celdas vivas alrededor</span>
+  nace por <i>reproducción</i>.
+</h6>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 4:</span>
+  Una celda muerta con
+  <span class="red">exactamente 3 celdas vivas alrededor</span>
+  nace por <i>reproducción</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
 
 ---
