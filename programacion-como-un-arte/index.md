@@ -87,6 +87,10 @@
     opacity: 0;
   }
 
+  .semi-transparent {
+    opacity: 0.3;
+  }
+
   .muted {
     color: #0005;
   }
@@ -208,6 +212,11 @@
   .five-by-five {
     grid-template-columns: repeat(5, 70px);
     grid-template-rows: repeat(5, 70px);
+  }
+
+  .eight-by-eight {
+    grid-template-columns: repeat(8, 55px);
+    grid-template-rows: repeat(8, 55px);
   }
 </style>
 
@@ -767,9 +776,88 @@
   <div></div>
   <div class="alive"></div>
   <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
   <div class="alive"></div>
   <div></div>
   <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 4:</span>
+  Una celda muerta con
+  <span class="red">exactamente 3 celdas vivas alrededor</span>
+  nace por <i>reproducción</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="being-born"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life
+
+<h6 style="margin-bottom: 70px">
+  <span class="blue">Regla 4:</span>
+  Una celda muerta con
+  <span class="red">exactamente 3 celdas vivas alrededor</span>
+  nace por <i>reproducción</i>.
+</h6>
+
+<div class="life-grid five-by-five">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
+  <div class="alive"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="alive"></div>
   <div class="alive"></div>
   <div></div>
   <div></div>
@@ -783,7 +871,1678 @@
   <div></div>
   <div></div>
   <div></div>
-  <div></div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+    </div>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 0</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="being-born"></div>
+      <div class="alive"></div>
+      <div class="being-born"></div>
+      <div class="alive"></div>
+      <div class="being-born"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="being-born"></div>
+      <div class="alive"></div>
+      <div class="being-born"></div>
+      <div class="alive"></div>
+      <div class="being-born"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 1</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 1</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 1</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 1</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 1</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div class="surviving"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 2</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li class="semi-transparent">Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li class="semi-transparent">Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li class="semi-transparent">Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li class="semi-transparent">Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 2</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="surviving"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="being-born"></div>
+      <div class="being-born"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div></div>
+      <div class="surviving"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="dying"></div>
+      <div class="surviving"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 3</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación 4</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
 </div>
 
 ---
