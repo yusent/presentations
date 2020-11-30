@@ -182,14 +182,14 @@
   }
 
   .life-grid > div {
-    background-color: white;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .alive, .dying, .surviving {
-    background-color: black !important;
+    background-color: white !important;
   }
 
   .being-born::before {
@@ -2470,35 +2470,27 @@
     <h6 style="text-align: center; margin-top: 0">Generación 4</h6>
     <div class="life-grid eight-by-eight">
       <div></div>
-      <div class="alive"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div class="alive"></div>
-      <div></div>
-      <div class="alive"></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
-      <div class="alive"></div>
       <div></div>
       <div></div>
       <div></div>
-      <div class="alive"></div>
-      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div class="alive"></div>
-      <div></div>
-      <div></div>
       <div class="alive"></div>
+      <div></div>
       <div></div>
       <div></div>
       <div></div>
@@ -2511,10 +2503,7 @@
       <div></div>
       <div></div>
       <div></div>
-      <div></div>
       <div class="alive"></div>
-      <div class="alive"></div>
-      <div></div>
       <div></div>
       <div></div>
       <div class="alive"></div>
@@ -2523,15 +2512,110 @@
       <div></div>
       <div></div>
       <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div style="padding-left: 1rem; font-size: 1.5rem">
+    <ol>
+      <li>Una celda viva con menos de 2 celdas vivas alrededor muere por <i>soledad</i>.</li>
+      <li>Una celda viva con 2 ó 3 celdas vivas alrededor sobrevive a la siguiente generación.</li>
+      <li>Una celda viva con más de 3 celdas vivas alrededor muere por <i>sobrepoblación</i>.</li>
+      <li>Una celda muerta con exactamente 3 celdas vivas alrededor nace por <i>reproducción</i>.</li>
+    </ol>
+  </div>
+</div>
+
+---
+
+# Conway's Game of Life - Ejemplo
+
+<div class="d-flex">
+  <div>
+    <h6 style="text-align: center; margin-top: 0">Generación ∞</h6>
+    <div class="life-grid eight-by-eight">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
       <div class="alive"></div>
       <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
       <div class="alive"></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
       <div class="alive"></div>
+      <div class="alive"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       <div></div>
     </div>
   </div>
