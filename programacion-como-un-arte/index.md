@@ -2631,8 +2631,21 @@
 
 ---
 
+<div class="d-flex flex-column flex-1" style="align-items: stretch">
+  <h4 style="margin-top: 0">http://copy.sh/life/</h4>
+  <iframe
+    name="Framename"
+    src="http://copy.sh/life/"
+    frameborder="0"
+    class="frame-area flex-1"
+  >
+  </iframe>
+</div>
+
+---
+
 <div class="flex-1 d-flex flex-column">
-  <h1>¿Qué es esto?</h1>
+  <h1>Lifeception</h1>
 
   <div class="flex-1">
     <video onclick="this.paused ? this.play() : this.pause(); this.blur()">
