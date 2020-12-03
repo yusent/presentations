@@ -2632,10 +2632,62 @@
 ---
 
 <div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">http://copy.sh/life/</h4>
+  <h4 style="margin-top: 0">Patrones estáticos</h4>
   <iframe
     name="Framename"
-    src="http://copy.sh/life/"
+    src="https://copy.sh/life?pattern=stilllifes&noui=1&fps=10"
+    frameborder="0"
+    class="frame-area flex-1"
+  >
+  </iframe>
+</div>
+
+---
+
+<div class="d-flex flex-column flex-1" style="align-items: stretch">
+  <h4 style="margin-top: 0">Osciladores</h4>
+  <iframe
+    name="Framename"
+    src="https://copy.sh/life?gist=88c7c09eaa3ac5dda5eeacd782e3447f&noui=1&fps=10"
+    frameborder="0"
+    class="frame-area flex-1"
+  >
+  </iframe>
+</div>
+
+---
+
+<div class="d-flex flex-column flex-1" style="align-items: stretch">
+  <h4 style="margin-top: 0">Glider</h4>
+  <iframe
+    name="Framename"
+    src="https://copy.sh/life?pattern=glider&noui=1&fps=10"
+    frameborder="0"
+    class="frame-area flex-1"
+  >
+  </iframe>
+</div>
+
+---
+
+<div class="d-flex flex-column flex-1" style="align-items: stretch">
+  <h4 style="margin-top: 0">Gosper glider gun</h4>
+  <iframe
+    name="Framename"
+    src="https://copy.sh/life?pattern=gosperglidergun&noui=1&fps=10"
+    frameborder="0"
+    class="frame-area flex-1"
+  >
+  </iframe>
+</div>
+
+---
+
+<div class="d-flex flex-column flex-1" style="align-items: stretch">
+  <h4 style="margin-top: 0">Reloj Digital</h4>
+  <iframe
+    name="Framename"
+    src="https://copy.sh/life?gist=f3413564b1fa9c69f2bad4b0400b8090&noui=1&step=512"
     frameborder="0"
     class="frame-area flex-1"
   >
