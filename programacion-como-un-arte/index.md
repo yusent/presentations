@@ -283,14 +283,68 @@
 
 ---
 
-<center>
+<div style="height: 100%">
   <video
-    width="1000"
+    height="100%"
+    width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
     <source src="media/alley-cat.webm" type="video/webm">
   </video>
-</center>
+</div>
+
+---
+
+<div style="height: 100%">
+  <video
+    height="100%"
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/dir-output.mkv" type="video/mp4">
+  </video>
+</div>
+
+---
+
+<img width="100%" src="media/dir-output.jpg" />
+
+<div style="position: absolute; color: red; font-size: 8rem; right: 9rem; top: 2rem; text-align: center">
+  ↑ ↑ ↑<br>
+  ???
+</div>
+
+---
+
+<img width="100%" src="media/lebowsky-eyes.webp" />
+
+---
+
+<div style="height: 100%">
+  <video
+    height="100%"
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/help.mkv" type="video/mp4">
+  </video>
+</div>
+
+---
+
+<div style="height: 100%">
+  <video
+    height="100%"
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/dir-pipe-more.mkv" type="video/mp4">
+  </video>
+</div>
+
+---
+
+<img width="100%" src="media/hackerman.gif" />
 
 ---
 
@@ -2631,77 +2685,75 @@
 
 ---
 
-<div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">Patrones estáticos</h4>
-  <iframe
-    name="Framename"
-    src="https://copy.sh/life?pattern=stilllifes&noui=1&fps=10"
-    frameborder="0"
-    class="frame-area flex-1"
-  >
-  </iframe>
-</div>
+# Clasificación de entidades
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Características</th>
+      <th>Clase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Estable</td>
+      <td colspan="3">Inactiva</td>
+      <td>
+        <a href="https://copy.sh/life?pattern=stilllifes&fps=10" target="_blank">Clase I</a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">Activa</td>
+      <td colspan="2">Estacionaria</td>
+      <td>
+        <a href="https://copy.sh/life?gist=88c7c09eaa3ac5dda5eeacd782e3447f&fps=10" target="_blank">Clase II</a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">En movimiento</td>
+      <td>Tamaño constante</td>
+      <td>
+        <a href="https://copy.sh/life?pattern=glider&fps=10" target="_blank">Clase III</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Tamaño creciente</td>
+      <td>
+        <a href="https://copy.sh/life?pattern=gosperglidergun&fps=10" target="_blank">Clase IV</a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">Inestable</td>
+      <td colspan="3">Predecible</td>
+      <td>Clase V</td>
+    </tr>
+    <tr>
+      <td colspan="3">Impredecible</td>
+      <td>Clase VI</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-<div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">Osciladores</h4>
-  <iframe
-    name="Framename"
-    src="https://copy.sh/life?gist=88c7c09eaa3ac5dda5eeacd782e3447f&noui=1&fps=10"
-    frameborder="0"
-    class="frame-area flex-1"
-  >
-  </iframe>
-</div>
+# Creaciones interesantes
+
+<ul>
+  <li>
+    <a href="https://copy.sh/life?gist=f3413564b1fa9c69f2bad4b0400b8090&step=512" target="_blank">Reloj Digital</a>
+  </li>
+  <li>
+    <a href="https://copy.sh/life?pattern=otcametapixel&fps=10" target="_blank">Metapixel</a>
+  </li>
+</ul>
 
 ---
 
-<div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">Glider</h4>
-  <iframe
-    name="Framename"
-    src="https://copy.sh/life?pattern=glider&noui=1&fps=10"
-    frameborder="0"
-    class="frame-area flex-1"
+<div class="d-flex flex-1" style="align-items: stretch">
+  <video
+    class="flex-1"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-  </iframe>
-</div>
-
----
-
-<div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">Gosper glider gun</h4>
-  <iframe
-    name="Framename"
-    src="https://copy.sh/life?pattern=gosperglidergun&noui=1&fps=10"
-    frameborder="0"
-    class="frame-area flex-1"
-  >
-  </iframe>
-</div>
-
----
-
-<div class="d-flex flex-column flex-1" style="align-items: stretch">
-  <h4 style="margin-top: 0">Reloj Digital</h4>
-  <iframe
-    name="Framename"
-    src="https://copy.sh/life?gist=f3413564b1fa9c69f2bad4b0400b8090&noui=1&step=512"
-    frameborder="0"
-    class="frame-area flex-1"
-  >
-  </iframe>
-</div>
-
----
-
-<div class="flex-1 d-flex flex-column">
-  <h1>Lifeception</h1>
-
-  <div class="flex-1">
-    <video onclick="this.paused ? this.play() : this.pause(); this.blur()">
-      <source src="media/life-in-life.webm" type="video/webm">
-    </video>
-  </div>
+    <source src="media/life-in-life.webm" type="video/webm">
+  </video>
 </div>
