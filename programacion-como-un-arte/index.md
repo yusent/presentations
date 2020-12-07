@@ -16,6 +16,10 @@
     justify-content: space-around;
   }
 
+  .space-between {
+    justify-content: space-between;
+  }
+
   #cover div {
     flex: 1;
   }
@@ -345,6 +349,19 @@
 ---
 
 <img width="100%" src="media/hackerman.gif" />
+
+---
+
+<h1 style="text-align: center">Arte</h1>
+
+<img width="100%" src="media/art.webp" />
+
+---
+
+<div class="d-flex" style="height: 100%">
+  <img src="media/oscar-wilde.jpg" style="height: 100%" />
+  <h1 style="text-align: center; margin-left: 6rem">“Todo arte es completamente <u>inútil</u>”</h1>
+</div>
 
 ---
 
@@ -2757,3 +2774,131 @@
     <source src="media/life-in-life.webm" type="video/webm">
   </video>
 </div>
+
+---
+
+<div class="title-section">
+  <h1>El código como un arte</h1>
+</div>
+
+---
+
+<h1 style="text-align: center; margin-bottom: 0">
+  The International Obfuscated C Code Contest
+</h1>
+
+<div style="text-align: center; margin-bottom: 1rem">
+  <a href="https://www.ioccc.org" target="_blank">https://www.ioccc.org</a>
+</div>
+
+---
+
+<h1 style="text-align: center; margin-bottom: 0">
+  The International Obfuscated C Code Contest
+</h1>
+
+<div style="text-align: center; margin-bottom: 1rem">
+  <a href="https://www.ioccc.org" target="_blank">https://www.ioccc.org</a>
+</div>
+
+### Metas:
+
+- Escribir el programa en C más oscuro u ofuscado dentro de las reglas.
+- Mostrar la importancia del estilo en la programación de una manera irónica.
+- Estresar los compiladores de C con código inusual.
+- Ilustrar algunas de las sutilezas del lenguaje C.
+- Proporcionar un foro seguro para mal código C.
+
+---
+
+<div class="d-flex space-between">
+  <span>Autor: <b>Chris Mills</b></span>
+  <a href="http://www.de.ioccc.org/2015/mills1/Makefile" target="_blank">http://www.de.ioccc.org/2015/mills1/Makefile</a>
+</div>
+
+```c
+                  #define P(a,b,c) a##b##c
+                #include/*++**++*/<curses.h>
+              int         c,h,            v,x,y,s,                i,b; int
+            main            () {            initscr(              ); P(cb,
+          rea,                k)()                ;///
+        P(n,                  oec,                ho)(
+       )/*     */             ;for            (curs_set(0); s=        x=COLS/2
+      ; P(    flu,            shi,          np)()){ timeout(y=c=      v=0);///
+      P(c,    lea,            r)()          ;for              (P (
+      mva,     d,             dstr        )(2,                3+x,
+      G) ;                  ; P(        usl,                  eep,    )(U)){//
+       P(m,               vad,         dstr                   )( y    >>8,x,//
+    "    "); for(i=LINES; /*           */ i                   -->0
+  ; mvinsch(i,0,0>(~c|i-h-H             &h-i                  )?' '
+:(i-                      h|h-            i+H)            <0?'|'      :'=' ));
+if((                       i=( y            +=v=        getch(        )>0?I:v+
+  A)>>8)>=LINES||mvinch(i*=   0<i,            x)!=' '||' '
+  !=mvinch(i,3+x))break/*&%   &*/;              mvaddstr(y
+    >>8,                   x,0>v                      ?F:B        ); i=--s
+    /-W;                  P(m,                        vpr,        intw)(0,
+     COLS-9," %u/%u ",(0<i)*                  i,b=b<i?i:
+      b); refresh(); if(++                    c==D){ c
+                        -=W; h=rand()%(LINES-H-6
+                          )+2; } } flash(); }}
+```
+
+---
+
+<div class="d-flex space-between">
+  <span>Autor: <b>Chris Mills</b></span>
+  <a href="http://www.de.ioccc.org/2015/mills1/Makefile" target="_blank">http://www.de.ioccc.org/2015/mills1/Makefile</a>
+</div>
+<div>
+  <video
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/tappy-bird.mkv" type="video/mp4">
+  </video>
+</div>
+
+---
+
+<div class="title-section">
+  <h1>Quines</h1>
+  <h4>Programas que imprimen su propio código</h4>
+</div>
+
+---
+
+<div class="d-flex space-between">
+  <h5 style="margin: 0">C</h5>
+  <span>Autor: <b>Jayce Sigit Chant</b></span>
+</div>
+
+```c
+char* s="char* s=%c%s%c;int main(){printf(s,34,s,34);}";int main(){printf(s,34,s,34);}
+```
+
+<div class="d-flex space-between">
+  <h5 style="margin: 0">Go</h5>
+  <span>Autor: <b><a href="https://github.com/adamryman" target="_blank">@adamryman</a></b></span>
+</div>
+
+```go
+package main
+func main(){b:=string(96);print(p,b,p,b)}
+const p=`package main
+func main(){b:=string(96);print(p,b,p,b)}
+const p=`
+```
+
+<div class="d-flex space-between">
+  <h5 style="margin: 0">Lisp</h5>
+  <span>Autor: <b>Pekka P. Pirinen</b></span>
+</div>
+
+```lisp
+(format t "~@?" "(format t \"~~@?\" ~:*~S)")
+```
+
+##### Python
+```python
+s='s=%a;print(s%%s)';print(s%s)
+```
