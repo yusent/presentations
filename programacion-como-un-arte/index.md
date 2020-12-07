@@ -222,6 +222,11 @@
     grid-template-columns: repeat(8, 55px);
     grid-template-rows: repeat(8, 55px);
   }
+
+  code {
+    word-break: break-all !important;
+    white-space : pre-wrap !important;
+  }
 </style>
 
 <div class="title-section">
@@ -2867,20 +2872,12 @@ if((                       i=( y            +=v=        getch(        )>0?I:v+
 
 ---
 
-<div class="d-flex space-between">
-  <h5 style="margin: 0">C</h5>
-  <span>Autor: <b>Jayce Sigit Chant</b></span>
-</div>
-
+##### C
 ```c
 char* s="char* s=%c%s%c;int main(){printf(s,34,s,34);}";int main(){printf(s,34,s,34);}
 ```
 
-<div class="d-flex space-between">
-  <h5 style="margin: 0">Go</h5>
-  <span>Autor: <b><a href="https://github.com/adamryman" target="_blank">@adamryman</a></b></span>
-</div>
-
+##### Go
 ```go
 package main
 func main(){b:=string(96);print(p,b,p,b)}
@@ -2889,16 +2886,155 @@ func main(){b:=string(96);print(p,b,p,b)}
 const p=`
 ```
 
-<div class="d-flex space-between">
-  <h5 style="margin: 0">Lisp</h5>
-  <span>Autor: <b>Pekka P. Pirinen</b></span>
-</div>
-
+##### Lisp
 ```lisp
 (format t "~@?" "(format t \"~~@?\" ~:*~S)")
 ```
+
+---
 
 ##### Python
 ```python
 s='s=%a;print(s%%s)';print(s%s)
 ```
+
+##### JavaScript
+```javascript
+(function f(){
+  console.log('(' + f.toString() + ')();');
+})();
+```
+
+---
+
+##### Python
+```python
+s='s=%a;print(s%%s)';print(s%s)
+```
+
+##### JavaScript
+```javascript
+(function f(){
+  console.log('(' + f.toString() + ')();');
+})();
+```
+
+##### JavaScript ES6
+```javascript
+(_=()=>`(_=${_})()`)()
+```
+
+---
+
+# Polyquine
+
+<pre>
+<code> #include/*
+q='''*/&lt;stdio.h&gt;
+main(){char*_;/*=;sub _:lvalue{$_}&lt;&lt;q;#';&lt;&lt;q#'''
+def printf(a,*b):print a%b,
+q
+#*/
+_=" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c";printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);
+#/*
+q='''*/
+}//'''#=</code>
+</pre>
+
+---
+
+# Polyquine - C
+
+<pre>
+<code><span class="hljs-meta"> #<span class="hljs-meta-keyword">include</span><span class="hljs-comment">/*
+q='''*/</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+main(){<span class="hljs-keyword">char</span>*_;<span class="hljs-comment">/*=;sub _:lvalue{$_}&lt;&lt;q;#';&lt;&lt;q#'''
+def printf(a,*b):print a%b,
+q
+#*/</span>
+_=<span class="hljs-string">" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c"</span>;<span class="hljs-built_in">printf</span>(_,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">36</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">34</span>,_,<span class="hljs-number">34</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);
+#<span class="hljs-comment">/*
+q='''*/</span>
+}<span class="hljs-comment">//'''#=</span></code>
+</pre>
+
+---
+
+# Polyquine - Ruby
+
+<pre>
+<code> <span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">''</span><span class="hljs-string">'*/&lt;stdio.h&gt;
+main(){char*_;/*=;sub _:lvalue{$_}&lt;&lt;q;#'</span>;<span class="hljs-string">&lt;&lt;q#'''
+def printf(a,*b):print a%b,
+q</span>
+<span class="hljs-comment">#*/</span>
+<span class="hljs-number">_</span>=<span class="hljs-string">" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c"</span>;printf<br>(<span class="hljs-number">_</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">36</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">34</span>,<span class="hljs-number">_</span>,<span class="hljs-number">34</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);
+<span class="hljs-comment">#/*</span>
+q=<span class="hljs-string">''</span><span class="hljs-string">'*/
+}//'</span><span class="hljs-string">''</span><span class="hljs-comment">#=</span></code>
+</pre>
+
+---
+
+# Polyquine - Python
+
+<pre>
+<code> <span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">'''*/&lt;stdio.h&gt;
+main(){char*_;/*=;sub _:lvalue{$_}&lt;&lt;q;#';&lt;&lt;q#'''</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">printf</span>(<span class="hljs-params">a,*b</span>):</span><span class="hljs-keyword">print</span> a%b,
+q
+<span class="hljs-comment">#*/</span>
+_=<span class="hljs-string">" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c"</span>;printf(_,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">36</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">34</span>,_,<span class="hljs-number">34</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);
+<span class="hljs-comment">#/*</span>
+q=<span class="hljs-string">'''*/
+}//'''</span><span class="hljs-comment">#=</span></code>
+</pre>
+
+---
+
+# Polyquine - Perl
+
+<pre>
+<code> <span class="hljs-comment">#include/*</span>
+<span class="hljs-keyword">q</span>=<span class="hljs-string">''</span><span class="hljs-string">'*/&lt;stdio.h&gt;
+main(){char*_;/*=;sub _:lvalue{$_}&lt;&lt;q;#'</span>;&lt;&lt;<span class="hljs-keyword">q</span><span class="hljs-comment">#'''</span>
+def <span class="hljs-keyword">printf</span>(a,*b):<span class="hljs-keyword">print</span> a%b,
+<span class="hljs-keyword">q</span>
+<span class="hljs-comment">#*/</span>
+<span class="hljs-number">_</span>=<span class="hljs-string">" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c"</span>;<span class="hljs-keyword">printf</span><br>(<span class="hljs-number">_</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">36</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">34</span>,<span class="hljs-number">_</span>,<span class="hljs-number">34</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);
+<span class="hljs-comment">#/*</span>
+<span class="hljs-keyword">q</span>=<span class="hljs-string">''</span><span class="hljs-string">'*/
+}//'</span><span class="hljs-string">''</span><span class="hljs-comment">#=</span></code>
+</pre>
+
+---
+
+# Polyquine - PHP
+
+<pre>
+<code> <span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">''</span><span class="hljs-string">'*/&lt;stdio.h&gt;
+main(){char*_;/*=;sub _:lvalue{$_}&lt;&lt;q;#'</span>;&lt;&lt;q<span class="hljs-comment">#'''</span>
+def printf(a,*b):<span class="hljs-keyword">print</span> a%b,
+q
+<span class="hljs-comment">#*/</span>
+_=<span class="hljs-string">" #include/*%cq='''*/&lt;stdio.h&gt;%cmain(){char*_;/*=;sub _:lvalue{%c_}&lt;&lt;q;#';&lt;&lt;q#'''%cdef printf(a,*b):print a%%b,%cq%c#*/%c_=%c%s%c;printf(_,10,10,36,10,10,10,10,34,_,34,10,10,10,10);%c#/*%cq='''*/%c}//'''#=%c"</span>;printf(_,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">36</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">34</span>,_,<span class="hljs-number">34</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>,<span class="hljs-number">10</span>);
+<span class="hljs-comment">#/*</span>
+q=<span class="hljs-string">''</span><span class="hljs-string">'*/
+}//'</span><span class="hljs-string">''</span><span class="hljs-comment">#=</span></code>
+</pre>
+
+---
+
+# Polyquine
+
+<div>
+  <video
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/polyquine.mkv" type="video/mp4">
+  </video>
+</div>
