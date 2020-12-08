@@ -72,11 +72,15 @@
   }
 
   .hljs-keyword {
-    color: #6f42c1 !important;
+    color: #0000cd !important;
   }
 
   .hljs-type {
     color: #660
+  }
+
+  .hljs-string {
+    color: #0c0 !important;
   }
 
   .red {
@@ -2926,6 +2930,91 @@ s='s=%a;print(s%%s)';print(s%s)
 
 ---
 
+# Polyglot
+
+```text
+#include/*
+q="""*/<stdio.h>
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+print'Perl'#";print'Ruby'#""";print('Python')#*/
+```
+
+---
+
+# Polyglot - C
+
+```c
+#include/*
+q="""*/<stdio.h>
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+print'Perl'#";print'Ruby'#""";print('Python')#*/
+```
+
+---
+
+# Polyglot - C++
+
+```cpp
+#include/*
+q="""*/<stdio.h>
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+print'Perl'#";print'Ruby'#""";print('Python')#*/
+```
+
+---
+
+# Polyglot - Perl
+
+<pre>
+<code><span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">""</span><span class="hljs-string">"*/&lt;stdio.h&gt;
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+<span class="hljs-keyword">print</span>'Perl'<span class="hljs-comment">#";print'Ruby'#""";print('Python')#*/</span></code>
+</pre>
+
+---
+
+# Polyglot - Ruby
+
+<pre>
+<code><span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">"""*/&lt;stdio.h&gt;
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+print'Perl'#"</span>;<span class="hljs-keyword">print</span><span class="hljs-string">'Ruby'</span><span class="hljs-comment">#""";print('Python')#*/</span></code>
+</pre>
+
+---
+
+# Polyglot - Python
+
+<pre>
+<code><span class="hljs-comment">#include/*</span>
+q=<span class="hljs-string">"""*/&lt;stdio.h&gt;
+int main() {putchar('C'); if(sizeof('C') - 1);
+    else   {putchar('+'); putchar('+');}} /*=;
+print'Perl'#";print'Ruby'#"""</span>;<span class="hljs-keyword">print</span>(<span class="hljs-string">'Python'</span>)<span class="hljs-comment">#*/</span></code>
+</pre>
+
+---
+
+# Polyglot - Demo
+
+<div>
+  <video
+    width="100%"
+    onclick="this.paused ? this.play() : this.pause(); this.blur()"
+  >
+    <source src="media/polyglot.mkv" type="video/mp4">
+  </video>
+</div>
+
+---
+
 # Polyquine
 
 <pre>
@@ -3028,7 +3117,7 @@ q=<span class="hljs-string">''</span><span class="hljs-string">'*/
 
 ---
 
-# Polyquine
+# Polyquine - Demo
 
 <div>
   <video
