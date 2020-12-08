@@ -116,53 +116,6 @@
     font-weight: bold;
   }
 
-  .chain {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80px;
-  }
-
-  .block {
-    background-color: #ccc;
-    font-weight: bold;
-    padding: 2px 10px;
-  }
-
-  .service-block {
-    background-color: #aaf;
-  }
-
-  .use-case-block {
-    background-color: #afa;
-  }
-
-  .application-block {
-    color: #fff;
-    background-color: #9e111b;
-    padding: 10px 20px;
-  }
-
-  .arrow {
-    border: solid black;
-    border-width: 0 6px 6px 0;
-    display: inline-block;
-    padding: 9px;
-  }
-
-  .arrow.right {
-    margin: 0 20px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-
-  .arrow.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-
   .note {
     color: #f00;
     font-weight: bold;
@@ -3449,13 +3402,13 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 
 # JSFuck
 
-JSFuck subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
+JSFuck es un subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
 
 ---
 
 # JSFuck
 
-JSFuck subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
+JSFuck es un subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
 
 ###### Hello World:
 ```text
@@ -3499,7 +3452,7 @@ JSFuck subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los cara
 
 # JSFuck
 
-JSFuck subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
+JSFuck es un subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.
 
 ###### Hello World:
 ```text
@@ -3625,3 +3578,144 @@ Function("console.log('Hello World')")()
 4. `(![]+[])[1]`: `1` Puede ser escrito como `+true`
 5. `(![]+[])[+true]`: Como ya vimos `![]` es `false`, así que `!![]` es `true`
 6. `(![]+[])[+!![]]`: Terminamos 😎
+
+---
+
+# Chef
+
+---
+
+# Chef
+
+Es un lenguaje de programación en el que los programas son recetas.
+
+---
+
+# Chef
+
+```text
+Hello World Souffle.
+
+This recipe prints the immortal words "Hello world!", in a basically brute force way. It also makes a lot of food for one person.
+
+Ingredients.
+72 g haricot beans
+101 eggs
+108 g lard
+111 cups oil
+32 zucchinis
+119 ml water
+114 g red salmon
+100 g dijon mustard
+33 potatoes
+
+Method.
+Put potatoes into the mixing bowl. Put dijon mustard into the mixing bowl. Put
+lard into the mixing bowl. Put red salmon into the mixing bowl. Put oil into
+the mixing bowl. Put water into the mixing bowl. Put zucchinis into the mixing
+bowl. Put oil into the mixing bowl. Put lard into the mixing bowl. Put lard into
+the mixing bowl. Put eggs into the mixing bowl. Put haricot beans into the
+mixing bowl. Liquefy contents of the mixing bowl. Pour contents of the mixing
+bowl into the baking dish.
+
+Serves 1.
+```
+
+---
+
+# Chef
+
+```text
+Hello World Souffle.
+
+This recipe prints the immortal words "Hello world!", in a basically brute force way. It also makes a lot of food for one person.
+
+Ingredients.
+72 g haricot beans
+101 eggs
+108 g lard
+111 cups oil
+32 zucchinis
+119 ml water
+114 g red salmon
+100 g dijon mustard
+33 potatoes
+
+Method.
+Put potatoes into the mixing bowl. Put dijon mustard into the mixing bowl. Put
+lard into the mixing bowl. Put red salmon into the mixing bowl. Put oil into
+the mixing bowl. Put water into the mixing bowl. Put zucchinis into the mixing
+bowl. Put oil into the mixing bowl. Put lard into the mixing bowl. Put lard into
+the mixing bowl. Put eggs into the mixing bowl. Put haricot beans into the
+mixing bowl. Liquefy contents of the mixing bowl. Pour contents of the mixing
+bowl into the baking dish.
+
+Serves 1.
+```
+
+<a href="https://tio.run/#chef" target="_blank">https://tio.run/#chef</a>
+
+---
+
+# Chef
+
+<div class="d-flex" style="align-items: flex-start">
+<pre style="font-size: 0.8rem; flex: 1">
+<code>Hello World Cake with Chocolate sauce.<br><br>This prints hello world, while being tastier than Hello World
+Souffle. The main chef makes a " world!" cake, which he puts in the
+baking dish. When he gets the sous chef to make the "Hello"
+chocolate sauce, it gets put into the baking dish and then the whole thing is printed when he refrigerates the sauce. When actually
+cooking, I'm interpreting the chocolate sauce baking dish to be
+separate from the cake one and Liquify to mean either melt or blend
+depending on context.<br><br>Ingredients.<br>33 g chocolate chips
+100 g butter
+54 ml double cream
+2 pinches baking powder
+114 g sugar
+111 ml beaten eggs
+119 g flour
+32 g cocoa powder
+0 g cake mixture<br><br>Cooking time: 25 minutes.<br><br>Pre-heat oven to 180 degrees Celsius.
+<br>Method.<br>Put chocolate chips into the mixing bowl.
+Put butter into the mixing bowl.
+Put sugar into the mixing bowl.
+Put beaten eggs into the mixing bowl.
+Put flour into the mixing bowl.
+Put baking powder into the mixing bowl.</code>
+</pre>
+
+<pre style="font-size: 0.8rem; flex: 1">
+<code>Put cocoa  powder into the mixing bowl.
+Stir the mixing bowl for 1 minute.
+Combine double cream into the mixing bowl.
+Stir the mixing bowl for 4 minutes.
+Liquify the contents of the mixing bowl.
+Pour contents of the mixing bowl into the baking dish.
+bake the cake mixture.
+Wait until baked.
+Serve with chocolate sauce.<br>
+chocolate sauce.
+
+Ingredients.
+111 g sugar
+108 ml hot water
+108 ml heated double cream
+101 g dark chocolate
+72 g milk chocolate
+
+Method.
+Clean the mixing bowl.
+Put sugar into the mixing bowl.
+Put hot water into the mixing bowl.
+Put heated double cream into the mixing bowl.
+dissolve the sugar.
+agitate the sugar until dissolved.
+Liquify the dark chocolate.
+Put dark chocolate into the mixing bowl.
+Liquify the milk chocolate.
+Put milk chocolate into the mixing bowl.
+Liquify contents of the mixing bowl.
+Pour contents of the mixing bowl into the baking dish.
+Refrigerate for 1 hour.</code>
+</pre>
+</div>
