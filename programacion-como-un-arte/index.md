@@ -4189,7 +4189,7 @@ y `Function` puede ser obtenido así:
 
 # Chef
 
-Es un lenguaje de programación en el que los programas son recetas.
+Es un lenguaje de programación en el que los programas son recetas de comida.
 
 ---
 
@@ -4324,6 +4324,115 @@ Pour contents of the mixing bowl into the baking dish.
 Refrigerate for 1 hour.</code>
 </pre>
 </div>
+
+---
+
+# Shakespeare
+
+---
+
+# Shakespeare
+
+Es un lenguaje de programación en el que los programas son obras de teatro.
+
+---
+
+# Shakespeare - Hello World
+
+<pre style="font-size: 1rem; line-height: 1rem">
+<p><b>The Infamous Hello World Program.</b><br><br>Romeo, a young man with a remarkable patience.
+Juliet, a likewise young woman of remarkable grace.
+Ophelia, a remarkable woman much in dispute with Hamlet.
+Hamlet, the flatterer of Andersen Insulting A/S.
+<h6>                    Act I: Hamlet's insults and flattery.
+
+                    Scene I: The insulting of Romeo.</h6>
+<span class="hljs-keyword">[Enter Hamlet and Romeo]</span>
+
+Hamlet:<br><br> You lying stupid fatherless big smelly half-witted coward!<br> You are as stupid as the difference between a handsome rich brave<br> hero and thyself! Speak your mind!<br><br> You are as brave as the sum of your fat little stuffed misused dusty<br> old rotten codpiece and a beautiful fair warm peaceful sunny summer's<br> day. You are as healthy as the difference between the sum of the<br> sweetest reddest rose and my father and yourself! Speak your mind!</p>
+</pre>
+
+---
+
+# Shakespeare - Hello World
+
+<pre style="font-size: 1rem; line-height: 1rem">
+<p> You are as cowardly as the sum of yourself and the difference
+ between a big mighty proud kingdom and a horse. Speak your mind.
+
+ Speak your mind!
+
+<span class="hljs-keyword">[Exit Romeo]</span>
+<h6>                    Scene II: The praising of Juliet.</h6>
+
+<span class="hljs-keyword">[Enter Juliet]</span>
+
+Hamlet:
+ Thou art as sweet as the sum of the sum of Romeo and his horse and his
+ black cat! Speak thy mind!
+
+<span class="hljs-keyword">[Exit Juliet]</span>
+<h6>                    Scene III: The praising of Ophelia.</h6>
+
+<span class="hljs-keyword">[Enter Ophelia]</span>
+
+Hamlet:
+ Thou art as lovely as the product of a large rural town and my amazing
+ bottomless embroidered purse. Speak thy mind!
+</p>
+</pre>
+
+---
+
+# Shakespeare - Hello World
+
+<pre style="font-size: 1rem; line-height: 1rem">
+<p> Thou art as loving as the product of the bluest clearest sweetest sky
+ and the sum of a squirrel and a white horse. Thou art as beautiful as
+ the difference between Juliet and thyself. Speak thy mind!
+
+<span class="hljs-keyword">[Exeunt Ophelia and Hamlet]</span>
+<h6>                    Act II: Behind Hamlet's back.
+
+                    Scene I: Romeo and Juliet's conversation.</h6>
+
+<span class="hljs-keyword">[Enter Romeo and Juliet]</span>
+
+Romeo:
+ Speak your mind. You are as worried as the sum of yourself and the
+ difference between my small smooth hamster and my nose. Speak your
+ mind!
+
+Juliet:
+ Speak YOUR mind! You are as bad as Hamlet! You are as small as the
+ difference between the square of the difference between my little pony
+ and your big hairy hound and the cube of your sorry little
+ codpiece. Speak your mind!
+</p>
+</pre>
+
+---
+
+# Shakespeare - Hello World
+
+<pre style="font-size: 1rem; line-height: 1rem">
+<p><span class="hljs-keyword">[Exit Romeo]</span>
+<h6>                    Scene II: Juliet and Ophelia's conversation.</h6>
+
+<span class="hljs-keyword">[Enter Ophelia]</span>
+
+Juliet:
+ Thou art as good as the quotient between Romeo and the sum of a small
+ furry animal and a leech. Speak your mind!
+
+Ophelia:
+ Thou art as disgusting as the quotient between Romeo and twice the
+ difference between a mistletoe and an oozing infected blister! Speak
+ your mind!
+
+<span class="hljs-keyword">[Exeunt]</span>
+</p>
+</pre>
 
 ---
 
