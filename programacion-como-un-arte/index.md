@@ -52,11 +52,11 @@
     justify-content: center;
   }
 
-  section[id="106"] {
+  section[id="109"] {
     padding-bottom: 0.5rem;
   }
 
-  section[id="107"] {
+  section[id="110"] {
     padding: 0;
   }
 
@@ -2931,6 +2931,37 @@ Fue creado en Google por **Alexander Mordvintsev**, **Mike Tyka** y **Christophe
 ---
 
 <div class="title-section">
+  <h1>Deep Dream Generator</h1>
+  <a href="https://deepdreamgenerator.com/" target="_blank">https://deepdreamgenerator.com</a>
+</div>
+
+---
+
+# Deep Dream Generator
+
+<div class="flex-1 d-flex" style="justify-content: center; height: 100%; overflow-y: hidden">
+  <div class="d-flex flex-column" style="height: 100%">
+    <img src="media/avatar.jpg" style="height: 50%" />
+    <img src="media/bunsan.png" style="height: 50%" />
+  </div>
+  <img src="media/avatar-bunsan.jpg" class="transparent" style="height: 100%; margin-left: 2rem" />
+</div>
+
+---
+
+# Deep Dream Generator
+
+<div class="flex-1 d-flex" style="justify-content: center; height: 100%; overflow-y: hidden">
+  <div class="d-flex flex-column" style="height: 100%">
+    <img src="media/avatar.jpg" style="height: 50%" />
+    <img src="media/bunsan.png" style="height: 50%" />
+  </div>
+  <img src="media/avatar-bunsan.jpg" style="height: 100%; margin-left: 2rem" />
+</div>
+
+---
+
+<div class="title-section">
   <h1>El código como un arte</h1>
 </div>
 
@@ -3578,41 +3609,45 @@ Brainfuck opera con un arreglo de celdas de memoria inicializadas en cero y un p
 # Brainfuck - Hello World
 
 ```brainfuck
- 1 +++++ +++               Set Cell #0 to 8
+ 1 +++++ +++               Asigna 8 a la celda 0 (contador de ciclo)
  2 [
- 3     >++++               Add 4 to Cell #1; this will always set Cell #1 to 4
- 4     [                   as the cell will be cleared by the loop
- 5         >++             Add 4*2 to Cell #2
- 6         >+++            Add 4*3 to Cell #3
- 7         >+++            Add 4*3 to Cell #4
- 8         >+              Add 4 to Cell #5
- 9         <<<<-           Decrement the loop counter in Cell #1
-10     ]                   Loop till Cell #1 is zero
-11     >+                  Add 1 to Cell #2
-12     >+                  Add 1 to Cell #3
-13     >-                  Subtract 1 from Cell #4
-14     >>+                 Add 1 to Cell #6
-15     [<]                 Move back to the first zero cell you find; this will
-16                         be Cell #1 which was cleared by the previous loop
-17     <-                  Decrement the loop Counter in Cell #0
-18 ]                       Loop till Cell #0 is zero
-19 
-20 The result of this is:
-21 Cell No :   0   1   2   3   4   5   6
-22 Contents:   0   0  72 104  88  32   8
-23 Pointer :   ^
-24 
-25 >>.                     Cell #2 has value 72 which is 'H'
-26 >---.                   Subtract 3 from Cell #3 to get 101 which is 'e'
-27 +++++ ++..+++.          Likewise for 'llo' from Cell #3
-28 >>.                     Cell #5 is 32 for the space
-29 <-.                     Subtract 1 from Cell #4 for 87 to give a 'W'
-30 <.                      Cell #3 was set to 'o' from the end of 'Hello'
-31 +++.----- -.----- ---.  Cell #3 for 'rl' and 'd'
-32 >>+.                    Add 1 to Cell #5 gives us an exclamation point
-33 >++.                    And finally a newline from Cell #6
+ 3     >++++               Asigna 4 a la celda 1 (contador de ciclo)
+ 4     [                   Inicia un ciclo
+ 5         >++             Suma 4*2 a la celda 2
+ 6         >+++            Suma 4*3 a la celda 3
+ 7         >+++            Suma 4*3 a la celda 4
+ 8         >+              Suma 4*1 a la celda 5
+ 9         <<<<-           Decrementa el contador en la celda 1
+10     ]                   Cicla hasta que la celda 1 sea 0
+11     >+                  Suma 1 a la celda 2
+12     >+                  Suma 1 a la celda 3
+13     >-                  Resta 1 de la celda 4
+14     >>+                 Suma 1 a la celda 6
+15     [<]                 Mueve el puntero a la primera celda en 0 que encuentre;
+16                         la cual será la celda 1 que se usó en el ciclo
+17     <-                  Decrementa el contador de ciclo en la celda 0
+18 ]                       Cicla hasta que la celda 0 sea 0
+```
 
+---
 
+# Brainfuck - Hello World
+
+```brainfuck
+19 El resultado es:
+20 Celda No:   0   1   2   3   4   5   6
+21 Valor   :   0   0  72 104  88  32   8
+22 Puntero :   ^
+23 
+24 >>.                     La celda 2 tiene el valor 72 que es 'H'
+25 >---.                   Resta 3 a la celda 3 para obtener 101 que es 'e'
+26 +++++ ++..+++.          De la misma manera usamos la celda 3 para obtener 'llo'
+27 >>.                     La celda 5 es 32 que es un espacio ' '
+28 <-.                     Resta 1 de la celda 4 para dar 87 que es 'W'
+29 <.                      La celda 3 quedó en 'o' por el final 'Hello'
+30 +++.----- -.----- ---.  Usamos la celda 3 para 'rl' y 'd'
+31 >>+.                    Suma 1 a la celda 5 para obtener el '!'
+32 >++.                    Y finalmente obtenemos el fin de línea de la celda 6
 ```
 
 ---
