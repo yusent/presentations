@@ -3738,6 +3738,247 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 
 ---
 
+# DNA#
+
+Está basado en la estructura del ADN y consta de 16 comandos:
+
+<div class="d-flex">
+<table style="margin-right: 1rem">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Equivalente en Brainfuck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATAT</td>
+<td><code>&gt;</code></td>
+</tr>
+<tr>
+<td>ATGC</td>
+<td><code>&lt;</code></td>
+</tr>
+<tr>
+<td>ATTA</td>
+<td><code>+</code></td>
+</tr>
+<tr>
+<td>ATCG</td>
+<td><code>-</code></td>
+</tr>
+<tr>
+<td>GCAT</td>
+<td><code>.</code></td>
+</tr>
+<tr>
+<td>GCGC</td>
+<td><code>,</code></td>
+</tr>
+<tr>
+<td>GCTA</td>
+<td><code>[</code></td>
+</tr>
+<tr>
+<td>GCCG</td>
+<td><code>]</code></td>
+</tr>
+</tbody>
+</table>
+
+<table style="margin-left: 1rem">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Equivalente en C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TAAT</td>
+<td>*pointer = *newpointer</td>
+</tr>
+<tr>
+<td>TAGC</td>
+<td>*pointer += *newpointer</td>
+</tr>
+<tr>
+<td>TATA</td>
+<td>*pointer -= *newpointer</td>
+</tr>
+<tr>
+<td>TACG</td>
+<td>*pointer *= *newpointer</td>
+</tr>
+<tr>
+<td>CGAT</td>
+<td>*pointer /= *newpointer</td>
+</tr>
+<tr>
+<td>CGGC</td>
+<td>. (Imprime valor como entero)</td>
+</tr>
+<tr>
+<td>CGTA</td>
+<td>, (Obtiene valor como entero)</td>
+</tr>
+<tr>
+<td>CGCG</td>
+<td>- (NOP)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+---
+
+# DNA# - Hello World
+
+```text
+ATTAATTATAGCTAGCCGCGATATTAATATGCATCGTACGTAGCCGCGATATTAATATGCATGCTAGCTAGCCGCGATGCTAGCATGCATCGATCGGCATATCGATCGATCGGCATTAGCATG
+CATCGGCATGCATATTAATTAATTAGCATATATGCATATGCTAGCATGCGCATTATAATGCGCATATTAATTAATTAGCATTATAATGCATTAATTAGCATTATAATGCGCATATATATTAGCAT
+```
+
+---
+
+# DNA# - Hello World
+
+<div class="d-flex space-between" style="font-size: 1rem">
+<pre>
+<code>    AT
+   T--A
+  A----T
+  T-----A
+  T-----A
+  G----C
+   T--A
+    GC
+    CG
+   C--G
+  A----T
+  A-----T
+  T-----A
+  A----T
+   A--T
+    GC
+    AT
+   C--G
+  T----A
+  C-----G
+  T-----A
+  G----C
+   C--G
+    CG
+    AT
+   A--T
+  T----A
+  A-----T
+  A-----T
+  G----C
+   A--T</code>
+</pre>
+<pre>
+<code>    GC
+    TA
+   G--C
+  T----A
+  G-----C
+  C-----G
+  C----G
+   A--T
+    GC
+    TA
+   G--C
+  A----T
+  G-----C
+  A-----T
+  C----G
+   A--T
+    CG
+    GC
+   A--T
+  A----T
+  C-----G
+  A-----T
+  C----G
+   A--T
+    CG
+    GC
+   A--T
+  T----A
+  G-----C
+  A-----T
+  G----C</code>
+</pre>
+<pre>
+<code>   A--T
+    CG
+    GC
+   A--T
+  G----C
+  A-----T
+  A-----T
+  T----A
+   A--T
+    TA
+    AT
+   T--A
+  G----C
+  A-----T
+  A-----T
+  A----T
+   G--C
+    AT
+    AT
+   G--C
+  T----A
+  G-----C
+  A-----T
+  G----C
+   G--C
+    AT
+    TA
+   T--A
+  A----T
+  G-----C
+  G-----C</code>
+</pre>
+<pre>
+<code>  A----T
+   A--T
+    TA
+    AT
+   T--A
+  A----T
+  T-----A
+  G-----C
+  A----T
+   T--A
+    TA
+    AT
+   G--C
+  A----T
+  T-----A
+  A-----T
+  T----A
+   G--C
+    AT
+    TA
+   T--A
+  A----T
+  G-----C
+  G-----C
+  A----T
+   A--T
+    AT
+    AT
+   T--A
+  G----C
+  A-----T</code>
+</pre>
+
+---
+
 # JSFuck
 
 JSFuck es un subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son `+`, `!`, `(`, `)`, `[`, `]`.

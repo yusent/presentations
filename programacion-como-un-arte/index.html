@@ -3322,10 +3322,242 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="122">
+<h1>DNA#</h1>
+<p>Está basado en la estructura del ADN y consta de 16 comandos:</p>
+<div class="d-flex">
+<table style="margin-right: 1rem">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Equivalente en Brainfuck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATAT</td>
+<td><code>&gt;</code></td>
+</tr>
+<tr>
+<td>ATGC</td>
+<td><code>&lt;</code></td>
+</tr>
+<tr>
+<td>ATTA</td>
+<td><code>+</code></td>
+</tr>
+<tr>
+<td>ATCG</td>
+<td><code>-</code></td>
+</tr>
+<tr>
+<td>GCAT</td>
+<td><code>.</code></td>
+</tr>
+<tr>
+<td>GCGC</td>
+<td><code>,</code></td>
+</tr>
+<tr>
+<td>GCTA</td>
+<td><code>[</code></td>
+</tr>
+<tr>
+<td>GCCG</td>
+<td><code>]</code></td>
+</tr>
+</tbody>
+</table>
+<table style="margin-left: 1rem">
+<thead>
+<tr>
+<th>Comando</th>
+<th>Equivalente en C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TAAT</td>
+<td>*pointer = *newpointer</td>
+</tr>
+<tr>
+<td>TAGC</td>
+<td>*pointer += *newpointer</td>
+</tr>
+<tr>
+<td>TATA</td>
+<td>*pointer -= *newpointer</td>
+</tr>
+<tr>
+<td>TACG</td>
+<td>*pointer *= *newpointer</td>
+</tr>
+<tr>
+<td>CGAT</td>
+<td>*pointer /= *newpointer</td>
+</tr>
+<tr>
+<td>CGGC</td>
+<td>. (Imprime valor como entero)</td>
+</tr>
+<tr>
+<td>CGTA</td>
+<td>, (Obtiene valor como entero)</td>
+</tr>
+<tr>
+<td>CGCG</td>
+<td>- (NOP)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="123">
+<h1>DNA# - Hello World</h1>
+<pre><code class="language-text"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>ATTAATTATAGCTAGCCGCGATATTAATATGCATCGTACGTAGCCGCGATATTAATATGCATGCTAGCTAGCCGCGATGCTAGCATGCATCGATCGGCATATCGATCGATCGGCATTAGCATG
+CATCGGCATGCATATTAATTAATTAGCATATATGCATATGCTAGCATGCGCATTATAATGCGCATATTAATTAATTAGCATTATAATGCATTAATTAGCATTATAATGCGCATATATATTAGCAT
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="124">
+<h1>DNA# - Hello World</h1>
+<div class="d-flex space-between" style="font-size: 1rem">
+<pre>
+<code>    AT
+   T--A
+  A----T
+  T-----A
+  T-----A
+  G----C
+   T--A
+    GC
+    CG
+   C--G
+  A----T
+  A-----T
+  T-----A
+  A----T
+   A--T
+    GC
+    AT
+   C--G
+  T----A
+  C-----G
+  T-----A
+  G----C
+   C--G
+    CG
+    AT
+   A--T
+  T----A
+  A-----T
+  A-----T
+  G----C
+   A--T</code>
+</pre>
+<pre>
+<code>    GC
+    TA
+   G--C
+  T----A
+  G-----C
+  C-----G
+  C----G
+   A--T
+    GC
+    TA
+   G--C
+  A----T
+  G-----C
+  A-----T
+  C----G
+   A--T
+    CG
+    GC
+   A--T
+  A----T
+  C-----G
+  A-----T
+  C----G
+   A--T
+    CG
+    GC
+   A--T
+  T----A
+  G-----C
+  A-----T
+  G----C</code>
+</pre>
+<pre>
+<code>   A--T
+    CG
+    GC
+   A--T
+  G----C
+  A-----T
+  A-----T
+  T----A
+   A--T
+    TA
+    AT
+   T--A
+  G----C
+  A-----T
+  A-----T
+  A----T
+   G--C
+    AT
+    AT
+   G--C
+  T----A
+  G-----C
+  A-----T
+  G----C
+   G--C
+    AT
+    TA
+   T--A
+  A----T
+  G-----C
+  G-----C</code>
+</pre>
+<pre>
+<code>  A----T
+   A--T
+    TA
+    AT
+   T--A
+  A----T
+  T-----A
+  G-----C
+  A----T
+   T--A
+    TA
+    AT
+   G--C
+  A----T
+  T-----A
+  A-----T
+  T----A
+   G--C
+    AT
+    TA
+   T--A
+  A----T
+  G-----C
+  G-----C
+  A----T
+   A--T
+    AT
+    AT
+   T--A
+  G----C
+  A-----T</code>
+</pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="125">
 <h1>JSFuck</h1>
 <p>JSFuck es un subconjunto esotérico de JavaScript que sólo usa 6 caracteres. Los caracteres son <code>+</code>, <code>!</code>, <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="123">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="126">
 <h1 style="margin-bottom: 0; padding-bottom: 0">JSFuck - Hello World</h1>
 <pre><code class="language-text"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![
 ]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+
@@ -3375,7 +3607,7 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 [])[!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]()[+!+[]+[!+[]+!+[]]])())
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="124">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="127">
 <h1 style="margin-bottom: 0; padding-bottom: 0">JSFuck - Hello World</h1>
 <pre><code class="language-text"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]][([][(![]+[])[+[]]+(![]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+(![
 ]+[])[!+[]+!+[]]+(![]+[])[+!+[]]+(!![]+[])[+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+(![]+[])[!+
@@ -3426,16 +3658,16 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 </span></span></foreignObject></svg></code></pre>
 <div class="note" style="top: 5.5rem">JavaScript válido</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="125">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="128">
 <h1>JSFuck</h1>
 <img src="media/how.webp" class="flex-1" />
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="126">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="129">
 <h1>JSFuck</h1>
 <img src="media/aliens.webp" class="flex-1" />
 <div style="position: absolute; bottom: 6rem; left: 32rem; color: white; font-weight: bold; font-size: 4rem">JavaScript</div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="127">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="130">
 <h1>JSFuck</h1>
 <p>Funciona porque cada programa en JavaScript se puede escribir como un <code>String</code> que se evalúa:</p>
 <p>e.g.</p>
@@ -3448,23 +3680,23 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 <pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[][<span class="hljs-string">&#x27;map&#x27;</span>][<span class="hljs-string">&#x27;constructor&#x27;</span>]
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="128">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="131">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="129">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="132">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="130">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="133">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
 <li><code>'false'[1]</code>: Obtenemos <code>'false'</code> haciendo <code>false+[]</code> por coerción de tipos</li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="131">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="134">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
@@ -3472,7 +3704,7 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 <li><code>(false+[])[1]</code>: Podemos escribir <code>false</code> como <code>![]</code></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="132">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="135">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
@@ -3481,7 +3713,7 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 <li><code>(![]+[])[1]</code>: <code>1</code> Puede ser escrito como <code>+true</code></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="133">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="136">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
@@ -3491,7 +3723,7 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 <li><code>(![]+[])[+true]</code>: Como ya vimos <code>![]</code> es <code>false</code>, así que <code>!![]</code> es <code>true</code></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="134">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="137">
 <h1>JSFuck - Escribiendo la letra 'a'</h1>
 <ol>
 <li><code>'a'</code>: Podemos obtenerla de la segunda posición del string <code>'false'</code></li>
@@ -3502,14 +3734,14 @@ MEEP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MeeP MEEP meeP mEEp MEEP meeP MEEP
 <li><code>(![]+[])[+!![]]</code>: Terminamos <img class="emoji" draggable="false" alt="😎" src="https://twemoji.maxcdn.com/2/svg/1f60e.svg" data-marp-twemoji=""/></li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="135">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="138">
 <h1>Chef</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="136">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="139">
 <h1>Chef</h1>
 <p>Es un lenguaje de programación en el que los programas son recetas.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="137">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="140">
 <h1 style="padding: 0">Chef</h1>
 <pre><code class="language-text"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Hello World Souffle.
 
@@ -3538,7 +3770,7 @@ bowl into the baking dish.
 Serves 1.
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="138">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="141">
 <h1 style="padding: 0">Chef</h1>
 <pre><code class="language-text"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Hello World Souffle.
 
@@ -3568,7 +3800,7 @@ Serves 1.
 </span></span></foreignObject></svg></code></pre>
 <p><a href="https://tio.run/#chef" target="_blank">https://tio.run/#chef</a></p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="139">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="142">
 <div class="d-flex space-between" style="align-items: center; margin-bottom: 16px">
   <h1 style="margin: 0; padding: 0">Chef</h1>
   <a href="http://www.mike-worth.com/2013/03/31/baking-a-hello-world-cake/" target="_blank">http://www.mike-worth.com/2013/03/31/baking-a-hello-world-cake</a>
@@ -3633,23 +3865,23 @@ Refrigerate for 1 hour.</code>
 </pre>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="140">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="143">
 <h1>Conclusiones</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="141">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="144">
 <h1>Conclusiones</h1>
 <ul>
 <li>El ser humano no necesita razones prácticas para realizar tareas complejas.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="142">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="145">
 <h1>Conclusiones</h1>
 <ul>
 <li>El ser humano no necesita razones prácticas para realizar tareas complejas.</li>
 <li>Llevamos nuestra creatividad y necesidad de expresarnos a cualquier dominio.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="143">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="146">
 <h1>Conclusiones</h1>
 <ul>
 <li>El ser humano no necesita razones prácticas para realizar tareas complejas.</li>
@@ -3657,7 +3889,7 @@ Refrigerate for 1 hour.</code>
 <li>La programación ha venido a potenciar no sólo nuestra capacidad para resolver problemas de utilidad, sino también nuestra capacidad de crear belleza en lugares inesperados.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="144">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="147">
 <img src="media/directed-by.webp" height="400" />
 <div class="title-section">
   <h3>Presentación disponible en:</h3>
