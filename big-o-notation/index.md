@@ -1,6 +1,6 @@
 <style>
   section[id="1"],
-  section[id="97"] {
+  section[id="96"] {
     align-items: center;
     justify-content: center;
   }
@@ -8,8 +8,8 @@
   section[id="47"],
   section[id="48"],
   section[id="49"],
-  section[id="95"],
-  section[id="96"] {
+  section[id="94"],
+  section[id="95"] {
     align-items: center;
   }
 
@@ -167,7 +167,7 @@ Imaginen que tenemos varias implementaciones de la misma función...
 
 - Es importante tener un vocabulario preciso para hablar del desempeño de nuestro código
 - Es útil para analizar ventajas y desventajas entre distintos enfoques
-- Si tenemos un programa lento nos ayuda a identificar las partes ineficiente que podemos mejorar
+- Si tenemos un programa lento nos ayuda a identificar las partes ineficientes que podemos mejorar
 
 ---
 
@@ -175,7 +175,7 @@ Imaginen que tenemos varias implementaciones de la misma función...
 
 - Es importante tener un vocabulario preciso para hablar del desempeño de nuestro código
 - Es útil para analizar ventajas y desventajas entre distintos enfoques
-- Si tenemos un programa lento nos ayuda a identificar las partes ineficiente que podemos mejorar
+- Si tenemos un programa lento nos ayuda a identificar las partes ineficientes que podemos mejorar
 - **Es un tema común en entrevistas de trabajo** 😱
 
 ---
@@ -282,7 +282,7 @@ console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
 
 **La misma computadora registrará distintos tiempos** 😩
 
-Esto sin contar que que para algoritmos muy rápidos tendremos un problema de precisión
+Esto sin contar que para algoritmos muy rápidos tendremos un problema de precisión
 
 ---
 
@@ -907,29 +907,6 @@ function bubbleSort(arr) { // n se refiere a la longitud de arr
     if (!isSwapped) break; // Tiempo constante
   }
 }
-```
-
----
-
-# Ejemplos
-
-```javascript
-function bubbleSort(arr) { // n se refiere a la longitud de arr
-  let isSwapped = false; // Tiempo constante
-
-  for (let i = 0; i < arr.length; i++) { // Tiempo constante n veces
-    isSwapped = false; // Tiempo constante
-    
-    for(let j = 0; j < arr.length; j++) { // Tiempo constante n veces
-      if (arr[j] > arr[j + 1]) { // Tiempo constante
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; // Tiempo constante
-        isSwapped = true; // Tiempo constante
-      }
-    } // El ciclo se repite por cada iteración del ciclo que engloba
-    
-    if (!isSwapped) break; // Tiempo constante
-  }
-} // O(a + b * n + ((c * n) + d) * n + e)
 ```
 
 ---
