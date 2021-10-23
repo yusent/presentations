@@ -1,15 +1,15 @@
 <style>
   section[id="1"],
-  section[id="96"] {
+  section[id="97"] {
     align-items: center;
     justify-content: center;
   }
 
-  section[id="47"],
   section[id="48"],
   section[id="49"],
-  section[id="94"],
-  section[id="95"] {
+  section[id="50"],
+  section[id="95"],
+  section[id="96"] {
     align-items: center;
   }
 
@@ -186,50 +186,31 @@ Imaginen que tenemos varias implementaciones de la misma función...
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-```
+<img src="images/timers-1.png" />
 
 ---
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-```
+<img src="images/timers-2.png" />
 
 ---
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-```
+<img src="images/timers-3.png" />
 
 ---
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
-```
+<img src="images/timers-4.png" />
 
 ---
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
-```
+<img src="images/timers-4.png" />
 
 ¿Cuál es el problema? 🤷
 
@@ -237,12 +218,7 @@ console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
-```
+<img src="images/timers-4.png" />
 
 ¿Cuál es el problema? 🤷
 
@@ -252,12 +228,7 @@ Diferentes computadoras registrarán diferentes tiempos
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
-```
+<img src="images/timers-4.png" />
 
 ¿Cuál es el problema? 🤷
 
@@ -269,12 +240,7 @@ console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
 
 # ¿Por qué no usamos *timers* para medir rapidez?
 
-```javascript
-const t0 = new Date();
-myFunc();
-const t1 = new Date();
-console.log(`Tardó ${(t1 - t0) / 1000} segundos`);
-```
+<img src="images/timers-4.png" />
 
 ¿Cuál es el problema? 🤷
 
@@ -310,14 +276,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-1.png" />
 
 ---
 
@@ -327,14 +286,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-2.png" />
 
 ---
 
@@ -344,14 +296,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-3.png" />
 
 ---
 
@@ -361,14 +306,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-4.png" />
 
 ---
 
@@ -378,14 +316,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-5.png" />
 
 ---
 
@@ -395,14 +326,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i;
-  return total;
-}
-```
+<img src="images/add-up-to-n-6.png" />
 
 ---
 
@@ -412,14 +336,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i; // n sumas, n asignaciones
-  return total;
-}
-```
+<img src="images/add-up-to-n-7.png" />
 
 ---
 
@@ -429,14 +346,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i; // n sumas, n asignaciones
-  return total;
-} // En total (5n + 2) operaciones
-```
+<img src="images/add-up-to-n-8.png" />
 
 ---
 
@@ -446,22 +356,21 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i; // n sumas, n asignaciones
-  return total;
-} // En total (5n + 2) operaciones
-```
+<img src="images/add-up-to-n-9.png" />
+
+---
+
+# ¿Entonces qué medimos?
+
+El número de operaciones que realiza la computadora al ejecutar nuestro algoritmo
+
+e.g. una función que sume todos los números enteros de 1 a *n*
+
+<img src="images/add-up-to-n-9.png" />
 
 algoritmo alternativo:
 
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2;
-}
-```
+<img src="images/add-up-to-n-alternative-1.png" />
 
 ---
 
@@ -471,22 +380,11 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i; // n sumas, n asignaciones
-  return total;
-} // En total (5n + 2) operaciones
-```
+<img src="images/add-up-to-n-9.png" />
 
 algoritmo alternativo:
 
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2; // 1 suma, 1 multiplicación, 1 división
-}
-```
+<img src="images/add-up-to-n-alternative-2.png" />
 
 ---
 
@@ -496,22 +394,11 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // 1 asignación
-  for (let i = 1; i <= n; i++) // 1 asignación, n comparaciones, n sumas, n asignaciones
-    total += i; // n sumas, n asignaciones
-  return total;
-} // En total (5n + 2) operaciones
-```
+<img src="images/add-up-to-n-9.png" />
 
 algoritmo alternativo:
 
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2; // 1 suma, 1 multiplicación, 1 división
-} // En total 3 operaciones
-```
+<img src="images/add-up-to-n-alternative-3.png" />
 
 ---
 

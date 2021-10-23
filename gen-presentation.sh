@@ -5,5 +5,5 @@ tempfilepath="/tmp/$1.md"
 
 cat me.md $filepath >> $tempfilepath
 
-marp --html $tempfilepath --output "$1.html"
+npx @marp-team/marp-cli --html $tempfilepath --output "$1.html"
 rm $tempfilepath
