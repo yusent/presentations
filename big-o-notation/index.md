@@ -1,15 +1,15 @@
 <style>
   section[id="1"],
-  section[id="97"] {
+  section[id="111"] {
     align-items: center;
     justify-content: center;
   }
 
-  section[id="48"],
-  section[id="49"],
-  section[id="50"],
-  section[id="95"],
-  section[id="96"] {
+  section[id="62"],
+  section[id="63"],
+  section[id="64"],
+  section[id="109"],
+  section[id="110"] {
     align-items: center;
   }
 
@@ -486,131 +486,202 @@ Expresa cómo el tiempo de ejecución crece en función del crecimiento del *inp
 
 Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
 
----
-
-# Definición semi-formal
-
-Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
-
-- **f(n)** puede ser:
-  - Lineal: **f(n) = n**
+<img style="object-fit: contain;height: 300px" src="images/feel-like-a-sir.jpg" />
 
 ---
 
-# Definición semi-formal
-
-Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
-
-- **f(n)** puede ser:
-  - Lineal: **f(n) = n**
-  - Cuadrática: <b>f(n) = n<sup>2</sup></b>
+# Complejidades comunes
 
 ---
 
-# Definición semi-formal
-
-Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
-
-- **f(n)** puede ser:
-  - Lineal: **f(n) = n**
-  - Cuadrática: <b>f(n) = n<sup>2</sup></b>
-  - Constante: **f(n) = 1**
+# Complejidades comunes: Constante
 
 ---
 
-# Definición semi-formal
+# Complejidades comunes: Constante
 
-Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
-
-- **f(n)** puede ser:
-  - Lineal: **f(n) = n**
-  - Cuadrática: <b>f(n) = n<sup>2</sup></b>
-  - Constante: **f(n) = 1**
-  - Logarítmica: **f(n) = log n**
+No depende del tamaño del input
 
 ---
 
-# Definición semi-formal
+# Complejidades comunes: Constante
 
-Decimos que un algoritmo es `O(f(n))` si el número de operaciones que la computadora tiene que realizar es eventualmente menos que `f(n)` multiplicado por una constante, conforme `n` incrementa
+No depende del tamaño del input:
 
-- **f(n)** puede ser:
-  - Lineal: **f(n) = n**
-  - Cuadrática: <b>f(n) = n<sup>2</sup></b>
-  - Constante: **f(n) = 1**
-  - Logarítmica: **f(n) = log n**
-  - Combinaciones:
-    - **f(n) = n log n**
+![](images/add-up-to-n.png)
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Constante
+
+No depende del tamaño del input:
+
+![](images/add-up-to-and-is-even.png)
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Constante
 
-- Las contantes multiplicando ó sumando se eliminan
+No depende del tamaño del input:
 
----
+![](images/add-up-to-and-is-even.png)
 
-# Reglas de simplificación
-
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
+Todas las complejidades constantes (`O(3)`, `O(12)`, `O(1000)`, etc.) se simplifican como <b style="color: #333">O(1)</b>
 
 ---
 
-# Reglas de simplificación
-
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
-  - **O(144)** y **O(12)** se simplifican como **O(1)**
+# Complejidades comunes: Lineal
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Lineal
 
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
-  - **O(144)** y **O(12)** se simplifican como **O(1)**
-- En funciones polinomiales sólo cuenta el término del exponente mayor
+Crece en la misma proporción que el input
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Lineal
 
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
-  - **O(144)** y **O(12)** se simplifican como **O(1)**
-- En funciones polinomiales sólo cuenta el término del exponente mayor
-  - **O(n<sup>2</sup> + n)** y **O(n<sup>2</sup> + 1)** se simplifican como **O(n<sup>2</sup>)**
+Crece en la misma proporción que el input:
+
+![](images/print-elems.png)
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Lineal
 
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
-  - **O(144)** y **O(12)** se simplifican como **O(1)**
-- En funciones polinomiales sólo cuenta el término del exponente mayor
-  - **O(n<sup>2</sup> + n)** y **O(n<sup>2</sup> + 1)** se simplifican como **O(n<sup>2</sup>)**
+Crece en la misma proporción que el input:
 
-**Podemos hacer esto porque sólo nos importa el cómo escala el tiempo de ejecución**
+![](images/print-elems-and-average.png)
 
 ---
 
-# Reglas de simplificación
+# Complejidades comunes: Lineal
 
-- Las contantes multiplicando ó sumando se eliminan
-  - **O(3n)**, **O(n + 12)**, **O(n / 2)**, **O(2n + 5)** se simplifican como **O(n)**
-  - **O(144)** y **O(12)** se simplifican como **O(1)**
-- En funciones polinomiales sólo cuenta el término del exponente mayor
-  - **O(n<sup>2</sup> + n)** y **O(n<sup>2</sup> + 1)** se simplifican como **O(n<sup>2</sup>)**
+Crece en la misma proporción que el input:
 
-**Podemos hacer esto porque sólo nos importa el cómo escala el tiempo de ejecución:**
+![](images/print-elems-and-average.png)
 
-**O(13)** se desempeña peor que **O(n)** para **n < 13**, sin embargo para toda **n > 13** nos conviene mucho más la complejidad constante que la lineal.
+Todas las complejidades lineales (`O(n + 1)`, `O(3n)`, `O(2n + 3)`, etc.) se simplifican como <b style="color: #333">O(n)</b>
+
+---
+
+# Complejidades comunes: Logarítmica
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos)
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+<b>log<sub>10</sub>(10) = 1</b>
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+<b>log<sub>10</sub>(10) = 1</b>
+<b>log<sub>10</sub>(100) = 2</b>
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+<b>log<sub>10</sub>(10) = 1</b>
+<b>log<sub>10</sub>(100) = 2</b>
+<b>log<sub>10</sub>(1000) = 3</b>
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+<b>log<sub>10</sub>(10) = 1</b>
+<b>log<sub>10</sub>(100) = 2</b>
+<b>log<sub>10</sub>(1000) = 3</b>
+<b>log<sub>10</sub>(1000000000000000000) = 18</b>
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+![](images/binary-search.png)
+
+---
+
+# Complejidades comunes: Logarítmica
+
+Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
+
+![](images/binary-search.png)
+
+Todas las complejidades logarítmicas se simplifican como <b style="color: #333">O(log(n))</b>
+
+---
+
+# Complejidades comunes: Cuadrática
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates.png)
+
+Todas las complejidades cuadráticas (<code>O(n<sup>2</sup> + 1)</code>, <code>O(3n<sup>2</sup> + 2n)</code>, <code>O(n<sup>2</sup> - n + 144)</code>, etc.) se simplifican como <b style="color: #333">O(n<sup>2</sup>)</b>
+
+---
+
+# Complejidades comunes: Exponencial
+
+---
+
+# Complejidades comunes: Exponencial
+
+El tamaño del input se usa como exponente para expresar la complejidad
+
+---
+
+# Complejidades comunes: Exponencial
+
+El tamaño del input se usa como exponente para expresar la complejidad:
+
+
+![](images/crack-pin.png)
 
 ---
 
