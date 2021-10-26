@@ -1,15 +1,16 @@
 <style>
   section[id="1"],
-  section[id="110"] {
+  section[id="2"],
+  section[id="111"] {
     align-items: center;
     justify-content: center;
   }
 
-  section[id="46"],
   section[id="47"],
   section[id="48"],
-  section[id="108"],
-  section[id="109"] {
+  section[id="49"],
+  section[id="109"],
+  section[id="110"] {
     align-items: center;
   }
 
@@ -19,6 +20,34 @@
 </style>
 
 # Big O Notation
+
+---
+
+<div id="cover" style="display: flex;align-items: center">
+  <div>
+    <h2 style="white-space: nowrap; margin-right: 2rem">¡Hola! Yo soy Yus</h2>
+  </div>
+  <div style="border-left: 1px solid #ccc">
+    <ul style="list-style-type: none">
+      <li class="d-flex">
+        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
+        @yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
+        @yusent
+      </li>
+      <li class="d-flex">
+        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
+        @yus3nt
+      </li>
+      <li class="d-flex">
+        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
+        @yus3nt
+      </li>
+    </ul>
+  </div>
+</div>
 
 ---
 
