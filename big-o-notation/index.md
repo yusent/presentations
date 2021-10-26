@@ -30,19 +30,19 @@
   <div style="border-left: 1px solid #ccc">
     <ul style="list-style-type: none">
       <li class="d-flex">
-        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
+        <img height="32" style="margin-right: 0.5rem; vertical-align: middle" src="https://unpkg.com/simple-icons@v3/icons/github.svg" />
         @yusent
       </li>
       <li class="d-flex">
-        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
+        <img height="32" style="margin-right: 0.5rem; vertical-align: middle" src="https://unpkg.com/simple-icons@v3/icons/linkedin.svg" />
         @yusent
       </li>
       <li class="d-flex">
-        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
+        <img height="32" style="margin-right: 0.5rem; vertical-align: middle" src="https://unpkg.com/simple-icons@v3/icons/twitter.svg" />
         @yus3nt
       </li>
       <li class="d-flex">
-        <img height="32" style="margin-right: 0.5rem" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
+        <img height="32" style="margin-right: 0.5rem; vertical-align: middle" src="https://unpkg.com/simple-icons@v3/icons/telegram.svg" />
         @yus3nt
       </li>
     </ul>
@@ -147,7 +147,7 @@ Imaginen que tenemos varias implementaciones de la misma función...
 
 ¿Qué significa **"mejor"**?
 
-¿Que sea más **rápida**? <b style="color: #00d">← Complejidad de tiempo (Time Complexity)</b>
+¿Que sea más **rápida**? <b style="color: #00d">➡️ Complejidad de tiempo (Time Complexity)</b>
 
 ¿Que use menos **memoria**?
 
@@ -165,9 +165,9 @@ Imaginen que tenemos varias implementaciones de la misma función...
 
 ¿Qué significa **"mejor"**?
 
-¿Que sea más **rápida**? <b style="color: #00d">← Complejidad de tiempo (Time Complexity)</b>
+¿Que sea más **rápida**? <b style="color: #00d">➡️ Complejidad de tiempo (Time Complexity)</b>
 
-¿Que use menos **memoria**? <b style="color: #00d">← Complejidad de espacio (Space Complexity)</b>
+¿Que use menos **memoria**? <b style="color: #00d">➡️ Complejidad de espacio (Space Complexity)</b>
 
 ¿Que sea más **legible**?
 
