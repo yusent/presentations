@@ -1,16 +1,16 @@
 <style>
   section[id="1"],
   section[id="2"],
-  section[id="111"] {
+  section[id="113"] {
     align-items: center;
     justify-content: center;
   }
 
-  section[id="47"],
-  section[id="48"],
   section[id="49"],
-  section[id="109"],
-  section[id="110"] {
+  section[id="50"],
+  section[id="51"],
+  section[id="111"],
+  section[id="112"] {
     align-items: center;
   }
 
@@ -48,6 +48,23 @@
     </ul>
   </div>
 </div>
+
+---
+
+# Hoy veremos...
+
+- ¿De qué se trata la notación **Big-O**?
+- ¿Cuál es su importancia?
+- ¿Cómo se expresa?
+- Ejemplos
+- Recursos de apoyo
+
+---
+
+# Lo que necesitan saber previamente...
+
+- Conceptos básicos de programación (variables, ciclos, funciones, etc.)
+- Conceptos básicos de álgebra (e.g. n + n = 2n, n * n = n<sup>2</sup>)
 
 ---
 
@@ -439,7 +456,8 @@ Dependiendo del criterio podríamos sólo querer contar cierto tipo de operacion
 - ¿Deberíamos contar el `return`?
 - ¿Por qué no contamos el hecho de usar un *for loop* como una operación?
 - Si la asignación y la suma se hacen en la misma instrucción ¿no deberían contar como 1 sóla operación?
-- El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
+
+El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
 
 ---
 
@@ -449,7 +467,8 @@ Dependiendo del criterio podríamos sólo querer contar cierto tipo de operacion
 - ¿Deberíamos contar el `return`?
 - ¿Por qué no contamos el hecho de usar un *for loop* como una operación?
 - Si la asignación y la suma se hacen en la misma instrucción ¿no deberían contar como 1 sóla operación?
-- El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
+
+El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
 
 **Lo que sí sabemos es que el resultado crece en proporción a `n` para el primer ejemplo y que es constante para el segundo**
 
