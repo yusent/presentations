@@ -1,6 +1,6 @@
 <style>
   section[id="1"],
-  section[id="116"] {
+  section[id="110"] {
     align-items: center;
     justify-content: center;
   }
@@ -8,8 +8,8 @@
   section[id="46"],
   section[id="47"],
   section[id="48"],
-  section[id="114"],
-  section[id="115"] {
+  section[id="108"],
+  section[id="109"] {
     align-items: center;
   }
 
@@ -706,8 +706,17 @@ El tamaño del input se usa como exponente para expresar la complejidad
 
 El tamaño del input se usa como exponente para expresar la complejidad:
 
+![](images/crack-pin.png)
+
+---
+
+# Complejidades comunes: Exponencial
+
+El tamaño del input se usa como exponente para expresar la complejidad:
 
 ![](images/crack-pin.png)
+
+Todas las complejidades exponenciales (<code>O(2<sup>n</sup> + 12)</code>, <code>O(3<sup>n</sup> + 2n)</code>, <code>O(3*10<sup>n</sup> - n + 144)</code>, ...) se simplifican como <b style="color: #333">O(b<sup>n</sup>)</b>
 
 ---
 
@@ -723,604 +732,135 @@ El tamaño del input se usa como exponente para expresar la complejidad:
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-}
-```
+![](images/add-up-to.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // Tiempo constante
-  for (let i = 1; i <= n; i++) // Tiempo constante n veces
-    total += i; // Tiempo constante n veces
-  return total; // Tiempo constante
-}
-```
+![](images/ex-add-up-to-1.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0; // Tiempo constante
-  for (let i = 1; i <= n; i++) // Tiempo constante n veces
-    total += i; // Tiempo constante n veces
-  return total; // Tiempo constante
-} // O(constante * n + otra_constante)
-```
+![](images/ex-add-up-to-2.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-} // O(n)
-```
+![](images/ex-add-up-to-3.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-} // O(n)
-```
-
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2;
-}
-```
+![](images/ex-add-up-to-4.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-} // O(n)
-```
-
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2; // Tiempo constante
-}
-```
+![](images/ex-add-up-to-5.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-} // O(n)
-```
-
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2; // Tiempo constante
-} // O(constante)
-```
+![](images/ex-add-up-to-6.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function addUpTo(n) {
-  let total = 0;
-  for (let i = 1; i <= n; i++)
-    total += i;
-  return total;
-} // O(n)
-```
-
-```javascript
-function addUpTo(n) {
-  return n * (n + 1) / 2;
-} // O(1)
-```
+![](images/ex-add-up-to-7.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function bubbleSort(arr) {
-  let isSwapped = false;
-
-  for (let i = 0; i < arr.length; i++) {
-    isSwapped = false;
-    
-    for(let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        isSwapped = true;
-      }
-    }
-    
-    if (!isSwapped) break;
-  }
-}
-```
+![](images/bubble-sort.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function bubbleSort(arr) { // n se refiere a la longitud de arr
-  let isSwapped = false; // Tiempo constante
-
-  for (let i = 0; i < arr.length; i++) { // Tiempo constante n veces
-    isSwapped = false; // Tiempo constante
-    
-    for(let j = 0; j < arr.length; j++) { // Tiempo constante n veces
-      if (arr[j] > arr[j + 1]) { // Tiempo constante
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; // Tiempo constante
-        isSwapped = true; // Tiempo constante
-      }
-    } // El ciclo se repite por cada iteración del ciclo que engloba
-    
-    if (!isSwapped) break; // Tiempo constante
-  }
-}
-```
+![](images/bubble-sort-1.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function bubbleSort(arr) {
-  let isSwapped = false;
-
-  for (let i = 0; i < arr.length; i++) {
-    isSwapped = false;
-    
-    for(let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        isSwapped = true;
-      }
-    }
-    
-    if (!isSwapped) break;
-  }
-} // O(n + n * n)
-```
+![](images/bubble-sort-2.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function bubbleSort(arr) {
-  let isSwapped = false;
-
-  for (let i = 0; i < arr.length; i++) {
-    isSwapped = false;
-    
-    for(let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        isSwapped = true;
-      }
-    }
-    
-    if (!isSwapped) break;
-  }
-} // O(n^2 + n)
-```
+![](images/bubble-sort-3.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function bubbleSort(arr) {
-  let isSwapped = false;
-
-  for (let i = 0; i < arr.length; i++) {
-    isSwapped = false;
-    
-    for(let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-        isSwapped = true;
-      }
-    }
-    
-    if (!isSwapped) break;
-  }
-} // O(n^2)
-```
+![](images/bubble-sort-4.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
-
-  for (let i = min; i <= max; i++)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++)
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+![](images/ex-binary-search.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
-
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++)
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+![](images/ex-binary-search-1.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
+![](images/ex-binary-search-2.png)
 
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+<span style="color: red;position: absolute; bottom: 200px;right: 200px;font-size: 2rem">¿Cuántas veces se repite el ciclo? 🤔</span>
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
+![](images/ex-binary-search-2.png)
 
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++) // O(k)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+<span style="color: red;position: absolute; bottom: 200px;right: 90px;font-size: 2rem">💡 Cada iteración descartamos la mitad del arreglo</span>
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
+![](images/ex-binary-search-2.png)
 
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++) // O(k)
-    while (count[i] > 0) { // O(xi) => xi es # de veces que i está en arr
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+<span style="color: red;position: absolute; bottom: 200px;right: 200px;font-size: 2rem">¿Cuántas veces podemos dividir n entre 2?</span>
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
+![](images/ex-binary-search-3.png)
 
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++) // O(k)
-    while (count[i] > 0) { // O(xi) => xi es # de veces que i está en arr
-      sortedArr.push(i);
-      count[i]--;
-    } // Sabemos que la suma de todos los xi debe dar n
-
-  return sortedArr;
-}
-```
+<span style="color: red;position: absolute; top: 255px;right: 200px;font-size: 2rem">log<sub>2</sub>(n)</span>
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
-
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++) // O(n)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-}
-```
+![](images/ex-binary-search-4.png)
 
 ---
 
 # Ejemplos
 
-```javascript
-function countingSort(arr, min, max) {
-  const [count, sortedArr] = [{}, []];
-
-  for (let i = min; i <= max; i++) // O(k) => k es (max - min)
-    count[i] = 0;
-
-  for (let i = 0; i < arr.length; i++) // O(n) => n es la longitud de arr
-    count[arr[i]]++;
-
-  for (let i = min; i <= max; i++) // O(n)
-    while (count[i] > 0) {
-      sortedArr.push(i);
-      count[i]--;
-    }
-
-  return sortedArr;
-} // O(n + k)
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  }
-
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  } // En cada iteración partimos a la mitad las posibilidades
-
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  } // En cada iteración partimos a la mitad las posibilidades
-    // ¿Cuántas veces podemos dividir entre 2 a n?
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  } // O(x) => n es 2 ^ x
-
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  } // O(x) => n es 2 ^ x (usamos logaritmo para obtener el exponente)
-
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  } // O(log2 n)
-
-  return -1;
-}
-```
-
----
-
-# Ejemplos
-
-```javascript
-function binarySearch(arr, num) {
-  let startIndex = 0;
-  let endIndex = arr.length - 1;
-
-  while (startIndex <= endIndex) {
-    let pivot = Math.floor((startIndex + endIndex) / 2);
-
-    if (arr[pivot] === num)
-      return pivot;
-    else if (arr[pivot] < num)
-      startIndex = pivot + 1;
-    else
-      endIndex = pivot - 1;
-  }
-
-  return -1;
-} // O(log2 n)
-```
+![](images/ex-binary-search-5.png)
 
 ---
 
