@@ -1,15 +1,15 @@
 <style>
   section[id="1"],
-  section[id="111"] {
+  section[id="116"] {
     align-items: center;
     justify-content: center;
   }
 
-  section[id="62"],
-  section[id="63"],
-  section[id="64"],
-  section[id="109"],
-  section[id="110"] {
+  section[id="46"],
+  section[id="47"],
+  section[id="48"],
+  section[id="114"],
+  section[id="115"] {
     align-items: center;
   }
 
@@ -276,7 +276,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-1.png" />
+<img src="images/add-up-to-4.png" />
 
 ---
 
@@ -286,7 +286,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-2.png" />
+<img src="images/add-up-to-5.png" />
 
 ---
 
@@ -296,7 +296,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-3.png" />
+<img src="images/add-up-to-6.png" />
 
 ---
 
@@ -306,7 +306,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-4.png" />
+<img src="images/add-up-to-7.png" />
 
 ---
 
@@ -316,7 +316,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-5.png" />
+<img src="images/add-up-to-8.png" />
 
 ---
 
@@ -326,7 +326,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-6.png" />
+<img src="images/add-up-to-9.png" />
 
 ---
 
@@ -336,7 +336,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-7.png" />
+<img src="images/add-up-to-10.png" />
 
 ---
 
@@ -346,7 +346,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-8.png" />
+<img src="images/add-up-to-11.png" />
 
 ---
 
@@ -356,7 +356,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-9.png" />
+<img src="images/add-up-to-12.png" />
 
 ---
 
@@ -366,39 +366,7 @@ El número de operaciones que realiza la computadora al ejecutar nuestro algorit
 
 e.g. una función que sume todos los números enteros de 1 a *n*
 
-<img src="images/add-up-to-n-9.png" />
-
-algoritmo alternativo:
-
-<img src="images/add-up-to-n-alternative-1.png" />
-
----
-
-# ¿Entonces qué medimos?
-
-El número de operaciones que realiza la computadora al ejecutar nuestro algoritmo
-
-e.g. una función que sume todos los números enteros de 1 a *n*
-
-<img src="images/add-up-to-n-9.png" />
-
-algoritmo alternativo:
-
-<img src="images/add-up-to-n-alternative-2.png" />
-
----
-
-# ¿Entonces qué medimos?
-
-El número de operaciones que realiza la computadora al ejecutar nuestro algoritmo
-
-e.g. una función que sume todos los números enteros de 1 a *n*
-
-<img src="images/add-up-to-n-9.png" />
-
-algoritmo alternativo:
-
-<img src="images/add-up-to-n-alternative-3.png" />
+<img src="images/add-up-to-13.png" />
 
 ---
 
@@ -442,7 +410,7 @@ Dependiendo del criterio podríamos sólo querer contar cierto tipo de operacion
 - ¿Deberíamos contar el `return`?
 - ¿Por qué no contamos el hecho de usar un *for loop* como una operación?
 - Si la asignación y la suma se hacen en la misma instrucción ¿no deberían contar como 1 sóla operación?
-- El resultado de analizar el primer ejemplo podría variar desde `2n` hasta `5n + 3`
+- El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
 
 ---
 
@@ -452,7 +420,7 @@ Dependiendo del criterio podríamos sólo querer contar cierto tipo de operacion
 - ¿Deberíamos contar el `return`?
 - ¿Por qué no contamos el hecho de usar un *for loop* como una operación?
 - Si la asignación y la suma se hacen en la misma instrucción ¿no deberían contar como 1 sóla operación?
-- El resultado de analizar el primer ejemplo podría variar desde `2n` hasta `5n + 3`
+- El resultado de analizar el primer ejemplo podría variar desde `2n + 1` hasta `4n + 1`
 
 **Lo que sí sabemos es que el resultado crece en proporción a `n` para el primer ejemplo y que es constante para el segundo**
 
@@ -524,7 +492,7 @@ No depende del tamaño del input:
 
 No depende del tamaño del input:
 
-![](images/add-up-to-and-is-even.png)
+![](images/add-up-to-and-is-even-simplified.png)
 
 Todas las complejidades constantes (`O(3)`, `O(12)`, `O(1000)`, etc.) se simplifican como <b style="color: #333">O(1)</b>
 
@@ -560,9 +528,9 @@ Crece en la misma proporción que el input:
 
 Crece en la misma proporción que el input:
 
-![](images/print-elems-and-average.png)
+![](images/print-elems-and-average-simplified.png)
 
-Todas las complejidades lineales (`O(n + 1)`, `O(3n)`, `O(2n + 3)`, etc.) se simplifican como <b style="color: #333">O(n)</b>
+Todas las complejidades lineales (`O(n + 1)`, `O(3n)`, ...) se simplifican como <b style="color: #333">O(n)</b>
 
 ---
 
@@ -632,7 +600,7 @@ Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
 
 Crece en proporción al logaritmo del tamaño del input (cada vez crece menos):
 
-![](images/binary-search.png)
+![](images/binary-search-simplified.png)
 
 Todas las complejidades logarítmicas se simplifican como <b style="color: #333">O(log(n))</b>
 
@@ -652,7 +620,7 @@ Crece en proporción al cuadrado del tamaño del input
 
 Crece en proporción al cuadrado del tamaño del input:
 
-![](images/has-duplicates.png)
+![](images/has-duplicates-1.png)
 
 ---
 
@@ -660,9 +628,67 @@ Crece en proporción al cuadrado del tamaño del input:
 
 Crece en proporción al cuadrado del tamaño del input:
 
-![](images/has-duplicates.png)
+![](images/has-duplicates-2.png)
 
-Todas las complejidades cuadráticas (<code>O(n<sup>2</sup> + 1)</code>, <code>O(3n<sup>2</sup> + 2n)</code>, <code>O(n<sup>2</sup> - n + 144)</code>, etc.) se simplifican como <b style="color: #333">O(n<sup>2</sup>)</b>
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-2.png)
+
+<span style="color: red;position: absolute; top: 250px;right: 200px;font-size: 2rem">¿De dónde salió una n<sup>2</sup>? 🤔</span>
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-3.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-4.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-5.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-6.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-7.png)
+
+---
+
+# Complejidades comunes: Cuadrática
+
+Crece en proporción al cuadrado del tamaño del input:
+
+![](images/has-duplicates-simplified.png)
+
+Todas las complejidades cuadráticas (<code>O(n<sup>2</sup> + 1)</code>, <code>O(3n<sup>2</sup> + 2n)</code>, <code>O(n<sup>2</sup> - n + 144)</code>, ...) se simplifican como <b style="color: #333">O(n<sup>2</sup>)</b>
 
 ---
 
