@@ -276,7 +276,7 @@
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/dir-output.mkv" type="video/mp4">
+    <source src="media/dir-output.webm" type="video/mp4">
   </video>
 </div>
 
@@ -301,7 +301,7 @@
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/help.mkv" type="video/mp4">
+    <source src="media/help.webm" type="video/mp4">
   </video>
 </div>
 
@@ -313,7 +313,7 @@
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/dir-pipe-more.mkv" type="video/mp4">
+    <source src="media/dir-pipe-more.webm" type="video/mp4">
   </video>
 </div>
 
@@ -2970,7 +2970,7 @@ Fue creado en Google por **Alexander Mordvintsev**, **Mike Tyka** y **Christophe
 # Código
 
 <div class="flex-1 d-flex space-between" style="overflow-y: hidden; align-items: flex-start">
-<pre style="font-size: 0.7rem; margin-bottom: 0">
+<pre style="font-size: 0.7rem; margin-bottom: 0; flex: 1">
 <code>lOL*QI[] = {<span class="hljs-string">"Use:\012\011dump file\012"</span>,<span class="hljs-string">"Unable to open file '\x25s'\012"</span>,
  <span class="hljs-string">"\012"</span>,<span class="hljs-string">"   "</span>,<span class="hljs-string">""</span>};
 main(I,Il)
@@ -3006,7 +3006,7 @@ lOL*Il[];
   D(l) { <span class="hljs-keyword">return</span> l&gt;=<span class="hljs-string">' '</span>&amp;&amp;l&lt;=<span class="hljs-string">'\~'</span>;
 }</code>
 </pre>
-<pre style="font-size: 0.7rem; margin-bottom: 0">
+<pre style="font-size: 0.7rem; margin-bottom: 0; flex: 1">
 <code><span class="hljs-comment">/* match: search for regexp anywhere in text */</span>
 <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">match</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *regexp, <span class="hljs-keyword">char</span> *text)</span>
 </span>{
@@ -3159,7 +3159,7 @@ if((                       i=( y            +=v=        getch(        )>0?I:v+
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/tappy-bird.mkv" type="video/mp4">
+    <source src="media/tappy-bird.webm" type="video/mp4">
   </video>
 </div>
 
@@ -3305,7 +3305,7 @@ print'Perl'#";print'Ruby'#"""</span>;<span class="hljs-keyword">print</span>(<sp
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/polyglot.mkv" type="video/mp4">
+    <source src="media/polyglot.webm" type="video/mp4">
   </video>
 </div>
 
@@ -3420,7 +3420,7 @@ q=<span class="hljs-string">''</span><span class="hljs-string">'*/
     width="100%"
     onclick="this.paused ? this.play() : this.pause(); this.blur()"
   >
-    <source src="media/polyquine.mkv" type="video/mp4">
+    <source src="media/polyquine.webm" type="video/mp4">
   </video>
 </div>
 
