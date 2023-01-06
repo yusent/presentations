@@ -770,7 +770,7 @@ Todas las complejidades exponenciales (<code>O(2<sup>n</sup> + 12)</code>, <code
 
 <h4 style="align-self: center">Comparación de complejidades</h4>
 
-<img src="images/complexity-comparison.svg" />
+<img src="images/complexity-comparison.svg" height="100%" />
 
 ---
 
